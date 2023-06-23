@@ -9,6 +9,7 @@ import ProfileSVG from "@/public/gallery/hello.svg";
 const Hello = () => {
   return (
     <>
+      {/* Desktop */}
       <div className="bg-gray-200 w-full rounded-[20px] flex p-10 max-md:hidden">
         <div className="flex flex-wrap justify-between items-center">
           <div className="space-y-14 w-[60%]">
@@ -44,7 +45,12 @@ const Hello = () => {
           <Image src={ProfileSVG} alt="Mika Profile Picture" />
         </div>
       </div>
-      <div className="md:hidden bg-gray-200 w-full rounded-[20px] flex flex-col p-8 px-5 justify-center items-center gap-y-5">
+
+      {/* Mobile */}
+      <div
+        id="home"
+        className="md:hidden bg-gray-200 w-full rounded-[20px] flex flex-col p-8 px-5 justify-center items-center gap-y-5"
+      >
         <div className="flex flex-col items-center gap-y-1">
           <Image
             src={ProfilePNG}
