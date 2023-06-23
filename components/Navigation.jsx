@@ -5,41 +5,72 @@ import { BsFillMoonFill } from "react-icons/bs";
 
 const Navigation = () => {
   const [date, setDate] = useState("");
+  const [mobileDate, setMobileDate] = useState("");
   const [toggle, setToggle] = useState(false);
   useEffect(() => {
-    const currentDate = new Date();
-    const pstDate = currentDate
-      .toLocaleString("en-US", {
-        timeZone: "America/Los_Angeles",
-        weekday: "short",
-        month: "short",
-        day: "numeric",
-        hour: "numeric",
-        minute: "numeric",
-        second: "numeric",
-        hour12: true,
-      })
-      .replace(/,/g, "");
-    setDate(pstDate);
+    const timer = setInterval(() => {
+      const currentDate = new Date();
+      const formattedDate = currentDate
+        .toLocaleString("en-US", {
+          weekday: "short",
+          month: "short",
+          day: "numeric",
+          hour: "numeric",
+          minute: "numeric",
+          hour12: true,
+        })
+        .replace(/,/g, "");
+
+      const formatteMobileDate = currentDate
+        .toLocaleString("en-US", {
+          month: "short",
+          day: "numeric",
+          hour: "numeric",
+          minute: "numeric",
+          hour12: true,
+        })
+        .replace(/at/i, "");
+      setDate(formattedDate);
+      setMobileDate(formatteMobileDate);
+    }, 1000); // Update every second (1000 milliseconds)
+
+    return () => {
+      clearInterval(timer); // Cleanup function to clear the interval when component unmounts
+    };
   }, []);
 
+  //   nav button will have a bg after a certain scroll
+  const [scrollNav, setScrollNav] = useState(false);
+  const changeNav = () => {
+    if (window.scrollY >= 50) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  }, []);
+
+  const ScrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
-    <div
-      id="home"
-      className="flex justify-between items-center w-full relative pt-2"
-    >
+    <div className="flex justify-between items-center w-full relative">
       <p className="font-medium select-none">mikashanela</p>
       <div className="flex items-center gap-x-4 max-md:hidden">
+        <p className="text-right select-none">{date} PST</p>
         <div
-          className={`cursor-pointer ${
+          className={`cursor-pointer text-lg ${
             toggle ? `w-fit bg-gray-300 p-1 rounded-[5px] bg-opacity-50` : `p-1`
           }`}
         >
           <BsToggles onClick={() => setToggle(!toggle)} />
         </div>
-        <p className="select-none">{date}</p>
         {toggle && (
-          <div className="absolute top-12 right-48 rounded-[20px] bg-gray-300 bg-opacity-50 p-3 space-y-3">
+          <div className="absolute top-12 right-0 rounded-[20px] bg-gray-300 bg-opacity-50 p-3 space-y-3">
             <div className="flex justify-between items-center gap-x-3 bg-gray-200 rounded-[20px] p-3 pl-1 py-1 cursor-pointer">
               <div className="w-fit bg-white bg-opacity-70 rounded-full p-2">
                 <BsFillMoonFill />
@@ -58,23 +89,31 @@ const Navigation = () => {
           </div>
         )}
       </div>
+      <div className="md:hidden absolute right-12">{mobileDate}</div>
+
       <div
-        className="md:hidden fixed right-5 top-1 text-4xl cursor-pointer"
+        className="md:hidden fixed right-5 top-[3px] text-[37px] cursor-pointer z-[100]"
         onClick={() => setToggle(!toggle)}
       >
         <BsToggles
-          //   id="home"
-          className={`cursor-pointer ${
-            toggle ? `bg-gray-300 p-2 rounded-[5px] bg-opacity-50` : `p-2`
-          }`}
+          className={`cursor-pointer transition-all ease-in-out ${
+            scrollNav ? `bg-gray-300 p-2 rounded-[5px] bg-opacity-70` : `p-2`
+          }
+            ${
+              toggle ? `bg-gray-300 p-2 rounded-[5px] bg-opacity-70` : `p-2`
+              //   : `bg-gray-300 p-2 rounded-[5px] bg-opacity-70`
+            }`}
         />
       </div>
       {toggle && (
-        <div className="md:hidden fixed right-5 top-12 rounded-[10px] bg-gray-300 bg-opacity-50 py-3 px-4 gap-y-4 flex flex-col">
+        <div className="md:hidden fixed right-5 top-12 rounded-[10px] bg-gray-300 bg-opacity-70 py-3 px-4 gap-y-4 flex flex-col z-[100]">
           <div className="flex flex-col gap-y-2">
-            <Link href="#home" className="select-none">
+            <p onClick={ScrollToTop} className="select-none">
               Home
-            </Link>
+            </p>
+            {/* <Link href="#home" className="select-none">
+              Home
+            </Link> */}
             <Link href="#projects" className="select-none">
               Experience
             </Link>
