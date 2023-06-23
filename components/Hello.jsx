@@ -10,7 +10,7 @@ const Hello = () => {
   return (
     <>
       {/* Desktop */}
-      <div className="bg-gray-200 w-full rounded-[20px] flex p-10 max-md:hidden">
+      <div className="bg-gray-200 w-full rounded-[20px] flex p-10 max-md:hidden bg-opacity-50">
         <div className="flex flex-wrap justify-between items-center">
           <div className="space-y-14 w-[60%]">
             <div className="space-y-4 break-before-all">
@@ -55,7 +55,7 @@ const Hello = () => {
             draggable={false}
             src={ProfilePNG}
             alt="Mika Profile Picture"
-            className="max-sm:w-40"
+            className="max-sm:w-40 w-full"
           />
           <p className="text-lg font-medium">Mika Shanela Carodan</p>
           <p className="underline">{"+1 (909) 214-5009"}</p>

@@ -63,7 +63,7 @@ const Navigation = () => {
       <div className="flex items-center gap-x-4 max-md:hidden">
         <p className="text-right select-none">{date} PST</p>
         <div
-          className={`cursor-pointer text-lg ${
+          className={` duration-300 cursor-pointer text-lg ${
             toggle ? `w-fit bg-gray-300 p-1 rounded-[5px] bg-opacity-50` : `p-1`
           }`}
         >
@@ -96,7 +96,7 @@ const Navigation = () => {
         onClick={() => setToggle(!toggle)}
       >
         <BsToggles
-          className={`cursor-pointer transition-all ease-in-out ${
+          className={`cursor-pointer transition-all ease-in-out duration-100 ${
             scrollNav ? `bg-gray-300 p-2 rounded-[5px] bg-opacity-70` : `p-2`
           }
             ${
@@ -111,16 +111,13 @@ const Navigation = () => {
             <p onClick={ScrollToTop} className="select-none">
               Home
             </p>
-            {/* <Link href="#home" className="select-none">
-              Home
-            </Link> */}
-            <Link href="#projects" className="select-none">
+            <Link href="#" className="select-none">
               Experience
             </Link>
             <Link href="#projects" className="select-none">
               Projects
             </Link>
-            <Link href="#projects" className="select-none">
+            <Link href="#" className="select-none">
               Contact
             </Link>
           </div>
