@@ -4,10 +4,11 @@ import logo from "@/public/assets/footer_logo.svg";
 
 const Footer = () => {
   return (
-    <div className="flex gap-x-5 justify-center items-center max-sm:text-xs">
+    <div className="flex gap-x-5 justify-center items-center max-sm:text-xs select-none">
       <p>{"Copyright © 2023"}</p>
       <p>{"All right reserved"}</p>
       <Image
+        draggable={false}
         src={logo}
         alt="Mika Logo Footer"
         quality={100}

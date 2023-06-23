@@ -14,17 +14,15 @@ const Hello = () => {
         <div className="flex flex-wrap justify-between items-center">
           <div className="space-y-14 w-[60%]">
             <div className="space-y-4 break-before-all">
-              <p className="text-4xl font-semibold">Hello, {"I'm"} Mika!</p>
+              <p className="text-4xl font-semibold select-none">
+                Hello, {"I'm"} Mika!
+              </p>
               <div>
                 <p className="texl-lg lg:text-xl">
                   Software Engineer based in Southern California. Trying to make
                   it out the trenches. After hours, I eat {"Häagen-Dazs"} and
                   watch the Golden State Warriors self-detonate their roster.
                 </p>
-                {/* <p className="text-xl">
-              After hours, I eat Haagen daaz and watch the Golden State Warriors
-              self-detonate their roster.
-            </p> */}
               </div>
               <p className="texl-lg lg:text-xl">
                 Hayley Williams from Paramore, top 5 woman ever.
@@ -42,25 +40,22 @@ const Hello = () => {
               </div>
             </div>
           </div>
-          <Image src={ProfileSVG} alt="Mika Profile Picture" />
+          <Image
+            draggable={false}
+            src={ProfileSVG}
+            alt="Mika Profile Picture"
+          />
         </div>
       </div>
 
       {/* Mobile */}
-      <div
-        id="home"
-        className="md:hidden bg-gray-200 w-full rounded-[20px] flex flex-col p-8 px-5 justify-center items-center gap-y-5"
-      >
+      <div className="md:hidden bg-gray-200 w-full rounded-[20px] flex flex-col p-8 px-5 justify-center items-center gap-y-5">
         <div className="flex flex-col items-center gap-y-1">
           <Image
+            draggable={false}
             src={ProfilePNG}
             alt="Mika Profile Picture"
             className="max-sm:w-40"
-            //   width={40}
-            //   height={400}
-            //   quality={100}
-            // className="rounded-full"
-            //   className="min-w-1/4"
           />
           <p className="text-lg font-medium">Mika Shanela Carodan</p>
           <p className="underline">{"+1 (909) 214-5009"}</p>
@@ -81,8 +76,6 @@ const Hello = () => {
           the trenches. After hours, I eat {"Häagen-Dazs"} and watch the Golden
           State Warriors self-detonate their roster.
         </p>
-        {/* <p>Mika Shanela Carodan</p>
-        <p>Mika Shanela</p> */}
       </div>
     </>
   );
