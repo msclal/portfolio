@@ -4,9 +4,13 @@ import logo from "@/public/assets/footer_logo.svg";
 import Link from "next/link";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="flex gap-x-5 justify-center items-center max-sm:text-xs select-none">
-      <p>{"Copyright © 2023"}</p>
+      <p>
+        {"Copyright © "} {currentYear}
+      </p>
       <p>{"All right reserved"}</p>
       <Link
         href={
