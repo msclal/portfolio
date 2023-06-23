@@ -9,7 +9,19 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        xs: "430px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+      },
+      fontFamily: {
+        inter: ["var(--font-inter)", "sans-serif"],
+        outfit: ["var(--font-outfit)", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
