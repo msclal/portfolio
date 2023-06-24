@@ -16,7 +16,7 @@ const Navigation = () => {
         componentRef.current &&
         !componentRef.current.contains(event.target)
       ) {
-        setIsHover(false);
+        setToggle(false);
       }
     };
 
@@ -26,10 +26,6 @@ const Navigation = () => {
       document.removeEventListener("click", handleClickOutside);
     };
   }, []);
-
-  //   const handleComponentClick = () => {
-  //     setIsHover(true);
-  //   };
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -87,6 +83,7 @@ const Navigation = () => {
       <div className="flex items-center gap-x-4 max-md:hidden">
         <p className="text-right select-none font-medium">{date} PST</p>
         <div
+          ref={componentRef}
           className={` duration-300 cursor-pointer text-lg ${
             toggle ? `w-fit bg-gray-300 p-1 rounded-[5px] bg-opacity-50` : `p-1`
           }`}
@@ -117,6 +114,7 @@ const Navigation = () => {
       <div className="md:hidden absolute right-12">{mobileDate}</div>
 
       <div
+        ref={componentRef}
         className="md:hidden fixed right-5 top-[8px] text-[37px] cursor-pointer z-[100]"
         onClick={() => setToggle(!toggle)}
       >
