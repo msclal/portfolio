@@ -78,12 +78,14 @@ const Navigation = () => {
   };
 
   return (
-    <div className="flex justify-between items-center w-full relative mt-2">
+    <div
+      ref={componentRef}
+      className="flex justify-between items-center w-full relative mt-2"
+    >
       <p className="font-medium select-none">mikashanela</p>
       <div className="flex items-center gap-x-4 max-md:hidden">
         <p className="text-right select-none font-medium">{date} PST</p>
         <div
-          ref={componentRef}
           className={` duration-300 cursor-pointer text-lg ${
             toggle ? `w-fit bg-gray-300 p-1 rounded-[5px] bg-opacity-50` : `p-1`
           }`}

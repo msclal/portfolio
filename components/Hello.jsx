@@ -29,13 +29,13 @@ const Hello = () => {
               </p>
             </div>
             <div className="flex gap-x-5 text-3xl">
-              <div className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px]">
+              <div className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px] duration-300">
                 <FiMail />
               </div>
-              <div className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px]">
+              <div className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px] duration-300">
                 <AiFillGithub />
               </div>
-              <div className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px]">
+              <div className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px] duration-300">
                 <ImLinkedin2 />
               </div>
             </div>
@@ -44,6 +44,8 @@ const Hello = () => {
             draggable={false}
             src={ProfileSVG}
             alt="Mika Profile Picture"
+            placeholder="blur"
+            blurDataURL="/public/gallery/hello.png"
           />
         </div>
       </div>
@@ -62,13 +64,13 @@ const Hello = () => {
           <p className="underline">{"+1 (909) 214-5009"}</p>
         </div>
         <div className="flex gap-x-5 text-3xl">
-          <div className="w-fit p-3 bg-gray-100 rounded-[10px]">
+          <div className="w-fit p-3 bg-gray-100 rounded-[10px] duration-300">
             <FiMail />
           </div>
-          <div className="w-fit p-3 bg-gray-100 rounded-[10px]">
+          <div className="w-fit p-3 bg-gray-100 rounded-[10px] duration-300">
             <AiFillGithub />
           </div>
-          <div className="w-fit p-3 bg-gray-100 rounded-[10px]">
+          <div className="w-fit p-3 bg-gray-100 rounded-[10px] duration-300">
             <ImLinkedin2 />
           </div>
         </div>
