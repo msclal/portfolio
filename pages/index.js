@@ -14,9 +14,13 @@ export default function Home() {
         <Headphones />
         <Contact />
       </div>
-      <div className="sm:hidden space-y-5">
-        <Headphones />
-        <Contact />
+      <div className="sm:hidden">
+        <div className="mb-6">
+          <Headphones />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
       </div>
     </>
   );

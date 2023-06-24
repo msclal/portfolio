@@ -87,53 +87,35 @@ const Navigation = () => {
               loading="lazy"
               className="select-none"
             />
-            {/* </Link> */}
-
-            <link
-              rel="preload"
-              href="https://encore.scdn.co/fonts/CircularSpTitle-Black-3f9afb402080d53345ca1850226ca724.woff2"
-              as="font"
-              priority="low"
-              type="font/woff2"
-              crossOrigin="anonymous"
-            />
-            <link
-              rel="preload"
-              href="https://open.spotifycdn.com/cdn/fonts/spoticon_regular_2.d728648c.woff2"
-              as="font"
-              priority="low"
-              type="font/woff2"
-              crossOrigin="anonymous"
-            />
           </div>
         )}
       </div>
       <div className="md:hidden absolute right-12">{mobileDate}</div>
 
       <div
-        className="md:hidden fixed right-3 top-[3px] text-[37px] cursor-pointer z-[100]"
+        className="md:hidden fixed right-5 top-[3px] text-[37px] cursor-pointer z-[100]"
         onClick={() => setToggle(!toggle)}
       >
         <BsToggles
           className={`cursor-pointer transition-all ease-in-out duration-100 ${
-            scrollNav ? `bg-gray-300 p-2 rounded-[5px] bg-opacity-50` : `p-2`
+            scrollNav ? `bg-gray-300 p-2 rounded-[5px] bg-opacity-70` : `p-2`
           }
-            ${toggle ? `bg-gray-300 p-2 rounded-[5px] bg-opacity-50` : `p-2`}`}
+            ${toggle ? `bg-gray-300 p-2 rounded-[5px] bg-opacity-70` : `p-2`}`}
         />
       </div>
       {toggle && (
-        <div className="md:hidden fixed right-5 top-12 rounded-[10px] bg-gray-300 bg-opacity-50 py-3 px-4 gap-y-4 flex flex-col z-[100]">
+        <div className="md:hidden fixed right-5 top-12 rounded-[10px] bg-gray-300 bg-opacity-70 py-3 px-4 gap-y-4 flex flex-col z-[100]">
           <div className="flex flex-col gap-y-2 text-center">
-            <p onClick={ScrollToTop} className="select-none">
+            <p onClick={ScrollToTop} className="font-medium select-none">
               Home
             </p>
-            <Link href="#contact" className="select-none">
+            <Link href="#contact" className="font-medium select-none">
               Experience
             </Link>
-            <Link href="#projects" className="select-none">
+            <Link href="#projects" className="font-medium select-none">
               Projects
             </Link>
-            <Link href="#contact" className="select-none">
+            <Link href="#contact" className="font-medium select-none">
               Contact
             </Link>
           </div>

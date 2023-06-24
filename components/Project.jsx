@@ -42,7 +42,12 @@ const Project = ({ project }) => {
       </Link>
 
       {/* Mobile */}
-      <div className="relative flex flex-col w-full h-[250px] md:h-[350px] rounded-[20px] cursor-pointer md:hidden">
+      <Link
+        href={project.link}
+        target="_blank"
+        rel="noreferrer noopener"
+        className="relative flex flex-col w-full h-[250px] md:h-[350px] rounded-[20px] cursor-pointer md:hidden"
+      >
         {
           <div className="w-full h-full absolute z-[5] p-3 rounded-[20px] flex flex-col justify-end bg-gray-600 bg-opacity-40">
             <div className="">
@@ -52,7 +57,6 @@ const Project = ({ project }) => {
               <p className="text-sm text-white font-medium">
                 {project.subTitle}
               </p>
-              {/* <p className="text-sm text-white">{project.description}</p> */}
             </div>
           </div>
         }
@@ -64,9 +68,8 @@ const Project = ({ project }) => {
           objectFit="cover"
           className={`rounded-[20px]`}
           placeholder="blur"
-          blurDataURL={project.image}
         />
-      </div>
+      </Link>
     </>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import Project from "./Project";
-import meThinks from "@/public/projects/meThinks.jpg";
+import meThinks from "@/public/projects/meThinks.png";
 import Citrus from "@/public/projects/citrus.png";
 import bioLink from "@/public/projects/bioLink.png";
 import rparts from "@/public/projects/r-parts.png";
@@ -54,7 +54,10 @@ const Projects = () => {
   ];
 
   return (
-    <div id="projects" className="grid sm:grid-cols-2 gap-5 place-items-center">
+    <div
+      id="projects"
+      className="grid sm:grid-cols-2 gap-5 pb-0 mb-0 place-items-center"
+    >
       {projectsData.map((project, index) => (
         <Project key={index} project={project} />
       ))}

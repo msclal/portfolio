@@ -6,10 +6,7 @@ import { ImLinkedin2 } from "react-icons/im";
 
 const Contact = () => {
   return (
-    <div
-      id="contact"
-      className="w-full md:w-1/2 h-[520px] md:h-[550px] p-3 md:p-5 bg-gray-200 rounded-[20px] bg-opacity-50 flex flex-col gap-y-5"
-    >
+    <div className="w-full md:w-1/2 h-[520px] md:h-[550px] p-5 bg-gray-200 rounded-[20px] bg-opacity-50 flex flex-col gap-y-5">
       <p className="font-semibold text-xl md:text-2xl select-none">Contact</p>
       <div className="flex justify-between items-center">
         <p className="font-medium md:text-lg">Resume</p>
@@ -40,7 +37,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <span className="border-[0.5px] border-gray-400 my-2"></span>
+      <span className="border-[1px] border-gray-400 mx-2 my-2"></span>
       <div className="space-y-3">
         <p className="font-semibold text-xl md:text-2xl select-none">
           Leave a Note
