@@ -127,13 +127,13 @@ const Navigation = () => {
             <p onClick={ScrollToTop} className="select-none">
               Home
             </p>
-            <Link href="#" className="select-none">
+            <Link href="#experience" className="select-none">
               Experience
             </Link>
             <Link href="#projects" className="select-none">
               Projects
             </Link>
-            <Link href="#" className="select-none">
+            <Link href="#contact" className="select-none">
               Contact
             </Link>
           </div>

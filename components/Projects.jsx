@@ -1,6 +1,6 @@
 import React from "react";
 import Project from "./Project";
-import meThinks from "@/public/projects/meThinks.png";
+import meThinks from "@/public/projects/meThinks.jpg";
 import Citrus from "@/public/projects/citrus.png";
 import bioLink from "@/public/projects/bioLink.png";
 import rparts from "@/public/projects/r-parts.png";
