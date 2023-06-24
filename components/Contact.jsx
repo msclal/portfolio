@@ -12,12 +12,12 @@ import { GrInstagram } from "react-icons/gr";
 const Contact = () => {
   const form = useRef();
 
-  const [subject, setSubject] = useState("");
+  const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
-    if (!subject || !message) {
+    if (!name || !message) {
       return;
     }
     toast.success("Message sent!", {
@@ -30,7 +30,7 @@ const Contact = () => {
       progress: undefined,
       theme: "light",
     });
-    setSubject("");
+    setName("");
     setMessage("");
 
     console.log("message sent");
@@ -41,6 +41,15 @@ const Contact = () => {
       form.current,
       "qeO4HSGIUHIOmFwlG"
     );
+  };
+
+  const handleKeypress = (e) => {
+    // it triggers by pressing the enter key
+    if (e.keyCode === 13) {
+      if (name && message) {
+        sendEmail(e);
+      }
+    }
   };
   return (
     <div className="w-full md:w-1/2 h-[520px] md:h-[550px] p-5 bg-gray-200 rounded-[20px] bg-opacity-50 flex flex-col gap-y-5">
@@ -77,7 +86,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <span className="border-[1px] border-gray-400 mx-2 my-2"></span>
+      <span className="border-[0.7px] border-gray-400 mx-2 my-2"></span>
       <div className="space-y-3">
         <p className="font-semibold text-xl md:text-2xl select-none">
           Leave a Note
@@ -88,14 +97,15 @@ const Contact = () => {
           className="space-y-1 md:space-y-3"
         >
           <div className="flex flex-col gap-y-1">
-            <label className="select-none">Subject</label>
+            <label className="select-none">Name</label>
             <input
               type="text"
-              name="subject"
-              value={subject}
+              name="name"
+              value={name}
               className="w-2/3 rounded-[10px] py-1 px-2 focus:outline-none"
               autoComplete="off"
-              onChange={(e) => setSubject(e.target.value)}
+              onChange={(e) => setName(e.target.value)}
+              onKeyUp={handleKeypress}
             />
           </div>
           <div className="space-y-1">
@@ -106,6 +116,7 @@ const Contact = () => {
               className="w-full py-1 px-2 rounded-[10px] focus:outline-none"
               autoComplete="off"
               onChange={(e) => setMessage(e.target.value)}
+              onKeyUp={handleKeypress}
             />
           </div>
           <input
