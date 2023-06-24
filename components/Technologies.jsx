@@ -35,7 +35,7 @@ const Technologies = () => {
   return (
     <>
       <div className="max-md:hidden bg-gradient-to-br from-[#f3e7e9] via-[#e3eeff] to-[#ffffff] rounded-[20px] p-5 space-y-5 bg-opacity-50">
-        <div className="flex flex-wrap justify-center lg:justify-between items-center text-3xl xl:text-4xl gap-y-2 drop-shadow-md">
+        <div className="flex flex-wrap justify-between items-center text-3xl xl:text-4xl gap-y-2 drop-shadow-2xl">
           <div className="relative hover:scale-[1.06] duration-300 flex justify-center">
             <TbBrandNextjs
               className="text-4xl xl:text-5xl stroke-[1.3px]"
@@ -50,7 +50,7 @@ const Technologies = () => {
               onMouseLeave={() => setVercel(false)}
             />
             {vercel && (
-              <p className="absolute text-xs -bottom-[22px]">Vercel</p>
+              <p className="absolute text-xs -bottom-[20px]">Vercel</p>
             )}
           </div>
           <div className="relative hover:scale-[1.06] duration-300 flex justify-center">
@@ -60,7 +60,7 @@ const Technologies = () => {
               onMouseLeave={() => setTailwind(false)}
             />
             {tailwind && (
-              <p className="absolute text-xs -bottom-[20px]">Tailwind</p>
+              <p className="absolute text-xs -bottom-[20px]">TailwindCSS</p>
             )}
           </div>
           <div className="relative hover:scale-[1.06] duration-300 flex justify-center">
@@ -69,7 +69,9 @@ const Technologies = () => {
               onMouseEnter={() => setReact(true)}
               onMouseLeave={() => setReact(false)}
             />
-            {react && <p className="absolute text-xs -bottom-[20px]">React</p>}
+            {react && (
+              <p className="absolute text-xs -bottom-[20px]">React.js</p>
+            )}
           </div>
           <div className="relative hover:scale-[1.06] duration-300 flex justify-center">
             <SiJavascript
@@ -78,7 +80,7 @@ const Technologies = () => {
               onMouseLeave={() => setJs(false)}
             />
             {js && (
-              <p className="absolute text-xs -bottom-[25px]">JavaScript</p>
+              <p className="absolute text-xs -bottom-[20px]">JavaScript</p>
             )}
           </div>
           <div className="relative hover:scale-[1.06] duration-300 flex justify-center">
@@ -88,7 +90,7 @@ const Technologies = () => {
               onMouseLeave={() => setTs(false)}
             />
             {ts && (
-              <p className="absolute text-xs -bottom-[25px]">TypeScript</p>
+              <p className="absolute text-xs -bottom-[20px]">TypeScript</p>
             )}
           </div>
           <div className="relative hover:scale-[1.05] duration-300 flex justify-center">
@@ -97,7 +99,11 @@ const Technologies = () => {
               onMouseEnter={() => setNode(true)}
               onMouseLeave={() => setNode(false)}
             />
-            {node && <p className="absolute text-xs bottom-[9px]">Node.js</p>}
+            {node && (
+              <p className="absolute text-xs -bottom-[9px] xl:bottom-[10px]">
+                Node.js
+              </p>
+            )}
           </div>
           <div className="relative hover:scale-[1.06] duration-300 flex justify-center">
             <SiMongodb
@@ -116,7 +122,7 @@ const Technologies = () => {
               onMouseLeave={() => setFirebase(false)}
             />
             {firebase && (
-              <p className="absolute text-xs -bottom-[22px]">Firebase</p>
+              <p className="absolute text-xs -bottom-[20px]">Firebase</p>
             )}
           </div>
           <div className="relative hover:scale-[1.06] duration-300 flex justify-center">
@@ -126,7 +132,7 @@ const Technologies = () => {
               onMouseLeave={() => setPostman(false)}
             />
             {postman && (
-              <p className="absolute text-xs -bottom-[22px]">Postman</p>
+              <p className="absolute text-xs -bottom-[20px]">Postman</p>
             )}
           </div>
           <div className="relative hover:scale-[1.06] duration-300 flex justify-center">
@@ -136,7 +142,7 @@ const Technologies = () => {
               onMouseLeave={() => setPython(false)}
             />
             {python && (
-              <p className="absolute text-xs -bottom-[22px]">Python</p>
+              <p className="absolute text-xs -bottom-[20px]">Python</p>
             )}
           </div>
           <div className="relative hover:scale-[1.06] duration-300 flex justify-center">
@@ -145,7 +151,7 @@ const Technologies = () => {
               onMouseEnter={() => setCPP(true)}
               onMouseLeave={() => setCPP(false)}
             />
-            {cpp && <p className="absolute text-xs -bottom-[22px]">C++</p>}
+            {cpp && <p className="absolute text-xs -bottom-[20px]">C++</p>}
           </div>
           <div className="relative hover:scale-[1.06] duration-300 flex justify-center">
             <SiFigma
@@ -153,7 +159,7 @@ const Technologies = () => {
               onMouseEnter={() => setFigma(true)}
               onMouseLeave={() => setFigma(false)}
             />
-            {figma && <p className="absolute text-xs -bottom-[22px]">Figma</p>}
+            {figma && <p className="absolute text-xs -bottom-[20px]">Figma</p>}
           </div>
           <div className="relative hover:scale-[1.06] duration-300 flex justify-center">
             <SiCypress
@@ -162,7 +168,7 @@ const Technologies = () => {
               onMouseLeave={() => setCypress(false)}
             />
             {cypress && (
-              <p className="absolute text-xs -bottom-[22px]">Cypress</p>
+              <p className="absolute text-xs -bottom-[20px]">Cypress</p>
             )}
           </div>
           <div className="relative hover:scale-[1.06] duration-300 flex justify-center">
@@ -171,7 +177,7 @@ const Technologies = () => {
               onMouseEnter={() => setGit(true)}
               onMouseLeave={() => setGit(false)}
             />
-            {git && <p className="absolute text-xs -bottom-[22px]">Git</p>}
+            {git && <p className="absolute text-xs -bottom-[20px]">Git</p>}
           </div>
         </div>
       </div>

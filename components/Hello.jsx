@@ -29,13 +29,13 @@ const Hello = () => {
               </p>
             </div>
             <div className="flex gap-x-5 text-3xl">
-              <div className="w-fit p-3 bg-white rounded-[10px]">
+              <div className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px]">
                 <FiMail />
               </div>
-              <div className="w-fit p-3 bg-white rounded-[10px]">
+              <div className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px]">
                 <AiFillGithub />
               </div>
-              <div className="w-fit p-3 bg-white rounded-[10px]">
+              <div className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px]">
                 <ImLinkedin2 />
               </div>
             </div>
