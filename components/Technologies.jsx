@@ -17,7 +17,10 @@ import { SiVercel } from "react-icons/si";
 
 const Technologies = () => {
   return (
-    <div className="bg-gray-200 rounded-[20px] p-3 md:p-5 md:space-y-5 bg-opacity-50">
+    <div
+      //   id="contact"
+      className="bg-gray-200 rounded-[20px] p-3 md:p-5 md:space-y-5 bg-opacity-50"
+    >
       <p className="font-semibold text-xl md:text-2xl select-none">
         Tools and Technologies
       </p>

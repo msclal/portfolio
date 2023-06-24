@@ -127,7 +127,7 @@ const Navigation = () => {
             <p onClick={ScrollToTop} className="select-none">
               Home
             </p>
-            <Link href="#experience" className="select-none">
+            <Link href="#contact" className="select-none">
               Experience
             </Link>
             <Link href="#projects" className="select-none">

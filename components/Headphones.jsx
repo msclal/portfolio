@@ -2,7 +2,10 @@ import React from "react";
 
 const Headphones = () => {
   return (
-    <div className="w-full md:w-1/2 h-[150px] sm:h-[550px] bg-gray-200 bg-opacity-50 rounded-[20px] max-sm:pb-1 p-3 md:p-5 space-y-3">
+    <div
+      id="contact"
+      className="w-full md:w-1/2 h-[150px] sm:h-[550px] bg-gray-200 bg-opacity-50 rounded-[20px] max-sm:pb-1 p-3 md:p-5 space-y-3"
+    >
       <p className="font-semibold text-xl md:text-2xl select-none">
         {"What's on my Headphones?"}
       </p>
