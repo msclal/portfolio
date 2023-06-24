@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 import Image from "next/legacy/image";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 
@@ -7,7 +8,8 @@ const Project = ({ project }) => {
 
   return (
     <>
-      <a
+      {/* Desktop */}
+      <Link
         href={project.link}
         target="_blank"
         rel="noreferrer noopener"
@@ -34,9 +36,12 @@ const Project = ({ project }) => {
           alt="meThinks"
           layout="fill"
           objectFit="cover"
-          className={`rounded-[20px] ${isHover ? `` : ``}`}
+          className={`rounded-[20px]`}
+          placeholder="blur"
         />
-      </a>
+      </Link>
+
+      {/* Mobile */}
       <div className="relative flex flex-col w-full h-[250px] md:h-[350px] rounded-[20px] cursor-pointer md:hidden">
         {
           <div className="w-full h-full absolute z-[5] p-3 rounded-[20px] flex flex-col justify-end bg-gray-600 bg-opacity-40">
@@ -58,6 +63,8 @@ const Project = ({ project }) => {
           layout="fill"
           objectFit="cover"
           className={`rounded-[20px]`}
+          placeholder="blur"
+          blurDataURL={project.image}
         />
       </div>
     </>

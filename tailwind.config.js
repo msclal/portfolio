@@ -20,6 +20,7 @@ module.exports = {
       fontFamily: {
         inter: ["var(--font-inter)", "sans-serif"],
         outfit: ["var(--font-outfit)", "sans-serif"],
+        notoSans: ["var(--font-notoSans)", "sans-serif"],
       },
       colors: {
         tech: {

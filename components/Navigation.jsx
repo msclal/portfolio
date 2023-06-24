@@ -61,7 +61,7 @@ const Navigation = () => {
     <div className="flex justify-between items-center w-full relative">
       <p className="font-medium select-none">mikashanela</p>
       <div className="flex items-center gap-x-4 max-md:hidden">
-        <p className="text-right select-none">{date} PST</p>
+        <p className="text-right select-none font-medium">{date} PST</p>
         <div
           className={` duration-300 cursor-pointer text-lg ${
             toggle ? `w-fit bg-gray-300 p-1 rounded-[5px] bg-opacity-50` : `p-1`
@@ -72,7 +72,7 @@ const Navigation = () => {
         {toggle && (
           <div className="absolute top-12 right-0 rounded-[20px] bg-gray-300 bg-opacity-50 p-3 space-y-3">
             <div className="flex justify-between items-center gap-x-3 bg-gray-200 rounded-[20px] p-3 pl-1 py-1 cursor-pointer">
-              <div className="w-fit bg-white bg-opacity-70 rounded-full p-2">
+              <div className="w-fit bg-white bg-opacity-50 rounded-full p-2">
                 <BsFillMoonFill />
               </div>
               <p className="font-medium select-none">Dark Mode</p>
@@ -82,9 +82,28 @@ const Navigation = () => {
               width="100%"
               height="80"
               allowFullScreen=""
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              as="style"
+              priority="low"
               loading="lazy"
               className="select-none"
+            />
+            {/* </Link> */}
+
+            <link
+              rel="preload"
+              href="https://encore.scdn.co/fonts/CircularSpTitle-Black-3f9afb402080d53345ca1850226ca724.woff2"
+              as="font"
+              priority="low"
+              type="font/woff2"
+              crossOrigin="anonymous"
+            />
+            <link
+              rel="preload"
+              href="https://open.spotifycdn.com/cdn/fonts/spoticon_regular_2.d728648c.woff2"
+              as="font"
+              priority="low"
+              type="font/woff2"
+              crossOrigin="anonymous"
             />
           </div>
         )}
@@ -92,22 +111,19 @@ const Navigation = () => {
       <div className="md:hidden absolute right-12">{mobileDate}</div>
 
       <div
-        className="md:hidden fixed right-5 top-[3px] text-[37px] cursor-pointer z-[100]"
+        className="md:hidden fixed right-3 top-[3px] text-[37px] cursor-pointer z-[100]"
         onClick={() => setToggle(!toggle)}
       >
         <BsToggles
           className={`cursor-pointer transition-all ease-in-out duration-100 ${
-            scrollNav ? `bg-gray-300 p-2 rounded-[5px] bg-opacity-70` : `p-2`
+            scrollNav ? `bg-gray-300 p-2 rounded-[5px] bg-opacity-50` : `p-2`
           }
-            ${
-              toggle ? `bg-gray-300 p-2 rounded-[5px] bg-opacity-70` : `p-2`
-              //   : `bg-gray-300 p-2 rounded-[5px] bg-opacity-70`
-            }`}
+            ${toggle ? `bg-gray-300 p-2 rounded-[5px] bg-opacity-50` : `p-2`}`}
         />
       </div>
       {toggle && (
-        <div className="md:hidden fixed right-5 top-12 rounded-[10px] bg-gray-300 bg-opacity-70 py-3 px-4 gap-y-4 flex flex-col z-[100]">
-          <div className="flex flex-col gap-y-2">
+        <div className="md:hidden fixed right-5 top-12 rounded-[10px] bg-gray-300 bg-opacity-50 py-3 px-4 gap-y-4 flex flex-col z-[100]">
+          <div className="flex flex-col gap-y-2 text-center">
             <p onClick={ScrollToTop} className="select-none">
               Home
             </p>

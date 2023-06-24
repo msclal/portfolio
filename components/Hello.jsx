@@ -14,7 +14,7 @@ const Hello = () => {
         <div className="flex flex-wrap justify-between items-center">
           <div className="space-y-14 w-[60%]">
             <div className="space-y-4 break-before-all">
-              <p className="text-4xl font-semibold select-none">
+              <p className="text-4xl font-semibold select-none ">
                 Hello, {"I'm"} Mika!
               </p>
               <div>
@@ -29,13 +29,13 @@ const Hello = () => {
               </p>
             </div>
             <div className="flex gap-x-5 text-3xl">
-              <div className="w-fit p-3 bg-gray-100 rounded-[10px]">
+              <div className="w-fit p-3 bg-white rounded-[10px]">
                 <FiMail />
               </div>
-              <div className="w-fit p-3 bg-gray-100 rounded-[10px]">
+              <div className="w-fit p-3 bg-white rounded-[10px]">
                 <AiFillGithub />
               </div>
-              <div className="w-fit p-3 bg-gray-100 rounded-[10px]">
+              <div className="w-fit p-3 bg-white rounded-[10px]">
                 <ImLinkedin2 />
               </div>
             </div>

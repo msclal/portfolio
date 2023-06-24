@@ -18,10 +18,10 @@ import { SiVercel } from "react-icons/si";
 const Technologies = () => {
   return (
     <div className="bg-gray-200 rounded-[20px] p-3 md:p-5 md:space-y-5 bg-opacity-50">
-      <p className="text-lg md:text-2xl font-semibold">
+      <p className="font-semibold text-xl md:text-2xl select-none">
         Tools and Technologies
       </p>
-      <div className="flex flex-wrap justify-center items-center text-xl md:text-3xl xl:text-4xl gap-x-5 md:gap-x-7 gap-y-0 md:gap-y-2">
+      <div className="flex flex-wrap justify-center items-center text-xl md:text-3xl xl:text-4xl gap-x-5 lg:gap-x-7 gap-y-0 md:gap-y-2">
         <TbBrandNextjs className="text-2xl xl:text-5xl stroke-[1.3px]" />
         <SiVercel />
         <SiTailwindcss className="text-tech-tailwind" />
