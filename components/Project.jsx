@@ -18,7 +18,7 @@ const Project = ({ project }) => {
         onMouseLeave={() => setIsHover(false)}
       >
         {isHover && (
-          <div className="w-full h-full absolute z-[5] p-3 rounded-[20px] flex flex-col justify-end bg-gray-600 bg-opacity-40 transition-all ease-in-out">
+          <div className="w-full h-full absolute z-[5] p-6 rounded-[20px] flex flex-col justify-end bg-gray-600 bg-opacity-40 transition-all ease-in-out">
             <div className="">
               <p className="text-xl text-white font-semibold">
                 {project.title}
@@ -49,7 +49,7 @@ const Project = ({ project }) => {
         className="relative flex flex-col w-full h-[250px] md:h-[350px] rounded-[20px] cursor-pointer md:hidden"
       >
         {
-          <div className="w-full h-full absolute z-[5] p-3 rounded-[20px] flex flex-col justify-end bg-gray-600 bg-opacity-40">
+          <div className="w-full h-full absolute z-[5] p-6 rounded-[20px] flex flex-col justify-end bg-gray-600 bg-opacity-40">
             <div className="">
               <p className="text-xl text-white font-semibold">
                 {project.title}

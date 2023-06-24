@@ -7,7 +7,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="flex gap-x-5 justify-center items-center max-sm:text-xs select-none">
+    <div className="flex gap-x-5 justify-center items-center max-sm:text-xs select-none my-5 md:my-10">
       <p>
         {"Copyright © "} {currentYear}
       </p>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { BsToggles } from "react-icons/bs";
 import { BsFillMoonFill } from "react-icons/bs";
@@ -7,6 +7,26 @@ const Navigation = () => {
   const [date, setDate] = useState("");
   const [mobileDate, setMobileDate] = useState("");
   const [toggle, setToggle] = useState(false);
+
+  const componentRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        componentRef.current &&
+        !componentRef.current.contains(event.target)
+      ) {
+        setToggle(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
   useEffect(() => {
     const timer = setInterval(() => {
       const currentDate = new Date();
@@ -58,7 +78,10 @@ const Navigation = () => {
   };
 
   return (
-    <div className="flex justify-between items-center w-full relative">
+    <div
+      ref={componentRef}
+      className="flex justify-between items-center w-full relative mt-2"
+    >
       <p className="font-medium select-none">mikashanela</p>
       <div className="flex items-center gap-x-4 max-md:hidden">
         <p className="text-right select-none font-medium">{date} PST</p>
@@ -93,7 +116,8 @@ const Navigation = () => {
       <div className="md:hidden absolute right-12">{mobileDate}</div>
 
       <div
-        className="md:hidden fixed right-5 top-[3px] text-[37px] cursor-pointer z-[100]"
+        ref={componentRef}
+        className="md:hidden fixed right-5 top-[8px] text-[37px] cursor-pointer z-[100]"
         onClick={() => setToggle(!toggle)}
       >
         <BsToggles
