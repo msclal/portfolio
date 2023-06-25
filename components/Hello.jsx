@@ -44,8 +44,6 @@ const Hello = () => {
             draggable={false}
             src={ProfileSVG}
             alt="Mika Profile Picture"
-            placeholder="blur"
-            blurDataURL="/public/gallery/hello.png"
           />
         </div>
       </div>
