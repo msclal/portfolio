@@ -52,7 +52,7 @@ const Contact = () => {
     }
   };
   return (
-    <div className="w-full md:w-1/2 h-[520px] md:h-[550px] p-5 bg-gray-200 rounded-[20px] bg-opacity-50 flex flex-col gap-y-5">
+    <div className="w-full md:w-1/2 h-[520px] md:h-[550px] p-5 bg-[#ebedee] rounded-[20px] bg-opacity-50 flex flex-col gap-y-5">
       <p className="font-semibold text-xl md:text-2xl select-none">Contact</p>
       <div className="flex justify-between items-center">
         <p className="font-medium md:text-lg">Resume</p>
