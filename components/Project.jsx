@@ -13,12 +13,12 @@ const Project = ({ project }) => {
         href={project.link}
         target="_blank"
         rel="noreferrer noopener"
-        className="relative flex flex-col w-full h-[250px] md:h-[350px] rounded-[20px] cursor-pointer max-md:hidden hover:scale-[1.01] duration-500"
+        className="relative flex flex-col w-full h-[250px] md:h-[350px] rounded-[20px] cursor-pointer max-md:hidden hover:scale-[1.007] duration-500"
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
       >
         {isHover && (
-          <div className="w-full h-full absolute z-[5] p-6 rounded-[20px] flex flex-col justify-end bg-gray-600 bg-opacity-40 transition-all ease-in-out">
+          <div className="w-full h-full absolute z-[5] p-6 rounded-[20px] flex flex-col justify-end bg-gray-600 bg-opacity-50 transition-all ease-in-out">
             <div className="">
               <p className="text-xl text-white font-semibold">
                 {project.title}
