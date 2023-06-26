@@ -2,14 +2,15 @@ import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Bean from "@/public/gallery/bean.jpeg";
-import Sas from "@/public/gallery/sas.jpg";
-import Rod from "@/public/gallery/rod.jpeg";
+// import Sas from "@/public/gallery/sas.jpg";
+import Grad from "@/public/gallery/grad.jpeg";
+import Tacos from "@/public/gallery/tacos.jpeg";
 import Norm from "@/public/gallery/norm.jpeg";
 
 const images = [
   { image: Bean, alt: "Mika in a Beanie" },
-  { image: Sas, alt: "Mika in a Beanie" },
-  { image: Rod, alt: "Mika in a Beanie" },
+  { image: Grad, alt: "Grad Pic" },
+  { image: Tacos, alt: "Taco Tuesday" },
   { image: Norm, alt: "Mika in a Beanie" },
 ];
 const delay = 5000;
