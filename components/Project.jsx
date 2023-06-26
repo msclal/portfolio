@@ -26,7 +26,7 @@ const Project = ({ project }) => {
               <p className="text-sm text-white font-medium">
                 {project.subTitle}
               </p>
-              <p className="text-sm text-white">{project.description}</p>
+              {/* <p className="text-sm text-white">{project.description}</p> */}
             </div>
           </div>
         )}
