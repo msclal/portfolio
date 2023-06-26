@@ -63,17 +63,16 @@ const Contact = () => {
       <p className="font-semibold text-xl md:text-2xl select-none">Contact</p>
       <div className="flex justify-between items-center">
         <p className="font-medium md:text-lg">Resume</p>
-        <div className="w-fit gap-x-1 flex items-center cursor-pointer text-gray-500">
-          <Link
-            href="resume.pdf"
-            alt="alt text"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View
-          </Link>
+        <Link
+          href="resume.pdf"
+          alt="alt text"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-fit gap-x-1 flex items-center cursor-pointer text-gray-500"
+        >
+          View
           <AiOutlineLink className="text-2xl" />
-        </div>
+        </Link>
       </div>
       <div className="flex justify-between items-center">
         <p className="font-medium md:text-lg">Message</p>

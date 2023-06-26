@@ -83,7 +83,7 @@ const Hello = () => {
         exit={{ opacity: 0, y: -20 }}
         className="md:hidden bg-gradient-to-br from-[#f1f9f0] to-[#e3eeff] rounded-[20px] flex flex-col p-8 px-5 justify-center items-center gap-y-5"
       >
-        <div className="flex flex-col items-center gap-y-1 drop-shadow-glow">
+        <div className="flex flex-col items-center gap-y-1">
           <Image
             draggable={false}
             src={ProfilePNG}

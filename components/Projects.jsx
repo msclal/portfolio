@@ -12,42 +12,46 @@ const Projects = () => {
   const projectsData = [
     {
       title: "meThinks...",
-      subTitle: "Twitter-BeReal Style Thought Posting",
-      description: "Led 4 engineers",
+      subTitle: "Twitter-BeReal Style thought posting",
+      description: "Led a team of 4 people ",
       image: meThinks,
       link: "https://github.com/msclal/project-methinks",
     },
     {
       title: "bioLink",
-      subTitle: "Personalized Medical Diagnoses in Seconds",
-      description: "Led 4 engineers",
+      subTitle:
+        "Empowering users with AI-driven health insights and facilitating live chat with local experts",
+      description: "",
       image: bioLink,
       link: "https://github.com/minsooerickim/bioLink",
     },
     {
       title: "Citrus Hack",
-      subTitle: "UCR's Premier Hackathon with over 700+ hackers",
+      subTitle: "UCR's premier hackathon event with over 700+ hackers",
       description: "Spearheaded Frontend Development",
       image: Citrus,
       link: "https://github.com/citrushack/citrushack2023",
     },
     {
       title: "R-Parts",
-      subTitle: "Secondhand Marketplace for UCR Engineering Students",
+      subTitle:
+        "Secondhand Marketplace for UCR students seeking parts for engineering classes",
       description: "Led 4 engineers",
       image: rparts,
       link: "https://github.com/shahdivyank/r-parts",
     },
     {
       title: "GarfAi",
-      subTitle: "Twitter-BeReal Style Thought Posting",
+      subTitle:
+        "Personalized AI to streamline the day-to-day workflows of a 10-person friend group (includes sentence rewriter, restaurant bill splitting, English writing analysis)",
       description: "Led 4 engineers",
       image: garf,
       link: "https://github.com/msclal/Garf",
     },
     {
       title: "bitByBIT",
-      subTitle: "Twitter-BeReal Style Thought Posting",
+      subTitle:
+        "A leetcode-style tool aimed at improving programming fundamentals for 2000+ UCR students enrolled in intro CS courses",
       description: "Led 4 engineers",
       image: bbb,
       link: "https://github.com/acm-ucr/bitByBIT",
