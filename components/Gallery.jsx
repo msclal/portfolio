@@ -67,7 +67,7 @@ const Gallery = () => {
 
   return (
     <div
-      className="w-full h-full md:w-[35%] overflow-hidden rounded-[20px]"
+      className="w-full h-full md:w-[38%] overflow-hidden rounded-[20px]"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}

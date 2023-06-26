@@ -64,7 +64,6 @@ const Hello = () => {
             draggable={false}
             src={ProfileSVG}
             width={250}
-            // height={280}
             className="aspect-square rounded-full mr-2"
             alt="Mika Profile Picture"
           />
@@ -72,8 +71,8 @@ const Hello = () => {
       </div>
 
       {/* Mobile */}
-      <div className="md:hidden bg-gradient-to-r from-[#f3e7e9] to-[#e3eeff] rounded-[20px] flex flex-col p-8 px-5 justify-center items-center gap-y-5">
-        <div className="flex flex-col items-center gap-y-1">
+      <div className="md:hidden bg-gradient-to-br from-[#f1f9f0] to-[#e3eeff] rounded-[20px] flex flex-col p-8 px-5 justify-center items-center gap-y-5">
+        <div className="flex flex-col items-center gap-y-1 drop-shadow-glow">
           <Image
             draggable={false}
             src={ProfilePNG}

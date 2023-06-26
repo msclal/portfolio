@@ -207,53 +207,23 @@ const Technologies = () => {
       </div>
 
       {/* Mobile */}
-      <div className="md:hidden bg-gradient-to-br from-[#f3e7e9] via-[#e3eeff] to-[#ffffff] rounded-[20px] p-3 pt-0 space-y-1 bg-opacity-50">
+      <div className="md:hidden bg-gradient-to-br from-[#f1f9f0] via-[#e3eeff] to-[#ffffff] rounded-[20px] p-3 pt-0 space-y-1 bg-opacity-50">
         <div className="flex flex-wrap justify-center items-center text-2xl gap-x-5 gap-y-2 drop-shadow-md">
-          {/* <div className="hover:scale-[1.04] duration-300"> */}
           <TbBrandNextjs className="text-2xl stroke-[1.3px]" />
-          {/* </div> */}
-          {/* <div className="hover:scale-[1.06] duration-300"> */}
           <SiVercel />
-          {/* </div> */}
-          {/* <div className="hover:scale-[1.06] duration-300"> */}
           <SiTailwindcss className="text-tech-tailwind" />
-          {/* </div> */}
-          {/* <div className="hover:scale-[1.06] duration-300"> */}
           <FaReact className="text-tech-react" />
-          {/* </div> */}
-          {/* <div className="hover:scale-[1.06]] duration-300"> */}
           <SiJavascript className="text-tech-javascript" />
-          {/* </div> */}
-          {/* <div className="hover:scale-[1.06] duration-300"> */}
           <SiTypescript className="text-tech-typescript" />
-          {/* </div>
-          <div className="hover:scale-[1.06] duration-300"> */}
           <DiNodejs className="text-5xl text-tech-node" />
-          {/* </div>
-          <div className="hover:scale-[1.06] duration-300"> */}
           <SiMongodb className="text-tech-mongo" />
-          {/* </div>
-          <div className="hover:scale-[1.06] duration-300"> */}
           <SiFirebase className="text-tech-firebase" />
-          {/* </div>
-          <div className="hover:scale-[1.06] duration-300"> */}
           <SiPostman className="text-tech-postman" />
-          {/* </div>
-          <div className="hover:scale-[1.06] duration-300"> */}
           <FaPython className="text-tech-python" />
-          {/* </div>
-          <div className="hover:scale-[1.06] duration-300"> */}
           <SiCplusplus className="text-tech-cpp" />
-          {/* </div>
-          <div className="hover:scale-[1.06] duration-300"> */}
           <SiFigma className="text-tech-figma" />
-          {/* </div>
-          <div className="hover:scale-[1.06] duration-300"> */}
           <SiCypress className="text-tech-cypress" />
-          {/* </div>
-          <div className="hover:scale-[1.06] duration-300"> */}
           <FaGit className="text-tech-git" />
-          {/* </div> */}
         </div>
       </div>
     </>

@@ -10,72 +10,76 @@ import wrxSpace from "@/public/gallery/wrxSpace.png";
 import ACM from "@/public/gallery/ACM.png";
 import citrusHack from "@/public/gallery/citrusHack.png";
 import bioLink from "@/public/gallery/bioLink.png";
+import { RiShareBoxFill } from "react-icons/ri";
 
 const Experience = () => {
   const experiences = [
     {
-      title: "First Line of Code!",
-      subTitle: "2019-2023 - UC Riverside",
+      title: "First Line of Code",
+      subTitle: "2019 - 2023 - UC Riverside",
       image: Scott,
       alt: "UC Riverside",
       description:
-        "This was also the start of my undergrad life studying Computer Science and Business. I've met the most amazing people in my four years of pursuing this degree.",
+        "C++ in CS010! This was also the start of undergrad life studying Computer Science and Business at UC Riverside. 10/10 experience.",
     },
     {
       title: "GPU Research Intern",
-      subTitle: "2019 - MacREU Research",
+      subTitle: "Summer 2021 - MacREU Research",
       image: macREU,
       alt: "MacREU Research",
       description:
-        "First line of code! And start of my undergrad life studying Computer Science",
+        "Researched ways to improve power-saving mechanisms of AMD GPUs. Also wrote a paper on it.",
+      link: "https://github.com/msclal/AMD-GPU-Research",
     },
     {
-      title: `Won 'Best Space App' & 'Best UI/UX'`,
-      subTitle: "2022 - Rose Hack",
+      title: "Rookie Success!",
+      subTitle: "January 2022 - Rose Hack",
       image: planetHer,
       alt: "Planet Her",
-      description:
-        "First line of code! And start of my undergrad life studying Computer Science",
+      description: `In my first hackathon (and first-time ever touching web dev), Planet Her Won 'Best Space App' & 'Best UI/UX'. `,
+      link: "https://devpost.com/software/planether",
     },
     {
-      title: `Won 'Best Use of Google Cloud'`,
-      subTitle: "2022 - Citrus Hack",
+      title: "Back To Back",
+      subTitle: "April 2022 - Citrus Hack",
       image: scottyMaps,
       alt: "ScottyMaps",
       description:
-        "First line of code! And start of my undergrad life studying Computer Science",
+        "Second hackathon appearance and our project, Scotty Maps, won 'Best Use of Google Cloud'!",
+      link: "https://devpost.com/software/scottymaps",
     },
     {
       title: "Software Engineer Intern",
-      subTitle: "2022 - Northwestern Mutual",
+      subTitle: "Summer 2022 - Northwestern Mutual",
       image: NM,
       alt: "Northwestern Mutual",
       description:
-        "First line of code! And start of my undergrad life studying Computer Science",
+        "I interned for the Innovation Team, and worked at the best office space, called Cream City Labs. We were in charge of ideating and developing new app ideas for the company.",
     },
     {
       title: "NMTech Instructor Assistant",
-      subTitle: "2022 - Milwaukee",
+      subTitle: "Summer 2022 - Milwaukee",
       image: nmTech,
       alt: "NMTech Classroom",
       description:
-        "First line of code! And start of my undergrad life studying Computer Science",
+        "Assisted in teaching 15 High Schoolers learn basic HTML, CSS, and JavaScript ",
     },
     {
-      title: `Won 'Second Place'`,
-      subTitle: "2022 - Northwestern Mutual Intern Hack",
+      title: `Standout Intern Takes Home Silver`,
+      subTitle: "Summer 2022 - Northwestern Mutual Tech Intern Hackathon",
       image: wrxSpace,
       alt: "wrxSpace",
       description:
-        "First line of code! And start of my undergrad life studying Computer Science",
+        "A 2-day event battling against 110+ SWE interns, wrxSpace won 'Second Place' at my internship's hackathon event.",
+      link: "https://github.com/msclal/wrxSpace",
     },
     {
       title: "ACM Project Developer",
-      subTitle: "2022 - UC Riverside",
+      subTitle: "2022-2023 - UC Riverside",
       image: ACM,
       alt: "ACM",
       description:
-        "First line of code! And start of my undergrad life studying Computer Science",
+        "UC Riverside's Computer Science club! We build projects that help enhance student experience at the school. I took part in building the 'bitByBit' and 'R'Parts' projects as a full-stack developer.",
     },
     {
       title: "Web Developer Lead",
@@ -83,20 +87,20 @@ const Experience = () => {
       image: citrusHack,
       alt: "Citrus Hack",
       description:
-        "First line of code! And start of my undergrad life studying Computer Science",
+        "I developed most of the front-end for CitrusHack 2023's website. I also assumed the role of 'On-Call Engineer' to tend to bugs and user feedback throughout the website's launch week.",
     },
     {
-      title: `Won 'Best Overall'`,
-      subTitle: "2023 - Bio Hack",
+      title: "Last Dance",
+      subTitle: "May 2023 - Bio Hack",
       image: bioLink,
       alt: "bioLink",
       description:
-        "First line of code! And start of my undergrad life studying Computer Science",
+        "bioLink won 'Best Overall' in my last college hackathon. One last \"hoorah\" as I bid goodbye to UC Riverside.",
+      link: "https://github.com/minsooerickim/bioLink",
     },
   ];
   return (
-    <div className="w-full md:w-2/3 h-full bg-[#ebedee] rounded-[20px] p-5 pr-2 bg-opacity-50 space-y-5">
-      {/* <div className="w-full md:w-2/3 h-full bg-gradient-to-b from-[#fdfbfb] to-[#ebedee] rounded-[20px] p-5 pr-2 bg-opacity-50 space-y-5"> */}
+    <div className="w-full md:w-[62%] h-full bg-[#ebedee] rounded-[20px] p-5 pr-2 bg-opacity-50 space-y-5">
       <p className="font-semibold text-xl md:text-2xl select-none">
         Experience
       </p>
@@ -104,9 +108,26 @@ const Experience = () => {
       <div className="overflow-y-auto h-[390px] pr-2 rounded-[10px]">
         {experiences.map((experience, index) => {
           return (
-            <div key={index} className="mb-5">
+            <div
+              key={index}
+              className={`${
+                index === experiences.length - 1 ? `mb-0` : `mb-5`
+              }`}
+            >
               <div className="flex flex-col gap-y-2">
-                <p className="font-medium text-lg">{experience.title}</p>
+                <a
+                  href={experience.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-x-2"
+                >
+                  <p className="font-medium md:text-lg">{experience.title}</p>
+                  {experience.link ? (
+                    <RiShareBoxFill className="text-gray-500 cursor-pointer" />
+                  ) : (
+                    ``
+                  )}
+                </a>
                 <div className="flex gap-x-5 items-stretch">
                   <div className="w-[150px] md:w-[170px] lg:w-[150px] xl:w-[120px] h-full aspect-square bg-transparent rounded-[10px]">
                     <Image

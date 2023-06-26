@@ -57,7 +57,7 @@ const Contact = () => {
       <p className="font-semibold text-xl md:text-2xl select-none">Contact</p>
       <div className="flex justify-between items-center">
         <p className="font-medium md:text-lg">Resume</p>
-        <div className="w-fit gap-x-1 flex items-center cursor-pointer text-gray-600">
+        <div className="w-fit gap-x-1 flex items-center cursor-pointer text-gray-500">
           <Link
             href="resume.pdf"
             alt="alt text"
