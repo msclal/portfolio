@@ -29,7 +29,7 @@ const Experience = () => {
       image: macREU,
       alt: "MacREU Research",
       description:
-        "Explored ways in improving power-saving mechanisms of AMD GPUs. Wrote a research paper and presented at multiple conferences.",
+        "Explored ways in improving power-saving mechanisms in AMD GPUs. Wrote a research paper and presented at multiple conferences.",
       link: "https://github.com/msclal/AMD-GPU-Research",
     },
     {
@@ -87,7 +87,7 @@ const Experience = () => {
       subTitle: "Winter-Spring 2023 - Citrus Hack",
       image: citrusHack,
       alt: "Citrus Hack",
-      description: `I was in charge of the front-end for the 2023 Citrus Hack website. I also assumed "On-Call Engineer" responsibilities to tend to bugs and user feedbacks during the website's launch week.`,
+      description: `I was in charge of the front-end for the 2023 Citrus Hack website. I also assumed On-Call Engineer responsibilities to tend to bugs and user feedbacks during the website's launch week.`,
     },
     {
       title: "Last Dance",

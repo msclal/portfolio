@@ -10,6 +10,25 @@ import ProfilePNG from "@/public/gallery/hello.png";
 import ProfileSVG from "@/public/gallery/hello.svg";
 
 const Hello = () => {
+  // const [isHovered, setIsHovered] = useState(false);
+
+  // let timeout;
+
+  // const handleMouseEnter = () => {
+  //   timeout = setTimeout(() => {
+  //     setIsHovered(true);
+  //   }, 2000);
+  // };
+
+  // const handleMouseLeave = () => {
+  //   clearTimeout(timeout);
+  //   setIsHovered(false);
+  // };
+
+  // useEffect(() => {
+  //   return () => clearTimeout(timeout);
+  // }, []);
+
   return (
     <>
       {/* Desktop */}
@@ -36,7 +55,7 @@ const Hello = () => {
                   <TypeAnimation
                     sequence={[
                       `#WhyYouTradeJordanPoole🥊`,
-                      7500,
+                      7000,
                       "#ChrisPaulShouldHaveBeenALaker😔",
                       5000,
                       "#DraymondLeaving👋🏻",
@@ -47,6 +66,7 @@ const Hello = () => {
                     wrapper="span"
                     cursor={true}
                     repeat={Infinity}
+                    preRenderFirstString={true}
                     className="font-medium text-[#a1b8da]"
                   />
                 </p>
@@ -80,13 +100,22 @@ const Hello = () => {
               </Link>
             </div>
           </div>
+          {/* <div className="bg-red-500 relative"> */}
           <Image
             draggable={false}
             src={ProfileSVG}
             width={250}
             className="aspect-square rounded-full mr-2"
             alt="Mika Profile Picture"
+            // onMouseEnter={handleMouseEnter}
+            // onMouseLeave={handleMouseLeave}
           />
+          {/* {isHovered && (
+              <p className="absolute top-1/2 left-[45%] z-[10] text-white text-center bg-blue-200">
+                Hello
+              </p>
+            )}
+          </div> */}
         </div>
       </motion.div>
 
@@ -112,7 +141,7 @@ const Hello = () => {
                 sequence={[
                   `Software Engineer`,
                   6000,
-                  "Egg Enthusiast",
+                  "Egg&Rice Enthusiast",
                   4000,
                   "Sauce Hoarder",
                   4000,
@@ -126,13 +155,14 @@ const Hello = () => {
                 wrapper="span"
                 cursor={false}
                 repeat={Infinity}
+                preRenderFirstString={true}
                 className="text-lg text-[#a888b7] font-medium h-full"
               />
             </div>
           </div>
-          <Link href={"tel:9092145009"} className="underline">
+          {/* <Link href={"tel:9092145009"} className="underline">
             {"+1 (909) 214-5009"}
-          </Link>
+          </Link> */}
         </div>
         <div className="flex gap-x-5 text-3xl">
           <Link
