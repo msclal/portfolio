@@ -204,7 +204,7 @@ const Navigation = () => {
           </motion.div>
         )}
       </div>
-      <div className="md:hidden absolute right-12">{mobileDate}</div>
+      <div className="md:hidden absolute right-12">{mobileDate} PST</div>
 
       <div
         ref={componentRef}
