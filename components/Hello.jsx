@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
 import { FiMail } from "react-icons/fi";
 import { AiFillGithub } from "react-icons/ai";
 import { ImLinkedin2 } from "react-icons/im";
@@ -32,9 +33,22 @@ const Hello = () => {
                   Trying to make it out the trenches. After hours, I eat{" "}
                   {"Häagen-Dazs"} and watch the Golden State Warriors
                   self-detonate their roster.
-                  <span className="font-medium text-[#a1b8da]">
-                    #WhyYouTradeJordanPoole🥊
-                  </span>
+                  <TypeAnimation
+                    sequence={[
+                      `#WhyYouTradeJordanPoole🥊`,
+                      7500,
+                      "#ChrisPaulShouldHaveBeenALaker😔",
+                      5000,
+                      "#DraymondLeaving👋🏻",
+                      5000,
+                    ]}
+                    speed={35}
+                    deletionSpeed={66}
+                    wrapper="span"
+                    cursor={true}
+                    repeat={Infinity}
+                    className="font-medium text-[#a1b8da]"
+                  />
                 </p>
               </div>
               <p className="texl-lg lg:text-xl">
@@ -83,17 +97,38 @@ const Hello = () => {
         exit={{ opacity: 0, y: 0 }}
         className="md:hidden bg-gradient-to-br from-[#f1f9f0] to-[#e3eeff] rounded-[20px] flex flex-col p-8 px-5 justify-center items-center gap-y-5"
       >
-        <div className="flex flex-col items-center gap-y-1">
+        <div className="flex flex-col items-center">
           <Image
             draggable={false}
             src={ProfilePNG}
             alt="Mika Profile Picture"
-            className="max-sm:w-40 w-full"
+            className="max-sm:w-40 w-full mb-3"
             placeholder="blur"
           />
           <div className="text-center">
             <p className="text-xl font-medium">Mika Shanela Carodan</p>
-            <p className="text-lg text-[#a888b7]">Software Engineer</p>
+            <div className="h-[28px] flex justify-center items-center">
+              <TypeAnimation
+                sequence={[
+                  `Software Engineer`,
+                  6000,
+                  "Egg Enthusiast",
+                  4000,
+                  "Sauce Hoarder",
+                  4000,
+                  "GarfAI CEO/COO/CTO/C-Everything",
+                  4000,
+                  "Mom of 15 Cats (+/- 1)",
+                  4000,
+                ]}
+                speed={50}
+                deletionSpeed={66}
+                wrapper="span"
+                cursor={false}
+                repeat={Infinity}
+                className="text-lg text-[#a888b7] font-medium h-full"
+              />
+            </div>
           </div>
           <Link href={"tel:9092145009"} className="underline">
             {"+1 (909) 214-5009"}
@@ -128,7 +163,7 @@ const Hello = () => {
           After hours, I eat {"Häagen-Dazs"} and watch the Golden State Warriors
           self-detonate their roster. Also,{" "}
           <span className="font-medium text-[#a1b8da]">
-            #HayleyWilliamsTop5
+            #HayleyWilliamsTop5Ever🗿
           </span>
         </p>
       </motion.div>

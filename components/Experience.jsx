@@ -17,11 +17,11 @@ const Experience = () => {
   const experiences = [
     {
       title: "First Line of Code",
-      subTitle: "2019 - 2023 - UC Riverside",
+      subTitle: "2019-2023 - UC Riverside",
       image: Scott,
       alt: "UC Riverside",
       description:
-        "C++ in CS010! This was also the start of undergrad life studying Computer Science and Business at UC Riverside. 10/10 experience.",
+        "C++ in CS010! This was also the start of undergrad life studying Computer Science and Business at UC Riverside. Chef's kiss, 10/10 people.",
     },
     {
       title: "GPU Research Intern",
@@ -29,7 +29,7 @@ const Experience = () => {
       image: macREU,
       alt: "MacREU Research",
       description:
-        "Researched ways to improve power-saving mechanisms of AMD GPUs. Also wrote a paper on it.",
+        "Explored ways in improving power-saving mechanisms of AMD GPUs. Wrote a research paper and presented at multiple conferences.",
       link: "https://github.com/msclal/AMD-GPU-Research",
     },
     {
@@ -63,7 +63,7 @@ const Experience = () => {
       image: nmTech,
       alt: "NMTech Classroom",
       description:
-        "Assisted in teaching 15 High Schoolers learn basic HTML, CSS, and JavaScript ",
+        "Assisted in teaching 15 High-Schoolers learn basic HTML, CSS, JavaScript, and React.",
     },
     {
       title: `Standout Intern Takes Home Silver`,
@@ -71,24 +71,23 @@ const Experience = () => {
       image: wrxSpace,
       alt: "wrxSpace",
       description:
-        "A 2-day event battling against 110+ SWE interns, wrxSpace won 'Second Place' at my internship's hackathon event.",
+        "In a grueling 2-day event battling against 110+ other SWE interns, wrxSpace won '2nd Place' at my internship's hackathon event.",
       link: "https://github.com/msclal/wrxSpace",
     },
     {
       title: "ACM Project Developer",
-      subTitle: "2022-2023 - UC Riverside",
+      subTitle: "Fall 2022-Spring 2023 - UC Riverside",
       image: ACM,
       alt: "ACM",
       description:
-        "UC Riverside's Computer Science club! We build projects that help enhance student experience at the school. I took part in building the 'bitByBit' and 'R'Parts' projects as a full-stack developer.",
+        "UC Riverside's Computer Science club! We build projects that enhance student experience at the school. I took part in building the 'bitByBit' and 'R'Parts' projects as a full-stack developer.",
     },
     {
       title: "Web Developer Lead",
-      subTitle: "2023 - Citrus Hack",
+      subTitle: "Winter-Spring 2023 - Citrus Hack",
       image: citrusHack,
       alt: "Citrus Hack",
-      description:
-        "I developed most of the front-end for CitrusHack 2023's website. I also assumed the role of 'On-Call Engineer' to tend to bugs and user feedback throughout the website's launch week.",
+      description: `I was in charge of the front-end for the 2023 Citrus Hack website. I also assumed "On-Call Engineer" responsibilities to tend to bugs and user feedbacks during the website's launch week.`,
     },
     {
       title: "Last Dance",
@@ -125,7 +124,7 @@ const Experience = () => {
                   href={experience.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-x-2"
+                  className="flex items-center gap-x-1 md:gap-x-2"
                 >
                   <p className="font-medium md:text-lg">{experience.title}</p>
                   {experience.link ? (
