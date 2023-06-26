@@ -14,7 +14,7 @@ const Footer = () => {
       <p>{"All right reserved"}</p>
       <Link
         href={
-          "https://open.spotify.com/track/1Bv3h7Vc4AaYA2BcSM3rVd?si=4e469ebf81ad41fe"
+          "https://open.spotify.com/artist/74XFHRwlV6OrjEM0A2NCMF?si=d7JGuPJ3RW6FqVGrap3M8A"
         }
       >
         <Image
