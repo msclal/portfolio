@@ -38,7 +38,7 @@ const Technologies = () => {
     <>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0, transition: { delay: 1.8 } }}
+        animate={{ opacity: 1, y: 0, transition: { delay: 2.3 } }}
         exit={{ opacity: 0, y: 20 }}
         className="max-md:hidden bg-gradient-to-br from-[#f3e7e9] via-[#e3eeff] to-[#ffffff] rounded-[20px] px-2 py-3 xl:py-2 space-y-5 bg-opacity-50"
       >

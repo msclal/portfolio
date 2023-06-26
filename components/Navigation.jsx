@@ -81,7 +81,7 @@ const Navigation = () => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 0 }}
-      animate={{ opacity: 1, y: 0, transition: { delay: 1 } }}
+      animate={{ opacity: 1, y: 0, transition: { delay: 1.5 } }}
       exit={{ opacity: 0, y: 0 }}
       ref={componentRef}
       className="flex justify-between items-center w-full relative mt-2"

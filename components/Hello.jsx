@@ -14,7 +14,7 @@ const Hello = () => {
       {/* Desktop */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0, transition: { delay: 1.5 } }}
+        animate={{ opacity: 1, y: 0, transition: { delay: 2 } }}
         exit={{ opacity: 0, y: 20 }}
         className="w-full rounded-[20px] flex p-10 max-md:hidden bg-opacity-50 bg-gradient-to-r from-[#f3e7e9] to-[#e3eeff]"
       >

@@ -103,7 +103,7 @@ const Experience = () => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0, transition: { delay: 2.3 } }}
+      animate={{ opacity: 1, y: 0, transition: { delay: 3 } }}
       exit={{ opacity: 0, y: 20 }}
       className="w-full md:w-[62%] h-full bg-[#ebedee] rounded-[20px] p-5 pr-2 bg-opacity-50 space-y-5"
     >

@@ -6,7 +6,7 @@ const Headphones = () => {
       {/* Desktop */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0, transition: { delay: 2.7 } }}
+        animate={{ opacity: 1, y: 0, transition: { delay: 3.2 } }}
         exit={{ opacity: 0, y: 20 }}
         className="max-sm:hidden w-full md:w-1/2 sm:h-[550px] bg-gradient-to-b from-[#c1dff9] to-[#fcf5eb] bg-opacity-50 rounded-[20px] max-sm:pb-1 p-5 md:p-5 space-y-3"
       >
