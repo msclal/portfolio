@@ -9,9 +9,9 @@ const Footer = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: -20 }}
+      initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: 0, transition: { delay: 3.2 } }}
-      exit={{ opacity: 0, y: -20 }}
+      exit={{ opacity: 0, y: 0 }}
       className="flex gap-x-5 justify-center items-center max-sm:text-xs select-none my-5 md:my-10"
     >
       <p>

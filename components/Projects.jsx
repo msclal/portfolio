@@ -60,9 +60,9 @@ const Projects = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: -20 }}
+      initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: 0, transition: { delay: 2.7 } }}
-      exit={{ opacity: 0, y: -20 }}
+      exit={{ opacity: 0, y: 0 }}
       id="projects"
       className="grid sm:grid-cols-2 gap-5 pb-0 mb-0 place-items-center"
     >
