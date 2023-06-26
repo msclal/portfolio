@@ -51,7 +51,7 @@ const Projects = () => {
     {
       title: "bitByBIT",
       subTitle:
-        "A leetcode-style platform aimed at improving UCR CS students' programming fundamentals",
+        "Leetcode-esque platform for UCR CS students to improve programming fundamentals",
       description: "Led 4 engineers",
       image: bbb,
       link: "https://github.com/acm-ucr/bitByBIT",
