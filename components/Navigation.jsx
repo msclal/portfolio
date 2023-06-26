@@ -1,13 +1,19 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { ToastContainer, toast, Slide } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { motion } from "framer-motion";
 import { BsToggles } from "react-icons/bs";
-import { BsFillMoonFill } from "react-icons/bs";
 
 const Navigation = () => {
   const [date, setDate] = useState("");
   const [mobileDate, setMobileDate] = useState("");
   const [toggle, setToggle] = useState(false);
+
+  const [light, setLight] = useState(true);
+  const [dark, setDark] = useState(false);
+  const [superDuper, setSuperDuper] = useState(false);
+  // const[super, setSuper] = useState(false)
 
   const componentRef = useRef(null);
 
@@ -60,6 +66,12 @@ const Navigation = () => {
     };
   }, []);
 
+  useEffect(() => {
+    if (!superDuper && !dark && !superDuper) {
+      setLight(true);
+    }
+  }, [light, dark, superDuper]);
+
   //   nav button will have a bg after a certain scroll
   const [scrollNav, setScrollNav] = useState(false);
   const changeNav = () => {
@@ -103,11 +115,81 @@ const Navigation = () => {
             exit={{ opacity: 0, y: 0 }}
             className="absolute top-12 right-0 rounded-[20px] bg-gray-300 bg-opacity-50 p-3 space-y-3"
           >
-            <div className="flex justify-between items-center gap-x-3 bg-gray-200 rounded-[20px] p-3 pl-1 py-1 cursor-pointer">
-              <div className="w-fit bg-white bg-opacity-50 rounded-full p-2">
-                <BsFillMoonFill />
+            <div className="flex w-full justify-between items-center bg-gray-200 rounded-[20px] p-3 cursor-pointer pr-0">
+              <div className="flex gap-x-3 items-center">
+                <div
+                  className={`w-[35px] h-[35px] bg-white rounded-full hover:border-[1.8px] hover:border-gray-400 ${
+                    light ? `border-[1.5px] border-gray-500` : ``
+                  }`}
+                  onClick={() => {
+                    setLight(true);
+                    setDark(false);
+                    setSuperDuper(false);
+                  }}
+                />
+                <div
+                  className={`w-[35px] h-[35px] bg-gray-400 rounded-full hover:border-[1.8px] hover:border-gray-800 ${
+                    dark ? `border-[1.5px] border-gray-900` : ``
+                  }`}
+                  onClick={() => {
+                    setLight(false);
+                    setDark(true);
+                    setSuperDuper(false);
+
+                    toast.info("Feature Coming Soon!", {
+                      position: "top-right",
+                      autoClose: 1500,
+                      hideProgressBar: true,
+                      closeOnClick: true,
+                      pauseOnHover: true,
+                      draggable: true,
+                      progress: undefined,
+                      transition: Slide,
+                      theme: "colored",
+                      toastId: "dark",
+                    });
+                  }}
+                ></div>
+                <div
+                  className={`w-[35px] h-[35px] bg-gradient-to-bl from-[#ffb3b3] via-[#a4b8fd] rounded-full hover:border-[1.8px] hover:border-purple-400 ${
+                    superDuper ? `border-[1.5px] border-purple-500` : ``
+                  }`}
+                  onClick={() => {
+                    setLight(false);
+                    setDark(false);
+                    setSuperDuper(true);
+
+                    toast.info("Feature Coming Soon!", {
+                      position: "top-right",
+                      autoClose: 1500,
+                      hideProgressBar: true,
+                      closeOnClick: true,
+                      pauseOnHover: true,
+                      draggable: true,
+                      progress: undefined,
+                      transition: Slide,
+                      theme: "colored",
+                      toastId: "super",
+                    });
+                  }}
+                ></div>
               </div>
-              <p className="font-medium select-none">Dark Mode</p>
+              {light && (
+                <p className="bg-gray-300 px-2 py-0 rounded-[10px] text-center font-medium">
+                  Light Mode
+                </p>
+              )}
+              {dark && (
+                <p className="bg-gray-300 px-2 py-0 rounded-[10px] text-center font-medium">
+                  Dark Mode
+                </p>
+              )}
+              {superDuper && (
+                <p className="px-2 py-0 rounded-[10px] bg-gradient-to-r from-[#ffb3b3] via-[#a4b8fd] to-[#ffb3b3] text-white text-center font-medium">
+                  {"Feelin'"} Super!
+                </p>
+              )}
+              <ToastContainer />
             </div>
             <iframe
               src="https://open.spotify.com/embed/track/1Bv3h7Vc4AaYA2BcSM3rVd?utm_source=generator"
@@ -157,10 +239,79 @@ const Navigation = () => {
               Contact
             </Link>
           </div>
-          <div className="flex items-center gap-x-3 bg-gray-200 rounded-[20px] p-3 py-1">
-            <BsFillMoonFill />
-            <p className="font-medium select-none">Dark</p>
+          <div className="flex gap-x-3">
+            <div
+              className={`w-[30px] h-[30px] bg-white rounded-full ${
+                light ? `border-[1.5px] border-gray-500` : ``
+              }`}
+              onClick={() => {
+                setLight(true);
+                setDark(false);
+                setSuperDuper(false);
+              }}
+            ></div>
+            <div
+              className={`w-[30px] h-[30px] bg-gray-400 rounded-full ${
+                dark ? `border-[1.5px] border-gray-900` : ``
+              }`}
+              onClick={() => {
+                setLight(false);
+                setDark(true);
+                setSuperDuper(false);
+
+                toast.info("Feature Coming Soon!", {
+                  position: "top-right",
+                  autoClose: 1500,
+                  hideProgressBar: true,
+                  closeOnClick: true,
+                  pauseOnHover: true,
+                  draggable: true,
+                  progress: undefined,
+                  transition: Slide,
+                  theme: "colored",
+                  toastId: "dark",
+                });
+              }}
+            />
+            <div
+              className={`w-[30px] h-[30px] bg-gradient-to-bl from-[#ffb3b3] via-[#a4b8fd] rounded-full ${
+                superDuper ? `border-[1.5px] border-purple-500` : ``
+              }`}
+              onClick={() => {
+                setLight(false);
+                setDark(false);
+                setSuperDuper(true);
+
+                toast.info("Feature Coming Soon!", {
+                  position: "top-right",
+                  autoClose: 1500,
+                  hideProgressBar: true,
+                  closeOnClick: true,
+                  pauseOnHover: true,
+                  draggable: true,
+                  progress: undefined,
+                  transition: Slide,
+                  theme: "colored",
+                  toastId: "dark",
+                });
+              }}
+            ></div>
           </div>
+          {light && (
+            <p className="bg-gray-300 px-2 py-0 rounded-[10px] text-center font-semibold">
+              Light
+            </p>
+          )}
+          {dark && (
+            <p className="bg-gray-300 px-2 py-0 rounded-[10px] text-center font-semibold">
+              Dark
+            </p>
+          )}
+          {superDuper && (
+            <p className="px-2 py-0 rounded-[10px] bg-gradient-to-r from-[#ffb3b3] via-[#a4b8fd] to-[#ffb3b3] text-white text-center font-semibold">
+              Super!
+            </p>
+          )}
         </motion.div>
       )}
     </motion.div>
