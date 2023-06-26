@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import logo from "@/public/assets/footer_logo.svg";
 import Link from "next/link";
 
@@ -7,7 +8,12 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="flex gap-x-5 justify-center items-center max-sm:text-xs select-none my-5 md:my-10">
+    <motion.div
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0, transition: { delay: 3.2 } }}
+      exit={{ opacity: 0, y: -20 }}
+      className="flex gap-x-5 justify-center items-center max-sm:text-xs select-none my-5 md:my-10"
+    >
       <p>
         {"Copyright © "} {currentYear}
       </p>
@@ -25,7 +31,7 @@ const Footer = () => {
           className="max-sm:w-20"
         />
       </Link>
-    </div>
+    </motion.div>
   );
 };
 
