@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import Scott from "@/public/gallery/scott.jpg";
 import macREU from "@/public/gallery/macREU.png";
 import planetHer from "@/public/gallery/planetHer.png";
@@ -100,7 +101,12 @@ const Experience = () => {
     },
   ];
   return (
-    <div className="w-full md:w-[62%] h-full bg-[#ebedee] rounded-[20px] p-5 pr-2 bg-opacity-50 space-y-5">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0, transition: { delay: 2.3 } }}
+      exit={{ opacity: 0, y: 20 }}
+      className="w-full md:w-[62%] h-full bg-[#ebedee] rounded-[20px] p-5 pr-2 bg-opacity-50 space-y-5"
+    >
       <p className="font-semibold text-xl md:text-2xl select-none">
         Experience
       </p>
@@ -152,7 +158,7 @@ const Experience = () => {
           );
         })}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

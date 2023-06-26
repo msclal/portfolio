@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import Bean from "@/public/gallery/bean.jpeg";
 import Sas from "@/public/gallery/sas.jpg";
 import Rod from "@/public/gallery/rod.jpeg";
@@ -66,7 +67,10 @@ const Gallery = () => {
   }
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0, transition: { delay: 2.3 } }}
+      exit={{ opacity: 0, y: 20 }}
       className="w-full h-full md:w-[38%] overflow-hidden rounded-[20px]"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
@@ -87,7 +91,7 @@ const Gallery = () => {
           />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

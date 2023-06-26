@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { BsToggles } from "react-icons/bs";
 import { BsFillMoonFill } from "react-icons/bs";
 
@@ -78,7 +79,10 @@ const Navigation = () => {
   };
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 0 }}
+      animate={{ opacity: 1, y: 0, transition: { delay: 1 } }}
+      exit={{ opacity: 0, y: 0 }}
       ref={componentRef}
       className="flex justify-between items-center w-full relative mt-2"
     >
@@ -149,7 +153,7 @@ const Navigation = () => {
           </div>
         </div>
       )}
-    </div>
+    </motion.div>
   );
 };
 

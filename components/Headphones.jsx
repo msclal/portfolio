@@ -1,9 +1,15 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 const Headphones = () => {
   return (
     <>
-      <div className="max-sm:hidden w-full md:w-1/2 sm:h-[550px] bg-gradient-to-b from-[#c1dff9] to-[#fcf5eb] bg-opacity-50 rounded-[20px] max-sm:pb-1 p-5 md:p-5 space-y-3">
+      {/* Desktop */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0, transition: { delay: 2.7 } }}
+        exit={{ opacity: 0, y: 20 }}
+        className="max-sm:hidden w-full md:w-1/2 sm:h-[550px] bg-gradient-to-b from-[#c1dff9] to-[#fcf5eb] bg-opacity-50 rounded-[20px] max-sm:pb-1 p-5 md:p-5 space-y-3"
+      >
         <p className="font-semibold text-xl md:text-2xl select-none text-white">
           {"What's on my Headphones?"}
         </p>
@@ -15,7 +21,9 @@ const Headphones = () => {
             className="h-[90%]"
           ></iframe>
         </div>
-      </div>
+      </motion.div>
+
+      {/* Mobile */}
       <div className="sm:hidden w-full h-[150px] bg-gradient-to-br from-[#dbcdb0] to-[#a48c44] rounded-[20px] pb-1 p-3 space-y-3">
         <p className="font-semibold text-xl select-none text-white">
           {"What's on my Headphones?"}
