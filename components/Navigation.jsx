@@ -37,6 +37,10 @@ const Navigation = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       const currentDate = new Date();
+
+      // Set the time zone to PST (Pacific Standard Time)
+      const timeZone = "America/Los_Angeles";
+
       const formattedDate = currentDate
         .toLocaleString("en-US", {
           weekday: "short",
@@ -45,18 +49,22 @@ const Navigation = () => {
           hour: "numeric",
           minute: "numeric",
           hour12: true,
+          timeZone: timeZone,
         })
         .replace(/,/g, "");
 
       const formatteMobileDate = currentDate
         .toLocaleString("en-US", {
+          weekday: "short",
           month: "short",
           day: "numeric",
           hour: "numeric",
           minute: "numeric",
           hour12: true,
+          timeZone: timeZone,
         })
         .replace(/at/i, "");
+
       setDate(formattedDate);
       setMobileDate(formatteMobileDate);
     }, 1000); // Update every second (1000 milliseconds)
@@ -65,12 +73,6 @@ const Navigation = () => {
       clearInterval(timer); // Cleanup function to clear the interval when component unmounts
     };
   }, []);
-
-  useEffect(() => {
-    if (!superDuper && !dark && !superDuper) {
-      setLight(true);
-    }
-  }, [light, dark, superDuper]);
 
   //   nav button will have a bg after a certain scroll
   const [scrollNav, setScrollNav] = useState(false);
@@ -100,7 +102,7 @@ const Navigation = () => {
     >
       <p className="font-medium select-none">mikashanela</p>
       <div className="flex items-center gap-x-4 max-md:hidden">
-        <p className="text-right select-none font-medium">{date} PST</p>
+        <p className="text-right select-none font-medium">{date}</p>
         <div
           className={` duration-300 cursor-pointer text-lg ${
             toggle ? `w-fit bg-gray-300 p-1 rounded-[5px] bg-opacity-50` : `p-1`
@@ -175,17 +177,17 @@ const Navigation = () => {
                 ></div>
               </div>
               {light && (
-                <p className="bg-gray-300 px-2 py-0 rounded-[10px] text-center font-medium">
+                <p className="bg-gray-300 px-2 py-1 rounded-[10px] text-center font-medium text-sm">
                   Light Mode
                 </p>
               )}
               {dark && (
-                <p className="bg-gray-300 px-2 py-0 rounded-[10px] text-center font-medium">
+                <p className="bg-gray-300 px-2 py-1 rounded-[10px] text-center font-medium text-sm">
                   Dark Mode
                 </p>
               )}
               {superDuper && (
-                <p className="px-2 py-0 rounded-[10px] bg-gradient-to-r from-[#ffb3b3] via-[#a4b8fd] to-[#ffb3b3] text-white text-center font-medium">
+                <p className="px-2 py-1 rounded-[10px] bg-gradient-to-r from-[#ffb3b3] via-[#a4b8fd] to-[#ffb3b3] text-white text-center font-medium text-sm">
                   {"Feelin'"} Super!
                 </p>
               )}
@@ -204,7 +206,7 @@ const Navigation = () => {
           </motion.div>
         )}
       </div>
-      <div className="md:hidden absolute right-12">{mobileDate} PST</div>
+      <div className="md:hidden absolute right-12">{mobileDate}</div>
 
       <div
         ref={componentRef}
@@ -298,17 +300,17 @@ const Navigation = () => {
             ></div>
           </div>
           {light && (
-            <p className="bg-gray-300 px-2 py-0 rounded-[10px] text-center font-semibold">
+            <p className="bg-gray-300 px-2 py-1 rounded-[10px] text-center font-semibold border-[0.5px] border-gray-400">
               Light
             </p>
           )}
           {dark && (
-            <p className="bg-gray-300 px-2 py-0 rounded-[10px] text-center font-semibold">
+            <p className="bg-gray-300 px-2 py-1 rounded-[10px] text-center font-semibold border-[0.5px] border-gray-400">
               Dark
             </p>
           )}
           {superDuper && (
-            <p className="px-2 py-0 rounded-[10px] bg-gradient-to-r from-[#ffb3b3] via-[#a4b8fd] to-[#ffb3b3] text-white text-center font-semibold">
+            <p className="px-2 py-1 rounded-[10px] bg-gradient-to-r from-[#ffb3b3] via-[#a4b8fd] to-[#ffb3b3] text-white text-center font-semibold border-[0.5px] border-gray-400">
               Super!
             </p>
           )}
