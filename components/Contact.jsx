@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer, toast, Slide } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AiOutlineLink } from "react-icons/ai";
 import { FiMail } from "react-icons/fi";
@@ -24,12 +24,13 @@ const Contact = () => {
     }
     toast.success("Note sent!", {
       position: "top-right",
-      autoClose: 2000,
+      autoClose: 1500,
       hideProgressBar: true,
       closeOnClick: true,
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
+      transition: Slide,
       theme: "colored",
     });
     setName("");
