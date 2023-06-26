@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Project from "./Project";
 import meThinks from "@/public/projects/meThinks.png";
 import Citrus from "@/public/projects/citrus.png";
@@ -54,14 +55,17 @@ const Projects = () => {
   ];
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0, transition: { delay: 2.7 } }}
+      exit={{ opacity: 0, y: -20 }}
       id="projects"
       className="grid sm:grid-cols-2 gap-5 pb-0 mb-0 place-items-center"
     >
       {projectsData.map((project, index) => (
         <Project key={index} project={project} />
       ))}
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { FiMail } from "react-icons/fi";
 import { AiFillGithub } from "react-icons/ai";
 import { ImLinkedin2 } from "react-icons/im";
@@ -11,7 +12,12 @@ const Hello = () => {
   return (
     <>
       {/* Desktop */}
-      <div className="w-full rounded-[20px] flex p-10 max-md:hidden bg-opacity-50 bg-gradient-to-r from-[#f3e7e9] to-[#e3eeff]">
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0, transition: { delay: 2 } }}
+        exit={{ opacity: 0, y: -20 }}
+        className="w-full rounded-[20px] flex p-10 max-md:hidden bg-opacity-50 bg-gradient-to-r from-[#f3e7e9] to-[#e3eeff]"
+      >
         <div className="flex flex-wrap justify-between items-center">
           <div className="space-y-14 w-[60%]">
             <div className="space-y-5 break-before-all">
@@ -68,10 +74,15 @@ const Hello = () => {
             alt="Mika Profile Picture"
           />
         </div>
-      </div>
+      </motion.div>
 
       {/* Mobile */}
-      <div className="md:hidden bg-gradient-to-br from-[#f1f9f0] to-[#e3eeff] rounded-[20px] flex flex-col p-8 px-5 justify-center items-center gap-y-5">
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0, transition: { delay: 2 } }}
+        exit={{ opacity: 0, y: -20 }}
+        className="md:hidden bg-gradient-to-br from-[#f1f9f0] to-[#e3eeff] rounded-[20px] flex flex-col p-8 px-5 justify-center items-center gap-y-5"
+      >
         <div className="flex flex-col items-center gap-y-1 drop-shadow-glow">
           <Image
             draggable={false}
@@ -120,7 +131,7 @@ const Hello = () => {
             #HayleyWilliamsTop5
           </span>
         </p>
-      </div>
+      </motion.div>
     </>
   );
 };

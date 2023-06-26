@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { BsToggles } from "react-icons/bs";
 import { BsFillMoonFill } from "react-icons/bs";
 
@@ -78,7 +79,10 @@ const Navigation = () => {
   };
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 0 }}
+      animate={{ opacity: 1, y: 0, transition: { delay: 2 } }}
+      exit={{ opacity: 0, y: 0 }}
       ref={componentRef}
       className="flex justify-between items-center w-full relative mt-2"
     >
@@ -93,7 +97,12 @@ const Navigation = () => {
           <BsToggles onClick={() => setToggle(!toggle)} />
         </div>
         {toggle && (
-          <div className="absolute top-12 right-0 rounded-[20px] bg-gray-300 bg-opacity-50 p-3 space-y-3">
+          <motion.div
+            initial={{ opacity: 0, y: 0 }}
+            animate={{ opacity: 1, y: 0, transition: { delay: 0.25 } }}
+            exit={{ opacity: 0, y: 0 }}
+            className="absolute top-12 right-0 rounded-[20px] bg-gray-300 bg-opacity-50 p-3 space-y-3"
+          >
             <div className="flex justify-between items-center gap-x-3 bg-gray-200 rounded-[20px] p-3 pl-1 py-1 cursor-pointer">
               <div className="w-fit bg-white bg-opacity-50 rounded-full p-2">
                 <BsFillMoonFill />
@@ -110,7 +119,7 @@ const Navigation = () => {
               loading="lazy"
               className="select-none"
             />
-          </div>
+          </motion.div>
         )}
       </div>
       <div className="md:hidden absolute right-12">{mobileDate}</div>
@@ -128,7 +137,12 @@ const Navigation = () => {
         />
       </div>
       {toggle && (
-        <div className="md:hidden fixed right-5 top-12 rounded-[10px] bg-gray-300 bg-opacity-70 py-3 px-4 gap-y-4 flex flex-col z-[100]">
+        <motion.div
+          initial={{ opacity: 0, y: 0 }}
+          animate={{ opacity: 1, x: 0, transition: { delay: 0.07 } }}
+          exit={{ opacity: 0, y: 0 }}
+          className="md:hidden fixed right-5 top-12 rounded-[10px] bg-gray-300 bg-opacity-70 py-3 px-4 gap-y-4 flex flex-col z-[100]"
+        >
           <div className="flex flex-col gap-y-2 text-center">
             <p onClick={ScrollToTop} className="font-medium select-none">
               Home
@@ -147,9 +161,9 @@ const Navigation = () => {
             <BsFillMoonFill />
             <p className="font-medium select-none">Dark</p>
           </div>
-        </div>
+        </motion.div>
       )}
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -53,7 +54,12 @@ const Contact = () => {
     }
   };
   return (
-    <div className="w-full md:w-1/2 h-[520px] md:h-[550px] p-5 bg-[#ebedee] rounded-[20px] bg-opacity-50 flex flex-col gap-y-5">
+    <motion.div
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0, transition: { delay: 3.2 } }}
+      exit={{ opacity: 0, y: -20 }}
+      className="w-full md:w-1/2 h-[520px] md:h-[550px] p-5 bg-[#ebedee] rounded-[20px] bg-opacity-50 flex flex-col gap-y-5"
+    >
       <p className="font-semibold text-xl md:text-2xl select-none">Contact</p>
       <div className="flex justify-between items-center">
         <p className="font-medium md:text-lg">Resume</p>
@@ -156,7 +162,7 @@ const Contact = () => {
         </form>
         <ToastContainer />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
