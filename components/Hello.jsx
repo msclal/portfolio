@@ -36,7 +36,7 @@ const Hello = () => {
                   <TypeAnimation
                     sequence={[
                       `#WhyYouTradeJordanPoole🥊`,
-                      7500,
+                      7000,
                       "#ChrisPaulShouldHaveBeenALaker😔",
                       5000,
                       "#DraymondLeaving👋🏻",
@@ -47,6 +47,7 @@ const Hello = () => {
                     wrapper="span"
                     cursor={true}
                     repeat={Infinity}
+                    preRenderFirstString={true}
                     className="font-medium text-[#a1b8da]"
                   />
                 </p>
@@ -126,6 +127,7 @@ const Hello = () => {
                 wrapper="span"
                 cursor={false}
                 repeat={Infinity}
+                preRenderFirstString={true}
                 className="text-lg text-[#a888b7] font-medium h-full"
               />
             </div>
