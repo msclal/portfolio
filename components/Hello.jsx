@@ -132,9 +132,9 @@ const Hello = () => {
               />
             </div>
           </div>
-          <Link href={"tel:9092145009"} className="underline">
+          {/* <Link href={"tel:9092145009"} className="underline">
             {"+1 (909) 214-5009"}
-          </Link>
+          </Link> */}
         </div>
         <div className="flex gap-x-5 text-3xl">
           <Link
