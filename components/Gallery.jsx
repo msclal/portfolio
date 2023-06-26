@@ -69,9 +69,9 @@ const Gallery = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: -20 }}
+      initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: 0, transition: { delay: 3 } }}
-      exit={{ opacity: 0, y: -20 }}
+      exit={{ opacity: 0, y: 0 }}
       className="w-full h-full md:w-[38%] overflow-hidden rounded-[20px]"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
