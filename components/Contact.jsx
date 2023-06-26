@@ -55,9 +55,9 @@ const Contact = () => {
   };
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0, transition: { delay: 3.2 } }}
-      exit={{ opacity: 0, y: 20 }}
+      exit={{ opacity: 0, y: -20 }}
       className="w-full md:w-1/2 h-[520px] md:h-[550px] p-5 bg-[#ebedee] rounded-[20px] bg-opacity-50 flex flex-col gap-y-5"
     >
       <p className="font-semibold text-xl md:text-2xl select-none">Contact</p>

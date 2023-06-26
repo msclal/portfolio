@@ -37,9 +37,9 @@ const Technologies = () => {
   return (
     <>
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0, transition: { delay: 2.3 } }}
-        exit={{ opacity: 0, y: 20 }}
+        exit={{ opacity: 0, y: -20 }}
         className="max-md:hidden bg-gradient-to-br from-[#f3e7e9] via-[#e3eeff] to-[#ffffff] rounded-[20px] px-2 py-3 xl:py-2 space-y-5 bg-opacity-50"
       >
         <div className="flex flex-wrap justify-between items-center text-3xl xl:text-4xl gap-y-2">
@@ -213,7 +213,12 @@ const Technologies = () => {
       </motion.div>
 
       {/* Mobile */}
-      <div className="md:hidden bg-gradient-to-br from-[#f1f9f0] via-[#e3eeff] to-[#ffffff] rounded-[20px] p-3 pt-0 space-y-1 bg-opacity-50">
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0, transition: { delay: 2.3 } }}
+        exit={{ opacity: 0, y: -20 }}
+        className="md:hidden bg-gradient-to-br from-[#f1f9f0] via-[#e3eeff] to-[#ffffff] rounded-[20px] p-3 pt-0 space-y-1 bg-opacity-50"
+      >
         <div className="flex flex-wrap justify-center items-center text-2xl gap-x-5 gap-y-2 drop-shadow-md">
           <TbBrandNextjs className="text-2xl stroke-[1.3px]" />
           <SiVercel />
@@ -231,7 +236,7 @@ const Technologies = () => {
           <SiCypress className="text-tech-cypress" />
           <FaGit className="text-tech-git" />
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
