@@ -15,79 +15,79 @@ const Experience = () => {
   const experiences = [
     {
       title: "First Line of Code!",
-      subTitle: "2019 - Freshman Year",
+      subTitle: "2019-2023 - UC Riverside",
       image: Scott,
       alt: "UC Riverside",
       description:
-        "First line of code! And start of my undergrad life studying Computer Science. First line sfsdfsd First line of code!",
+        "This was also the start of my undergrad life studying Computer Science and Business. I've met the most amazing people in my four years of pursuing this degree.",
     },
     {
-      title: "First Line of Code!",
-      subTitle: "2019 - Freshman Year",
+      title: "GPU Research Intern",
+      subTitle: "2019 - MacREU Research",
       image: macREU,
       alt: "MacREU Research",
       description:
         "First line of code! And start of my undergrad life studying Computer Science",
     },
     {
-      title: "First Line of Code!",
-      subTitle: "2019 - Freshman Year",
+      title: `Won 'Best Space App' & 'Best UI/UX'`,
+      subTitle: "2022 - Rose Hack",
       image: planetHer,
       alt: "Planet Her",
       description:
         "First line of code! And start of my undergrad life studying Computer Science",
     },
     {
-      title: "First Line of Code!",
-      subTitle: "2019 - Freshman Year",
+      title: `Won 'Best Use of Google Cloud'`,
+      subTitle: "2022 - Citrus Hack",
       image: scottyMaps,
       alt: "ScottyMaps",
       description:
         "First line of code! And start of my undergrad life studying Computer Science",
     },
     {
-      title: "First Line of Code!",
-      subTitle: "2019 - Freshman Year",
+      title: "Software Engineer Intern",
+      subTitle: "2022 - Northwestern Mutual",
       image: NM,
       alt: "Northwestern Mutual",
       description:
         "First line of code! And start of my undergrad life studying Computer Science",
     },
     {
-      title: "First Line of Code!",
-      subTitle: "2019 - Freshman Year",
+      title: "NMTech Instructor Assistant",
+      subTitle: "2022 - Milwaukee",
       image: nmTech,
       alt: "NMTech Classroom",
       description:
         "First line of code! And start of my undergrad life studying Computer Science",
     },
     {
-      title: "First Line of Code!",
-      subTitle: "2019 - Freshman Year",
+      title: `Won 'Second Place'`,
+      subTitle: "2022 - Northwestern Mutual Intern Hack",
       image: wrxSpace,
       alt: "wrxSpace",
       description:
         "First line of code! And start of my undergrad life studying Computer Science",
     },
     {
-      title: "First Line of Code!",
-      subTitle: "2019 - Freshman Year",
+      title: "ACM Project Developer",
+      subTitle: "2022 - UC Riverside",
       image: ACM,
       alt: "ACM",
       description:
         "First line of code! And start of my undergrad life studying Computer Science",
     },
     {
-      title: "First Line of Code!",
-      subTitle: "2019 - Freshman Year",
+      title: "Web Developer Lead",
+      subTitle: "2023 - Citrus Hack",
       image: citrusHack,
       alt: "Citrus Hack",
       description:
         "First line of code! And start of my undergrad life studying Computer Science",
     },
     {
-      title: "First Line of Code!",
-      subTitle: "2019 - Freshman Year",
+      title: `Won 'Best Overall'`,
+      subTitle: "2023 - Bio Hack",
       image: bioLink,
       alt: "bioLink",
       description:
@@ -108,7 +108,7 @@ const Experience = () => {
               <div className="flex flex-col gap-y-2">
                 <p className="font-medium text-lg">{experience.title}</p>
                 <div className="flex gap-x-5 items-stretch">
-                  <div className="w-[250px] md:w-[170px] lg:w-[150px] xl:w-[120px] h-full aspect-square bg-transparent rounded-[10px]">
+                  <div className="w-[150px] md:w-[170px] lg:w-[150px] xl:w-[120px] h-full aspect-square bg-transparent rounded-[10px]">
                     <Image
                       src={experience.image}
                       alt="image"
@@ -118,10 +118,10 @@ const Experience = () => {
                     />
                   </div>
                   <div className="flex flex-col gap-y-2 w-full">
-                    <p className="break-before-all max-md:text-sm">
+                    <p className="break-before-all max-md:text-[13px]">
                       {experience.description}
                     </p>
-                    <p className="text-gray-400 font-light max-md:text-sm">
+                    <p className="text-gray-500 font-light max-md:text-[13px]">
                       {experience.subTitle}
                     </p>
                   </div>

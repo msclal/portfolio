@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import Link from "next/link";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -57,33 +58,61 @@ const Contact = () => {
       <div className="flex justify-between items-center">
         <p className="font-medium md:text-lg">Resume</p>
         <div className="w-fit gap-x-1 flex items-center cursor-pointer text-gray-600">
-          <p>View</p>
+          <Link
+            href="resume.pdf"
+            alt="alt text"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View
+          </Link>
           <AiOutlineLink className="text-2xl" />
         </div>
       </div>
       <div className="flex justify-between items-center">
         <p className="font-medium md:text-lg">Message</p>
         <div className="flex gap-x-3 text-lg">
-          <div className="w-fit p-3 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300">
+          <Link
+            href="mailto:mikashanela.dev@gmail.com"
+            className="w-fit p-3 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300"
+          >
             <FiMail />
-          </div>
-          <div className="w-fit p-3 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300">
+          </Link>
+          <Link
+            href={"tel:9092145009"}
+            className="w-fit p-3 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300"
+          >
             <ImPhone />
-          </div>
+          </Link>
         </div>
       </div>
       <div className="flex justify-between items-center">
         <p className="font-medium md:text-lg">Socials</p>
         <div className="flex gap-x-3 text-lg">
-          <div className="w-fit p-3 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300">
-            <GrInstagram />
-          </div>
-          <div className="w-fit p-3 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300">
+          <Link
+            href="https://github.com/msclal"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-fit p-3 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300"
+          >
             <AiFillGithub />
-          </div>
-          <div className="w-fit p-3 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300">
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/mika-shanela/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-fit p-3 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300"
+          >
             <ImLinkedin2 />
-          </div>
+          </Link>
+          <Link
+            href="https://www.instagram.com/mikashanela/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-fit p-3 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300"
+          >
+            <GrInstagram />
+          </Link>
         </div>
       </div>
       <span className="border-[0.7px] border-gray-400 mx-2 my-2"></span>
