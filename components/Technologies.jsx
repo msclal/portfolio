@@ -36,7 +36,7 @@ const Technologies = () => {
   return (
     <>
       <div className="max-md:hidden bg-gradient-to-br from-[#f3e7e9] via-[#e3eeff] to-[#ffffff] rounded-[20px] px-2 py-3 xl:py-2 space-y-5 bg-opacity-50">
-        <div className="flex flex-wrap justify-between items-center text-3xl xl:text-4xl gap-y-2 drop-shadow-2xl">
+        <div className="flex flex-wrap justify-between items-center text-3xl xl:text-4xl gap-y-2">
           <div className="relative hover:scale-[1.08] hover:-translate-y-1 duration-300 flex justify-center">
             <span className="absolute -bottom-[7px] xl:-bottom-[7px] w-[6px] h-[6px] bg-[#d4cfcebe] rounded-full"></span>
             <TbBrandNextjs
@@ -73,7 +73,7 @@ const Technologies = () => {
             )}
           </div>
 
-          <div className="relative hover:scale-[1.08] hover:-translate-y-1 duration-300 flex justify-center drop-shadow-glow">
+          <div className="relative hover:scale-[1.08] hover:-translate-y-1 duration-300 flex justify-center">
             <span className="absolute -bottom-[10px] w-[6px] h-[6px] bg-[#d4cfce] rounded-full"></span>
             <FaReact
               className="text-tech-react"
