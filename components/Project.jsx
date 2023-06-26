@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/legacy/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 
 const Project = ({ project }) => {
@@ -19,12 +18,7 @@ const Project = ({ project }) => {
         onMouseLeave={() => setIsHover(false)}
       >
         {isHover && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { delay: 0.045 } }}
-            exit={{ opacity: 0 }}
-            className="w-full h-full absolute z-[5] p-6 rounded-[20px] flex flex-col justify-end bg-gray-600 bg-opacity-50 transition-all ease-in-out"
-          >
+          <div className="w-full h-full absolute z-[5] p-6 rounded-[20px] flex flex-col justify-end bg-gray-600 bg-opacity-50 transition-all ease-in-out">
             <div className="">
               <p className="text-xl text-white font-semibold">
                 {project.title}
@@ -34,7 +28,7 @@ const Project = ({ project }) => {
               </p>
               {/* <p className="text-sm text-white">{project.description}</p> */}
             </div>
-          </motion.div>
+          </div>
         )}
         <BsBoxArrowUpRight className="absolute right-4 top-4 z-[10] text-lg text-white stroke-1" />
         <Image

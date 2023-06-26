@@ -43,7 +43,7 @@ const Projects = () => {
     {
       title: "GarfAi",
       subTitle:
-        "Personalized AI to streamline the day-to-day workflows of a 10-person friend group (includes sentence rewriter, restaurant bill splitting, English writing analysis)",
+        "Personalized AI assistant that optimizes my friend group's daily workflows (includes sentence rewriting, bill splitting, writing analysis)",
       description: "Led 4 engineers",
       image: garf,
       link: "https://github.com/msclal/Garf",
@@ -51,7 +51,7 @@ const Projects = () => {
     {
       title: "bitByBIT",
       subTitle:
-        "A leetcode-style tool aimed at improving programming fundamentals for 2000+ UCR students enrolled in intro CS courses",
+        "A leetcode-style platform aimed at improving programming fundamentals for 2000+ UCR students enrolled in intro CS courses",
       description: "Led 4 engineers",
       image: bbb,
       link: "https://github.com/acm-ucr/bitByBIT",
