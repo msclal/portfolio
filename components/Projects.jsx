@@ -20,7 +20,7 @@ const Projects = () => {
     {
       title: "bioLink",
       subTitle:
-        "Empowering users with AI-driven health insights and facilitating live chat with local experts",
+        "AI-driven health insights and live chatting with local experts",
       description: "",
       image: bioLink,
       link: "https://github.com/minsooerickim/bioLink",
@@ -41,9 +41,9 @@ const Projects = () => {
       link: "https://github.com/shahdivyank/r-parts",
     },
     {
-      title: "GarfAi",
+      title: "Garf AI",
       subTitle:
-        "Personalized AI assistant that optimizes my friend group's daily workflows (includes sentence rewriting, bill splitting, writing analysis)",
+        "Personal AI assistant for my friend group (gift ideas, bill splitting, writing analysis, etc.)",
       description: "Led 4 engineers",
       image: garf,
       link: "https://github.com/msclal/Garf",
@@ -51,7 +51,7 @@ const Projects = () => {
     {
       title: "bitByBIT",
       subTitle:
-        "A leetcode-style platform aimed at improving programming fundamentals for 2000+ UCR students enrolled in intro CS courses",
+        "A leetcode-style platform aimed at improving UCR CS students' programming fundamentals",
       description: "Led 4 engineers",
       image: bbb,
       link: "https://github.com/acm-ucr/bitByBIT",

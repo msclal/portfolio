@@ -113,7 +113,7 @@ const Hello = () => {
                 sequence={[
                   `Software Engineer`,
                   6000,
-                  "Egg Enthusiast",
+                  "Egg&Rice Enthusiast",
                   4000,
                   "Sauce Hoarder",
                   4000,
