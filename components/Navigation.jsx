@@ -55,7 +55,7 @@ const Navigation = () => {
 
       const formatteMobileDate = currentDate
         .toLocaleString("en-US", {
-          weekday: "short",
+          // weekday: "short",
           month: "short",
           day: "numeric",
           hour: "numeric",
@@ -187,7 +187,7 @@ const Navigation = () => {
                 </p>
               )}
               {superDuper && (
-                <p className="px-2 py-1 rounded-[10px] bg-gradient-to-r from-[#ffb3b3] via-[#a4b8fd] to-[#ffb3b3] text-white text-center font-medium text-sm">
+                <p className="px-2 py-1 rounded-[10px] bg-gradient-to-r from-[#ffb3b3] via-[#a4b8fd] to-[#ffb3b3] text-green-100 text-center font-medium text-sm">
                   {"Feelin'"} Super!
                 </p>
               )}
@@ -310,7 +310,7 @@ const Navigation = () => {
             </p>
           )}
           {superDuper && (
-            <p className="px-2 py-1 rounded-[10px] bg-gradient-to-r from-[#ffb3b3] via-[#a4b8fd] to-[#ffb3b3] text-white text-center font-semibold border-[0.5px] border-gray-400">
+            <p className="px-2 py-1 rounded-[10px] bg-gradient-to-r from-[#ffb3b3] via-[#a4b8fd] to-[#ffb3b3] text-center font-semibold border-[0.5px] border-gray-400 text-green-100">
               Super!
             </p>
           )}
