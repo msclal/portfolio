@@ -75,7 +75,7 @@ const Hello = () => {
                       7000,
                       "'Melodrama' is a generation-defining cinematic pop opus.",
                       5000,
-                      "The Strokes were cooking when they put out 'Room on Fire'",
+                      "The Strokes were cooking when they put out 'Room on Fire'.",
                       5000,
                       "La La Land.",
                       3000,
