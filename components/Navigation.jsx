@@ -55,9 +55,9 @@ const Navigation = () => {
 
       const formatteMobileDate = currentDate
         .toLocaleString("en-US", {
-          // weekday: "short",
-          month: "short",
-          day: "numeric",
+          weekday: "short",
+          // month: "short",
+          // day: "numeric",
           hour: "numeric",
           minute: "numeric",
           hour12: true,
@@ -102,7 +102,7 @@ const Navigation = () => {
     >
       <p className="font-medium select-none">mikashanela</p>
       <div className="flex items-center gap-x-4 max-md:hidden">
-        <p className="text-right select-none font-medium">{date}</p>
+        <p className="text-right select-none font-medium">{date} PDT</p>
         <div
           className={` duration-300 cursor-pointer text-lg ${
             toggle ? `w-fit bg-gray-300 p-1 rounded-[5px] bg-opacity-50` : `p-1`
@@ -153,8 +153,8 @@ const Navigation = () => {
                   }}
                 ></div>
                 <div
-                  className={`w-[35px] h-[35px] bg-gradient-to-bl from-[#ffb3b3] via-[#a4b8fd] rounded-full hover:border-[1.8px] hover:border-purple-400 ${
-                    superDuper ? `border-[1.5px] border-purple-500` : ``
+                  className={`w-[35px] h-[35px] bg-gradient-to-bl from-[#ffb3b3] via-[#a4b8fd] rounded-full hover:border-[1.8px] hover:border-gray-500 ${
+                    superDuper ? `border-[1.5px] border-gray-500` : ``
                   }`}
                   onClick={() => {
                     setLight(false);
@@ -206,7 +206,7 @@ const Navigation = () => {
           </motion.div>
         )}
       </div>
-      <div className="md:hidden absolute right-12">{mobileDate}</div>
+      <div className="md:hidden absolute right-12">{mobileDate} PDT</div>
 
       <div
         ref={componentRef}
@@ -277,7 +277,7 @@ const Navigation = () => {
             />
             <div
               className={`w-[30px] h-[30px] bg-gradient-to-bl from-[#ffb3b3] via-[#a4b8fd] rounded-full ${
-                superDuper ? `border-[1.5px] border-purple-500` : ``
+                superDuper ? `border-[1.5px] border-gray-500` : ``
               }`}
               onClick={() => {
                 setLight(false);
