@@ -1,17 +1,19 @@
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Bean from "@/public/gallery/bean.jpeg";
+// import Bean from "@/public/gallery/bean.jpeg";
+import Cat from "@/public/gallery/cat.jpeg";
 // import Sas from "@/public/gallery/sas.jpg";
 import Grad from "@/public/gallery/grad.jpeg";
 import Tacos from "@/public/gallery/tacos.jpeg";
 import Norm from "@/public/gallery/norm.jpeg";
 
 const images = [
-  { image: Bean, alt: "Mika in a Beanie" },
+  { image: Cat, alt: "Mika with Cat" },
+  // { image: Bean, alt: "Mika in a Beanie" },
   { image: Grad, alt: "Grad Pic" },
   { image: Tacos, alt: "Taco Tuesday" },
-  { image: Norm, alt: "Mika in a Beanie" },
+  { image: Norm, alt: "Norm the Navel" },
 ];
 const delay = 5000;
 const swipeThreshold = 0; // Adjust this value for touch sensitivity

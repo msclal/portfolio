@@ -28,7 +28,8 @@ const Headphones = () => {
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 0, transition: { delay: 3.2 } }}
         exit={{ opacity: 0, y: 0 }}
-        className="sm:hidden w-full h-[150px] bg-gradient-to-br from-[#b4a37b] to-[#7f7f7f] rounded-[20px] pb-1 p-3 space-y-3"
+        // className="sm:hidden w-full h-[150px] bg-gradient-to-br from-[#b4a37b71] to-[#949494] rounded-[20px] pb-1 p-3 space-y-3"
+        className="sm:hidden w-full h-[150px] bg-gradient-to-br from-[#b8a781] to-[#746346] rounded-[20px] pb-1 p-3 space-y-3"
         // className="sm:hidden w-full h-[150px] bg-gradient-to-br from-[#dbcdb0] to-[#a48c44] rounded-[20px] pb-1 p-3 space-y-3"
       >
         <p className="font-semibold text-xl select-none text-white">
