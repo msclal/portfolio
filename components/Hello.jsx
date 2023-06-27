@@ -56,10 +56,14 @@ const Hello = () => {
                     sequence={[
                       `#WhyYouTradeJordanPoole🥊`,
                       7000,
-                      "#ChrisPaulShouldHaveBeenALaker😔",
+                      "#WhereIsBobMyers😕",
                       5000,
-                      "#DraymondLeaving👋🏻",
+                      "#CP3ShouldveBeenALaker😔",
                       5000,
+                      "#WarriorsDynasty❌",
+                      5000,
+                      // "#DraymondLeaving👋🏻",
+                      // 5000,
                     ]}
                     speed={35}
                     deletionSpeed={66}
