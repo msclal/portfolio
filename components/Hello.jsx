@@ -55,13 +55,13 @@ const Hello = () => {
                   <TypeAnimation
                     sequence={[
                       `#WhyYouTradeJordanPoole🥊`,
-                      7000,
+                      6000,
                       "#WhereIsBobMyers😕",
-                      5000,
+                      4000,
                       "#CP3ShouldveBeenALaker😔",
-                      5000,
+                      4000,
                       "#WarriorsDynasty❌",
-                      5000,
+                      4000,
                       // "#DraymondLeaving👋🏻",
                       // 5000,
                     ]}
@@ -109,6 +109,7 @@ const Hello = () => {
             draggable={false}
             src={ProfileSVG}
             width={250}
+            priority={true}
             className="aspect-square rounded-full mr-2"
             alt="Mika Profile Picture"
             // onMouseEnter={handleMouseEnter}
