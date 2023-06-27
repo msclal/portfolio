@@ -28,18 +28,31 @@ const Headphones = () => {
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 0, transition: { delay: 3.2 } }}
         exit={{ opacity: 0, y: 0 }}
-        className="sm:hidden w-full h-[150px] bg-gradient-to-br from-[#dbcdb0] to-[#a48c44] rounded-[20px] pb-1 p-3 space-y-3"
+        className="sm:hidden w-full h-[150px] bg-gradient-to-br from-[#b4a37b] to-[#7f7f7f] rounded-[20px] pb-1 p-3 space-y-3"
+        // className="sm:hidden w-full h-[150px] bg-gradient-to-br from-[#dbcdb0] to-[#a48c44] rounded-[20px] pb-1 p-3 space-y-3"
       >
         <p className="font-semibold text-xl select-none text-white">
           {"What's on my Headphones?"}
         </p>
         <div className="w-full h-full">
-          <iframe
+          {/* <iframe
             src="https://open.spotify.com/embed/track/1Bv3h7Vc4AaYA2BcSM3rVd?utm_source=generator"
             width="100%"
             loading="lazy"
             className="h-[75%]"
+          ></iframe> */}
+          <iframe
+            src="https://open.spotify.com/embed/track/7wYCva1bI1AkHRQoVXhy8F?utm_source=generator"
+            width="100%"
+            loading="lazy"
+            className="h-[75%]"
           ></iframe>
+          {/* <iframe
+            src="https://open.spotify.com/embed/track/1Bv3h7Vc4AaYA2BcSM3rVd?utm_source=generator"
+            width="100%"
+            loading="lazy"
+            className="h-[75%]"
+          ></iframe> */}
         </div>
       </motion.div>
     </>
