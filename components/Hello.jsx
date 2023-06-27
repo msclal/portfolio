@@ -45,40 +45,53 @@ const Hello = () => {
                 Hello, {"I'm"} Mika!
               </p>
               <div>
-                <p className="texl-lg lg:text-xl space-x-2">
+                <p className="text-xl space-x-2">
                   <span className="font-medium text-[#a888b7] mr-1">
                     Software Engineer based in Southern California.
                   </span>
                   Trying to make it out the trenches. After hours, I eat{" "}
                   {"Häagen-Dazs"} and watch the Golden State Warriors
                   self-detonate their roster.
+                  <span className="font-medium text-[#a1b8da]">
+                    #WhyYouTradeJordanPoole🥊
+                  </span>
+                </p>
+              </div>
+              {/* <p className="texl-lg lg:text-xl">
+                Hayley Williams from Paramore, top-5 woman ever.
+              </p> */}
+              {/* <div> */}
+              <div className="h-[28px] text-xl">
+                <span>Also, </span>
+                <span>
                   <TypeAnimation
+                    // wrapper="p"
                     sequence={[
-                      `#WhyYouTradeJordanPoole🥊`,
-                      6000,
-                      "#WhereIsBobMyers😕",
-                      4000,
-                      "#CP3ShouldveBeenALaker😔",
-                      4000,
-                      "#WarriorsDynasty❌",
-                      4000,
-                      // "#DraymondLeaving👋🏻",
-                      // 5000,
+                      // `Hello!`,
+                      // 6000,
+                      // "Hayley Williams from Paramore, top-5 woman ever.",
+                      // 4000,
+                      "Hayley Williams from Paramore top-5 ever.",
+                      7000,
+                      "'Melodrama' is a generation-defining cinematic pop opus.",
+                      5000,
+                      "The Strokes were cooking when they put out 'Room on Fire'",
+                      5000,
+                      "La La Land.",
+                      3000,
                     ]}
-                    speed={35}
-                    deletionSpeed={66}
-                    wrapper="span"
+                    speed={55}
+                    deletionSpeed={65}
                     cursor={true}
                     repeat={Infinity}
                     preRenderFirstString={true}
-                    className="font-medium text-[#a1b8da]"
+                    className=""
                   />
-                </p>
+                </span>
               </div>
-              <p className="texl-lg lg:text-xl">
-                Hayley Williams from Paramore, top-5 woman ever.
-              </p>
+              {/* </div> */}
             </div>
+            {/* </div> */}
             <div className="flex gap-x-5 text-3xl">
               <Link
                 href="mailto:mikashanela.dev@gmail.com"
@@ -104,17 +117,19 @@ const Hello = () => {
               </Link>
             </div>
           </div>
-          {/* <div className="bg-red-500 relative"> */}
-          <Image
-            draggable={false}
-            src={ProfileSVG}
-            width={250}
-            priority={true}
-            className="aspect-square rounded-full mr-2"
-            alt="Mika Profile Picture"
-            // onMouseEnter={handleMouseEnter}
-            // onMouseLeave={handleMouseLeave}
-          />
+          <div className="w-[230px] lg:w-[250px]">
+            {/* <div className="bg-red-500 relative"> */}
+            <Image
+              draggable={false}
+              src={ProfileSVG}
+              // width={250}
+              // priority={true}
+              className="aspect-square rounded-full mr-2"
+              alt="Mika Profile Picture"
+              // onMouseEnter={handleMouseEnter}
+              // onMouseLeave={handleMouseLeave}
+            />
+          </div>
           {/* {isHovered && (
               <p className="absolute top-1/2 left-[45%] z-[10] text-white text-center bg-blue-200">
                 Hello
@@ -141,19 +156,19 @@ const Hello = () => {
           />
           <div className="text-center">
             <p className="text-xl font-medium">Mika Shanela Carodan</p>
-            <div className="h-[28px] flex justify-center items-center">
+            <div className="h-[28px] min-w-[310px] flex justify-center items-center text-center">
               <TypeAnimation
                 sequence={[
                   `Software Engineer`,
-                  6000,
+                  7000,
                   "Egg&Rice Enthusiast",
-                  4000,
+                  5000,
                   "Sauce Hoarder",
-                  4000,
+                  5000,
                   "GarfAI CEO/COO/CTO/C-Everything",
-                  4000,
+                  5000,
                   "Mom of 15 Cats (+/- 1)",
-                  4000,
+                  5000,
                 ]}
                 speed={50}
                 deletionSpeed={66}
@@ -161,7 +176,7 @@ const Hello = () => {
                 cursor={false}
                 repeat={Infinity}
                 preRenderFirstString={true}
-                className="text-lg text-[#a888b7] font-medium h-full"
+                className="max-[375px]:text-base text-lg text-[#a888b7] font-medium h-full"
               />
             </div>
           </div>
