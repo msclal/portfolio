@@ -39,7 +39,7 @@ const Hello = () => {
         className="w-full rounded-[20px] flex p-10 max-md:hidden bg-opacity-50 bg-gradient-to-r from-[#f3e7e9] to-[#e3eeff]"
       >
         <div className="flex flex-wrap justify-between items-center">
-          <div className="space-y-14 w-[60%]">
+          <div className="space-y-20 lg:space-y-14 w-[60%]">
             <div className="space-y-5 break-before-all">
               <p className="text-4xl font-semibold select-none ">
                 Hello, {"I'm"} Mika!
@@ -71,14 +71,14 @@ const Hello = () => {
                       // 6000,
                       // "Hayley Williams from Paramore, top-5 woman ever.",
                       // 4000,
-                      "Hayley Williams from Paramore top-5 ever.",
+                      "Hayley Williams from Paramore is a top-5 iconic female artist lister.",
                       7000,
-                      "'Melodrama' is a generation-defining cinematic pop opus.",
+                      "Lorde's 'Melodrama' is a generation-defining cinematic pop opus.",
                       5000,
-                      "The Strokes were cooking when they put out 'Room on Fire'.",
+                      "The Strokes' 'Room on Fire' has always been the perfect successor to 'Is This It'.",
                       5000,
-                      "La La Land.",
-                      3000,
+                      // "La La Land.",
+                      // 3000,
                     ]}
                     speed={55}
                     deletionSpeed={65}

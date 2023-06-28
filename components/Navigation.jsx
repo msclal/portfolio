@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import { ToastContainer, toast, Slide } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { motion } from "framer-motion";
@@ -238,13 +238,28 @@ const Navigation = () => {
             <p onClick={ScrollToTop} className="font-medium select-none">
               Home
             </p>
-            <Link href="#projects" className="font-medium select-none">
+            <Link
+              to="projects"
+              smooth={true}
+              duration={50}
+              className="font-medium select-none"
+            >
               Projects
             </Link>
-            <Link href="#experience" className="font-medium select-none">
+            <Link
+              to="experience"
+              smooth={true}
+              duration={50}
+              className="font-medium select-none"
+            >
               Experience
             </Link>
-            <Link href="#contact" className="font-medium select-none">
+            <Link
+              to="contact"
+              smooth={true}
+              duration={50}
+              className="font-medium select-none"
+            >
               Contact
             </Link>
           </div>
