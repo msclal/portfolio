@@ -87,7 +87,21 @@ const Experience = () => {
       subTitle: "Winter-Spring 2023 - Citrus Hack",
       image: citrusHack,
       alt: "Citrus Hack",
-      description: `I was in charge of the front-end for the 2023 Citrus Hack website. I also assumed On-Call Engineer responsibilities to tend to bugs and user feedbacks during the website's launch week.`,
+      description: (
+        <>
+          I spearheaded the front-end for{" "}
+          <a
+            href="https://www.citrushack.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-gray-500"
+          >
+            CitrusHack.com.
+          </a>{" "}
+          I also assumed On-Call Engineer responsibilities to tend to bugs and
+          user feedbacks during the {`website's`} launch week
+        </>
+      ),
     },
     {
       title: "Last Dance",
