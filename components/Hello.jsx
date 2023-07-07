@@ -41,19 +41,43 @@ const Hello = () => {
         <div className="flex flex-wrap justify-between items-center">
           <div className="space-y-20 lg:space-y-14 w-[60%]">
             <div className="space-y-5 break-before-all">
-              <p className="text-4xl font-semibold select-none ">
+              <p className="text-4xl font-semibold select-none">
                 Hello, {"I'm"} Mika!
               </p>
+              {/* <TypeAnimation
+                sequence={[
+                  // `Hello!`,
+                  // 6000,
+                  // "Hayley Williams from Paramore, top-5 woman ever.",
+                  // 4000,
+                  "Hello, I'm Mika!",
+                  7000,
+                  "Kamusta, Ako si Mika!",
+                  7000,
+                  // "The Strokes' 'Room on Fire' has always been the perfect successor to 'Is This It'.",
+                  // 5000,
+                  // "La La Land.",
+                  // 3000,
+                ]}
+                speed={55}
+                deletionSpeed={65}
+                cursor={true}
+                repeat={Infinity}
+                preRenderFirstString={true}
+                className="text-4xl font-semibold select-none "
+              >
+                Hello, {"I'm"} Mika!
+              </TypeAnimation> */}
               <div>
                 <p className="text-xl space-x-2">
                   <span className="font-medium text-[#a888b7] mr-1">
                     Software Engineer based in Southern California.
                   </span>
                   Trying to make it out the trenches. After hours, I eat{" "}
-                  {"Häagen-Dazs"} and watch the Golden State Warriors
-                  self-detonate their roster.
+                  {"Häagen-Dazs"} and watch the ill-fated Lakers waste another
+                  season of {"Lebron's"} career.
                   <span className="font-medium text-[#a1b8da]">
-                    #WhyYouTradeJordanPoole🥊
+                    #ThrowTheWholeTeamAway🥊
                   </span>
                 </p>
               </div>
@@ -62,20 +86,23 @@ const Hello = () => {
               </p> */}
               {/* <div> */}
               <div className="h-[28px] text-xl">
-                <span>Also, </span>
+                <span>Also some recent favorites: </span>
                 <span>
                   <TypeAnimation
                     // wrapper="p"
                     sequence={[
                       // `Hello!`,
                       // 6000,
-                      // "Hayley Williams from Paramore, top-5 woman ever.",
-                      // 4000,
-                      "Hayley Williams from Paramore is a top-5 iconic female artist lister.",
+                      "Hayley Williams from Paramore.",
+                      4000,
+                      // <Link href="citrushack.com">
+                      //   "Hayley Williams from Paramore - a top-5 iconic female
+                      //   artist lister."
+                      // </Link>,
                       7000,
-                      "Lorde's 'Melodrama' is a generation-defining cinematic pop opus.",
+                      "'Melodrama' - a generation-defining cinematic pop opus.",
                       5000,
-                      "The Strokes' 'Room on Fire' has always been the perfect successor to 'Is This It'.",
+                      "The Strokes' 'Room on Fire'.",
                       5000,
                       // "La La Land.",
                       // 3000,
@@ -208,14 +235,14 @@ const Hello = () => {
             <ImLinkedin2 />
           </Link>
         </div>
-        <p className="text-center">
+        <span className="text-center">
           Based in Southern California. Trying to make it out the trenches.
-          After hours, I eat {"Häagen-Dazs"} and watch the Golden State Warriors
-          self-detonate their roster. Also,{" "}
+          After hours, I eat {"Häagen-Dazs"} and watch the Lakers waste another
+          season of {"Lebron's"} career. Also,{" "}
           <span className="font-medium text-[#a1b8da]">
             #HayleyWilliamsTop5Ever🗿
           </span>
-        </p>
+        </span>
       </motion.div>
     </>
   );
