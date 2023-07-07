@@ -73,9 +73,9 @@ const Hello = () => {
                   <span className="font-medium text-[#a888b7] mr-1">
                     Software Engineer based in Southern California.
                   </span>
-                  Trying to make it out the trenches. After hours, I eat{" "}
-                  {"Häagen-Dazs"} and watch the ill-fated Lakers waste another
-                  season of {"Lebron's"} career.
+                  Feeling Supersonic 24/5. After hours, I eat {"Häagen-Dazs"}{" "}
+                  and watch the ill-fated Lakers waste another season of{" "}
+                  {"Lebron's"} career.
                   <span className="font-medium text-[#a1b8da]">
                     #ThrowTheWholeTeamAway🥊
                   </span>
@@ -86,28 +86,42 @@ const Hello = () => {
               </p> */}
               {/* <div> */}
               <div className="h-[28px] text-xl">
-                <span>Also some recent favorites: </span>
+                <span>Also some favorites: </span>
                 <span>
                   <TypeAnimation
                     // wrapper="p"
                     sequence={[
                       // `Hello!`,
                       // 6000,
-                      "Hayley Williams from Paramore.",
-                      4000,
+                      "Hayley Williams from Paramore!",
+                      6500,
                       // <Link href="citrushack.com">
                       //   "Hayley Williams from Paramore - a top-5 iconic female
                       //   artist lister."
                       // </Link>,
-                      7000,
-                      "'Melodrama' - a generation-defining cinematic pop opus.",
-                      5000,
-                      "The Strokes' 'Room on Fire'.",
-                      5000,
-                      // "La La Land.",
+                      // "Lorde's 'Melodrama' (a generation-defining cinematic pop opus).",
+                      // "Lorde's 'Melodrama'.",
+                      // 3000,
+                      // "The Strokes' 'Room on Fire'.",
+                      // 5000,
+                      // "The Strokes - debut & sophomore albums",
+                      // 5000,
+                      // "Early 2000s Indie Rock Scene.",
+                      // 3000,
+                      // "80s Mom Songs.",
+                      // 3000,
+                      "Calamari + All the Hot Sauces.",
+                      3000,
+                      "The MacBook M1 Pro Speakers.",
+                      3000,
+                      // ".",
+                      // 3000,
+                      // "Eggs + Rice.",
+                      // 3000,
+                      // "A",
                       // 3000,
                     ]}
-                    speed={55}
+                    speed={65}
                     deletionSpeed={65}
                     cursor={true}
                     repeat={Infinity}
