@@ -53,17 +53,16 @@ const Navigation = () => {
         })
         .replace(/,/g, "");
 
-      const formatteMobileDate = currentDate
-        .toLocaleString("en-US", {
-          weekday: "short",
-          // month: "short",
-          // day: "numeric",
-          hour: "numeric",
-          minute: "numeric",
-          hour12: true,
-          timeZone: timeZone,
-        })
-        .replace(/at/i, "");
+      const formatteMobileDate = currentDate.toLocaleString("en-US", {
+        weekday: "short",
+        // month: "short",
+        // day: "numeric",
+        hour: "numeric",
+        minute: "numeric",
+        hour12: true,
+        timeZone: timeZone,
+      });
+      // .replace(/at/i, "");
 
       setDate(formattedDate);
       setMobileDate(formatteMobileDate);

@@ -202,11 +202,11 @@ const Hello = () => {
                 sequence={[
                   `Software Engineer`,
                   7000,
-                  "Egg&Rice Enthusiast",
+                  "E-Scooter Enthusiast",
+                  5000,
+                  "Egg&Rice Muncher",
                   5000,
                   "Sauce Hoarder",
-                  5000,
-                  "GarfAI CEO/COO/CTO/C-Everything",
                   5000,
                   "Mom of 15 Cats (+/- 1)",
                   5000,
@@ -249,14 +249,16 @@ const Hello = () => {
             <ImLinkedin2 />
           </Link>
         </div>
-        <span className="text-center">
-          Based in Southern California. Trying to make it out the trenches.
-          After hours, I eat {"Häagen-Dazs"} and watch the Lakers waste another
-          season of {"Lebron's"} career. Also,{" "}
-          <span className="font-medium text-[#a1b8da]">
+        <div className="flex flex-col justify-center items-center">
+          <p className="text-center">
+            Based in Southern California. Feeling Supersonic 24/5. After hours,
+            I eat {"Häagen-Dazs"} + watch the Lakers waste another season of{" "}
+            {"Lebron's"} career.
+          </p>
+          <p className="font-medium text-[#a1b8da]">
             #HayleyWilliamsTop5Ever🗿
-          </span>
-        </span>
+          </p>
+        </div>
       </motion.div>
     </>
   );
