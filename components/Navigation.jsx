@@ -54,7 +54,7 @@ const Navigation = () => {
         .replace(/,/g, "");
 
       const formatteMobileDate = currentDate.toLocaleString("en-US", {
-        weekday: "short",
+        // weekday: "short",
         // month: "short",
         // day: "numeric",
         hour: "numeric",
@@ -92,15 +92,17 @@ const Navigation = () => {
   };
 
   return (
+    // {/* DESKTOP */}
+
     <motion.div
       initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: 0, transition: { delay: 2 } }}
       exit={{ opacity: 0, y: 0 }}
       ref={componentRef}
-      className="flex justify-between items-center w-full relative mt-2"
+      className="flex justify-between items-center w-full relative mt-2 max-sm:text-sm"
     >
-      <p className="font-medium select-none">mikashanela</p>
-      <div className="flex items-center gap-x-4 max-md:hidden">
+      <p className="font-medium select-none">⌘ mikashanela</p>
+      <div className="flex items-center justify-center gap-x-4 max-md:hidden">
         <p className="text-right select-none font-medium">{date} PDT</p>
         <div
           className={` duration-300 cursor-pointer text-lg ${
@@ -212,15 +214,17 @@ const Navigation = () => {
           </motion.div>
         )}
       </div>
-      <div className="md:hidden absolute right-12">{mobileDate} PDT</div>
+
+      {/* MOBILE */}
+      <div className="md:hidden absolute right-9">{mobileDate} PDT</div>
 
       <div
         ref={componentRef}
-        className="md:hidden fixed right-5 top-[8px] text-[37px] cursor-pointer z-[100]"
+        className="md:hidden fixed right-3 top-[10px] text-[37px] cursor-pointer z-[100]"
         onClick={() => setToggle(!toggle)}
       >
         <BsToggles
-          className={`cursor-pointer transition-all ease-in-out duration-100 ${
+          className={`cursor-pointer transition-all ease-in-out duration-100 text-[33px] ${
             scrollNav ? `bg-gray-300 p-2 rounded-[5px] bg-opacity-70` : `p-2`
           }
             ${toggle ? `bg-gray-300 p-2 rounded-[5px] bg-opacity-70` : `p-2`}`}

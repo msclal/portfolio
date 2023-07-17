@@ -61,45 +61,45 @@ const Contact = () => {
       exit={{ opacity: 0, y: 0 }}
       className="w-full md:w-1/2 h-[520px] md:h-[550px] p-5 bg-[#ebedee] rounded-[20px] bg-opacity-50 flex flex-col gap-y-5"
     >
-      <p className="font-semibold text-xl md:text-2xl select-none">Contact</p>
+      <p className="font-semibold text-lg select-none">Contact</p>
       <div className="flex justify-between items-center">
-        <p className="font-medium md:text-lg">Resume</p>
+        <p className="font-medium max-xs:text-sm">Resume</p>
         <Link
           href="resume.pdf"
           alt="alt text"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-fit gap-x-1 flex items-center cursor-pointer text-gray-500"
+          className="w-fit gap-x-1 flex items-center cursor-pointer text-gray-500 hover:text-gray-700 duration-300"
         >
           View
           <AiOutlineLink className="text-2xl" />
         </Link>
       </div>
       <div className="flex justify-between items-center">
-        <p className="font-medium md:text-lg">Message</p>
+        <p className="font-medium max-xs:text-sm">Message</p>
         <div className="flex gap-x-3 text-lg">
           <Link
             href="mailto:mikashanela.dev@gmail.com"
-            className="w-fit p-3 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300"
+            className="w-fit p-3 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
           >
             <FiMail />
           </Link>
           <Link
             href={"tel:9092145009"}
-            className="w-fit p-3 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300"
+            className="w-fit p-3 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
           >
             <ImPhone />
           </Link>
         </div>
       </div>
       <div className="flex justify-between items-center">
-        <p className="font-medium md:text-lg">Socials</p>
+        <p className="font-medium max-xs:text-sm">Socials</p>
         <div className="flex gap-x-3 text-lg">
           <Link
             href="https://github.com/msclal"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-fit p-3 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300"
+            className="w-fit p-3 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
           >
             <AiFillGithub />
           </Link>
@@ -107,7 +107,7 @@ const Contact = () => {
             href="https://www.linkedin.com/in/mika-shanela/"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-fit p-3 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300"
+            className="w-fit p-3 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
           >
             <ImLinkedin2 />
           </Link>
@@ -115,7 +115,7 @@ const Contact = () => {
             href="https://www.instagram.com/mikashanela/"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-fit p-3 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300"
+            className="w-fit p-3 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
           >
             <GrInstagram />
           </Link>
@@ -123,16 +123,14 @@ const Contact = () => {
       </div>
       <span className="border-[0.7px] border-gray-400 mx-2 my-2"></span>
       <div className="space-y-3">
-        <p className="font-semibold text-xl md:text-2xl select-none">
-          Leave a Note
-        </p>
+        <p className="font-semibold text-lg select-none">Leave a Note</p>
         <form
           ref={form}
           onSubmit={sendEmail}
           className="space-y-1 md:space-y-3"
         >
           <div className="flex flex-col gap-y-1">
-            <label className="select-none">Name</label>
+            <label className="select-none max-xs:text-sm">Name</label>
             <input
               type="text"
               name="name"
@@ -144,7 +142,7 @@ const Contact = () => {
             />
           </div>
           <div className="space-y-1">
-            <label className="select-none">Message</label>
+            <label className="select-none max-xs:text-sm">Message</label>
             <textarea
               name="message"
               value={message}
@@ -157,7 +155,7 @@ const Contact = () => {
           <input
             type="submit"
             value="Send"
-            className="bg-gray-500 hover:bg-gray-600 cursor-pointer text-sm w-fit text-white px-2 py-1 rounded-[10px] select-none duration-300"
+            className="bg-gray-500 hover:bg-gray-600 cursor-pointer text-sm w-fit text-white px-2 py-1 rounded-[10px] select-none duration-300 hover:-translate-y-[0.7px] max-xs:text-sm"
           />
         </form>
         <ToastContainer />

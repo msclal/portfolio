@@ -14,8 +14,8 @@ import { SiCplusplus } from "react-icons/si";
 import { DiNodejs } from "react-icons/di";
 import { SiCypress } from "react-icons/si";
 import { FaGit } from "react-icons/fa";
-import { SiVercel } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
+import { SiOpenai } from "react-icons/si";
 
 const Technologies = () => {
   const [next, setNext] = useState(false);
@@ -54,13 +54,25 @@ const Technologies = () => {
               <p className="absolute text-[10px] -top-[26px]">Next.js</p>
             )}
           </div>
+          {/* <div className="relative hover:scale-[1.08] hover:-translate-y-1 duration-300 flex justify-center">
+            <span className="absolute -bottom-[7px] xl:-bottom-[7px] w-[6px] h-[6px] bg-[#d4cfcebe] rounded-full"></span>
+            <SiOpenai
+
+              onMouseEnter={() => setNext(true)}
+              onMouseLeave={() => setNext(false)}
+            />
+            {next && (
+              <p className="absolute text-[10px] -top-[26px]">Next.js</p>
+            )}
+          </div> */}
 
           <div className="relative hover:scale-[1.08] hover:-translate-y-1 duration-300 flex justify-center">
             <span className="absolute -bottom-[10px] w-[6px] h-[6px] bg-[#d4cfce] rounded-full"></span>
 
-            <SiVercel
+            <SiOpenai
               onMouseEnter={() => setVercel(true)}
               onMouseLeave={() => setVercel(false)}
+              className="text-tech-openai"
             />
             {vercel && (
               <p className="absolute text-[10px] -top-[30px]">Vercel</p>
@@ -221,7 +233,7 @@ const Technologies = () => {
       >
         <div className="flex flex-wrap justify-center items-center text-2xl gap-x-5 gap-y-2 drop-shadow-md">
           <TbBrandNextjs className="text-2xl stroke-[1.3px]" />
-          <SiVercel />
+          <SiOpenai className="text-tech-openai" />
           <SiTailwindcss className="text-tech-tailwind" />
           <FaReact className="text-tech-react" />
           <SiJavascript className="text-tech-javascript" />

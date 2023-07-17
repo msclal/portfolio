@@ -41,41 +41,17 @@ const Hello = () => {
         <div className="flex flex-wrap justify-between items-center">
           <div className="space-y-20 lg:space-y-14 w-[60%]">
             <div className="space-y-5 break-before-all">
-              <p className="text-4xl font-semibold select-none">
+              <p className="text-3xl font-semibold select-none">
                 Hello, {"I'm"} Mika!
               </p>
-              {/* <TypeAnimation
-                sequence={[
-                  // `Hello!`,
-                  // 6000,
-                  // "Hayley Williams from Paramore, top-5 woman ever.",
-                  // 4000,
-                  "Hello, I'm Mika!",
-                  7000,
-                  "Kamusta, Ako si Mika!",
-                  7000,
-                  // "The Strokes' 'Room on Fire' has always been the perfect successor to 'Is This It'.",
-                  // 5000,
-                  // "La La Land.",
-                  // 3000,
-                ]}
-                speed={55}
-                deletionSpeed={65}
-                cursor={true}
-                repeat={Infinity}
-                preRenderFirstString={true}
-                className="text-4xl font-semibold select-none "
-              >
-                Hello, {"I'm"} Mika!
-              </TypeAnimation> */}
               <div>
-                <p className="text-xl space-x-2">
+                <p className="space-x-2 text-lg">
                   <span className="font-medium text-[#a888b7] mr-1">
-                    Software Engineer based in Southern California.
+                    Software Engineer with a flair for UI/UX.
                   </span>
-                  Feeling Supersonic 24/5. After hours, I eat {"Häagen-Dazs"}{" "}
-                  and watch the ill-fated Lakers waste another season of{" "}
-                  {"Lebron's"} career.
+                  Based in Southern California. After hours, I eat{" "}
+                  {"Häagen-Dazs"} and watch the ill-fated Lakers waste another
+                  season of {"Lebron's"} career.
                   <span className="font-medium text-[#a1b8da]">
                     #ThrowTheWholeTeamAway🥊
                   </span>
@@ -85,7 +61,7 @@ const Hello = () => {
                 Hayley Williams from Paramore, top-5 woman ever.
               </p> */}
               {/* <div> */}
-              <div className="h-[28px] text-xl">
+              <div className="h-[28px] text-lg">
                 <span>Also some favorites: </span>
                 <span>
                   <TypeAnimation
@@ -111,9 +87,11 @@ const Hello = () => {
                       // "80s Mom Songs.",
                       // 3000,
                       "Calamari + All the Hot Sauces.",
-                      3000,
-                      "The MacBook M1 Pro Speakers.",
-                      3000,
+                      5000,
+                      "A Karaoke Mic.",
+                      5000,
+                      // "The MacBook M1 Pro Speakers.",
+                      // 3000,
                       // ".",
                       // 3000,
                       // "Eggs + Rice.",
@@ -136,7 +114,7 @@ const Hello = () => {
             <div className="flex gap-x-5 text-3xl">
               <Link
                 href="mailto:mikashanela.dev@gmail.com"
-                className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px] duration-300"
+                className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[1px]"
               >
                 <FiMail />
               </Link>
@@ -144,7 +122,7 @@ const Hello = () => {
                 href="https://github.com/msclal"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px] duration-300"
+                className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[1px]"
               >
                 <AiFillGithub />
               </Link>
@@ -152,7 +130,7 @@ const Hello = () => {
                 href="https://www.linkedin.com/in/mika-shanela/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px] duration-300"
+                className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[1px]"
               >
                 <ImLinkedin2 />
               </Link>
@@ -196,19 +174,23 @@ const Hello = () => {
             placeholder="blur"
           />
           <div className="text-center">
-            <p className="text-xl font-medium">Mika Shanela Carodan</p>
+            <p className="text-lg font-medium">Mika Shanela Carodan</p>
             <div className="h-[28px] min-w-[310px] flex justify-center items-center text-center">
               <TypeAnimation
                 sequence={[
                   `Software Engineer`,
                   7000,
+                  `UX Advocate`,
+                  5000,
                   "E-Scooter Enthusiast",
                   5000,
-                  "Egg&Rice Muncher",
+                  "Professional Kareoke Singer",
                   5000,
-                  "Sauce Hoarder",
+                  // "Egg&Rice Muncher",
+                  // 5000,
+                  "Hot Sauce Hoarder",
                   5000,
-                  "Mom of 15 Cats (+/- 1)",
+                  "Proud Mom (of 15 Cats)",
                   5000,
                 ]}
                 speed={50}
@@ -217,7 +199,7 @@ const Hello = () => {
                 cursor={false}
                 repeat={Infinity}
                 preRenderFirstString={true}
-                className="max-[375px]:text-base text-lg text-[#a888b7] font-medium h-full"
+                className="max-[375px]:text-base text-[#a888b7] font-medium h-full"
               />
             </div>
           </div>
@@ -249,11 +231,11 @@ const Hello = () => {
             <ImLinkedin2 />
           </Link>
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center text-sm">
           <p className="text-center">
             Based in Southern California. Feeling Supersonic 24/5. After hours,
             I eat {"Häagen-Dazs"} + watch the Lakers waste another season of{" "}
-            {"Lebron's"} career.
+            {"Lebron's"} career. Also,
           </p>
           <p className="font-medium text-[#a1b8da]">
             #HayleyWilliamsTop5Ever🗿

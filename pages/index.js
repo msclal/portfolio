@@ -9,14 +9,18 @@ import Experience from "@/components/Experience";
 export default function Home() {
   return (
     <>
-      <Hello />
-      <Technologies />
+      <div className="space-y-5 md:space-y-6">
+        <Hello />
+        <Technologies />
+      </div>
       <Projects />
-      {/* <Gallery /> */}
-      <div className="flex gap-x-5 max-md:hidden h-full">
+
+      {/* DESKTOP */}
+      <div className="flex gap-x-8 max-md:hidden h-full">
         <Gallery />
         <Experience />
       </div>
+      {/* MOBILE */}
       <div className="md:hidden space-y-5">
         <div id="experience">
           <Experience />
@@ -26,10 +30,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex gap-x-5 max-sm:hidden">
+      {/* DESKTOP */}
+      <div className="flex gap-x-8 max-sm:hidden">
         <Headphones />
         <Contact />
       </div>
+      {/* MOBILE */}
       <div className="sm:hidden">
         <div className="mb-5">
           <Headphones />

@@ -80,7 +80,7 @@ const Gallery = () => {
       onTouchEnd={handleTouchEnd}
     >
       <div
-        className="whitespace-nowrap transition-ease duration-1000 rounded-[20px]"
+        className="whitespace-nowrap transition-ease duration-1000 rounded-[20px] hover:scale-125"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
         {images.map((image, index) => (

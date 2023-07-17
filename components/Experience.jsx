@@ -16,7 +16,7 @@ import { RiShareBoxFill } from "react-icons/ri";
 const Experience = () => {
   const experiences = [
     {
-      title: "First Line of Code",
+      title: "First Line of Code!",
       subTitle: "2019-2023 - UC Riverside",
       image: Scott,
       alt: "UC Riverside",
@@ -33,7 +33,7 @@ const Experience = () => {
       link: "https://github.com/msclal/AMD-GPU-Research",
     },
     {
-      title: "Rookie Success!",
+      title: "Rookie Success",
       subTitle: "January 2022 - Rose Hack",
       image: planetHer,
       alt: "Planet Her",
@@ -98,8 +98,8 @@ const Experience = () => {
           >
             CitrusHack.com.
           </a>{" "}
-          I also assumed On-Call Engineer responsibilities to tend to bugs and
-          user feedbacks during the {`website's`} launch week
+          I also assumed On-Call Technial Support responsibilities to tend to
+          bugs and user feedbacks during the {`website's`} launch week
         </>
       ),
     },
@@ -118,58 +118,61 @@ const Experience = () => {
       initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: 0, transition: { delay: 3 } }}
       exit={{ opacity: 0, y: 0 }}
-      className="w-full md:w-[62%] h-full bg-[#ebedee] rounded-[20px] p-5 pr-2 bg-opacity-50 space-y-5"
+      className="w-full md:w-[62%] h-full"
+      // className="w-full md:w-[62%] h-full bg-[#ebedee] rounded-[20px] p-5 pr-2 bg-opacity-50 space-y-5 hover:scale-125"
     >
-      <p className="font-semibold text-xl md:text-2xl select-none">
-        Experience
-      </p>
+      <div className="bg-[#ebedee] rounded-[20px] p-5 pr-2 bg-opacity-50 space-y-5 hover:scale-[1.007] duration-300">
+        <p className="font-semibold select-none text-lg">Experience</p>
 
-      <div className="overflow-y-auto h-[390px] pr-2 rounded-[10px]">
-        {experiences.map((experience, index) => {
-          return (
-            <div
-              key={index}
-              className={`${
-                index === experiences.length - 1 ? `mb-0` : `mb-5`
-              }`}
-            >
-              <div className="flex flex-col gap-y-2">
-                <a
-                  href={experience.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-x-1 md:gap-x-2"
-                >
-                  <p className="font-medium md:text-lg">{experience.title}</p>
-                  {experience.link ? (
-                    <RiShareBoxFill className="text-gray-500 cursor-pointer" />
-                  ) : (
-                    ``
-                  )}
-                </a>
-                <div className="flex gap-x-5 items-stretch">
-                  <div className="w-[150px] md:w-[170px] lg:w-[150px] xl:w-[120px] h-full aspect-square bg-transparent rounded-[10px]">
-                    <Image
-                      src={experience.image}
-                      alt="image"
-                      draggable={false}
-                      className="w-full h-full aspect-square rounded-[10px]"
-                      placeholder="blur"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-y-2 w-full">
-                    <p className="break-before-all max-md:text-[13px]">
-                      {experience.description}
+        <div className="overflow-y-auto h-[390px] pr-2 rounded-[10px]">
+          {experiences.map((experience, index) => {
+            return (
+              <div
+                key={index}
+                className={`${
+                  index === experiences.length - 1 ? `mb-0` : `mb-5`
+                }`}
+              >
+                <div className="flex flex-col gap-y-2">
+                  <a
+                    href={experience.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-x-1 md:gap-x-2"
+                  >
+                    <p className="font-medium max-sm:text-sm">
+                      {experience.title}
                     </p>
-                    <p className="text-gray-500 font-light max-md:text-[13px]">
-                      {experience.subTitle}
-                    </p>
+                    {experience.link ? (
+                      <RiShareBoxFill className="text-gray-500 cursor-pointer" />
+                    ) : (
+                      ``
+                    )}
+                  </a>
+                  <div className="flex gap-x-5 items-stretch">
+                    <div className="w-[150px] md:w-[170px] lg:w-[150px] xl:w-[120px] h-full aspect-square bg-transparent rounded-[10px]">
+                      <Image
+                        src={experience.image}
+                        alt="image"
+                        draggable={false}
+                        className="w-full h-full aspect-square rounded-[10px]"
+                        placeholder="blur"
+                      />
+                    </div>
+                    <div className="flex flex-col gap-y-2 w-full">
+                      <p className="break-before-all text-xs md:text-sm">
+                        {experience.description}
+                      </p>
+                      <p className="text-gray-500 font-light text-xs md:text-sm">
+                        {experience.subTitle}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </motion.div>
   );
@@ -179,13 +182,13 @@ export default Experience;
 
 {
   /* <p className="font-medium text-lg">First Line of Code!</p>
-          <div className="flex gap-x-5">
-            <div className="w-[250px] md:w-[170px] lg:w-[150px] xl:w-[120px] h-[100px] bg-red-500"></div>
-            <div className="flex flex-col gap-y-2">
-              <p className="break-before-all">
-                First line of code! And start of my undergrad life studying
-                Computer Science
-              </p>
+  <div className="flex gap-x-5">
+  <div className="w-[250px] md:w-[170px] lg:w-[150px] xl:w-[120px] h-[100px] bg-red-500"></div>
+  <div className="flex flex-col gap-y-2">
+  <p className="break-before-all">
+  First line of code! And start of my undergrad life studying
+  Computer Science
+  </p>
               <p className="text-gray-400 font-light">2019 - Freshman Year</p>
             </div>
           </div> */

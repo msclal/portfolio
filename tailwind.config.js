@@ -21,10 +21,12 @@ module.exports = {
         inter: ["var(--font-inter)", "sans-serif"],
         outfit: ["var(--font-outfit)", "sans-serif"],
         notoSans: ["var(--font-notoSans)", "sans-serif"],
+        manrope: ["var(--font-manrope)", "sans-serif"],
       },
       colors: {
         tech: {
           postman: "#ed7547",
+          openai: "#0BA37F",
           tailwind: "#53b5d1",
           react: "#82d8f8",
           javascript: "#edde67",
