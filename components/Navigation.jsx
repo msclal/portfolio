@@ -4,6 +4,7 @@ import { ToastContainer, toast, Slide } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { motion } from "framer-motion";
 import { BsToggles } from "react-icons/bs";
+import { FiCommand } from "react-icons/fi";
 
 const Navigation = () => {
   const [date, setDate] = useState("");
@@ -101,7 +102,12 @@ const Navigation = () => {
       ref={componentRef}
       className="flex justify-between items-center w-full relative mt-2 max-sm:text-sm"
     >
-      <p className="font-medium select-none">⌘ mikashanela</p>
+      <span className="font-medium select-none flex items-center gap-x-[6px] md:gap-x-2">
+        <span>
+          <FiCommand />
+        </span>
+        mikashanela
+      </span>
       <div className="flex items-center justify-center gap-x-4 max-md:hidden">
         <p className="text-right select-none font-medium">{date} PDT</p>
         <div
