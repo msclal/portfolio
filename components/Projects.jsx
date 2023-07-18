@@ -55,12 +55,12 @@ const Projects = () => {
           <SiSocketdotio />
         </div>
       ),
-      bg: "bg-gradient-to-br from-[#f9fcff] to-[#ecfbf2]",
+      bg: "bg-gradient-to-br from-[#f9fcff] to-[#f3fef7]",
       // bg: "bg-gradient-to-br from-[#f9fcff] via-[#f5f8ff] to-[#f7fffa]",
     },
     {
       title: "Citrus Hack",
-      role: "Lead Developer & On-Call Tech Support",
+      role: "Lead Developer & On-Call Support Engineer",
       subTitle:
         "UCR's Premier Hackathon Event (largest in California Inland Empire) with 725+ hackers",
       description: "Spearheaded Frontend Development",

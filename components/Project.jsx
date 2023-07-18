@@ -73,7 +73,7 @@ const Project = ({ project }) => {
         // href={project.link}
         // target="_blank"
         // rel="noreferrer noopener"
-        className={`p-4 flex flex-col w-full rounded-[20px] gap-y-3 border-[1px] border-gray-200 drop-shadow-sm hover:scale-[1.007] duration-300 bg-opacity-70 ${project.bg}`}
+        className={`p-4 flex flex-col w-full rounded-[20px] gap-y-3 border-[1px] border-gray-200 drop-shadow-sm md:hover:scale-[1.007] duration-300 bg-opacity-70 ${project.bg}`}
       >
         <Image
           src={project.image}
@@ -86,7 +86,7 @@ const Project = ({ project }) => {
         />
         <div>
           <p className="font-semibold">{project.title}</p>
-          <p className="text-stone-400 text-sm">{project.role}</p>
+          <p className="text-stone-400 text-sm font-medium">{project.role}</p>
           <p className="text-sm">{project.subTitle}</p>
         </div>
         <div className="space-y-1">
