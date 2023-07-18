@@ -34,7 +34,7 @@ const Projects = () => {
           <SiSocketdotio />
         </div>
       ),
-      bg: "bg-gradient-to-r from-[#eef2fd] to-[#f9fcff]",
+      bg: "bg-gradient-to-r from-[#eef2fd] to-[#ecf5fe]",
       // bg: "bg-gradient-to-bl from-[#f5f8ff] to-[#f2f6fd]",
     },
     {
@@ -55,7 +55,7 @@ const Projects = () => {
           <SiSocketdotio />
         </div>
       ),
-      bg: "bg-gradient-to-br from-[#f9fcff] to-[#f3fef7]",
+      bg: "bg-gradient-to-br from-[#ecf5fe] to-[#f3fef7]",
       // bg: "bg-gradient-to-br from-[#f9fcff] via-[#f5f8ff] to-[#f7fffa]",
     },
     {
@@ -75,7 +75,7 @@ const Projects = () => {
           <SiMongodb />
         </div>
       ),
-      bg: "bg-gradient-to-r from-[#f0f6fd] to-[#edf6ff]",
+      bg: "bg-gradient-to-r from-[#f0f6fd] to-[#e8f4ff]",
       // bg: "bg-gradient-to-bl from-[#f7fbff] via-[#f7fffa] to-[#f1f8fb]",
     },
     {
@@ -95,7 +95,7 @@ const Projects = () => {
           <SiFirebase />
         </div>
       ),
-      bg: "bg-gradient-to-br from-[#f7fbff] to-[#fffbef]",
+      bg: "bg-gradient-to-br from-[#e8f4ff] to-[#fffbef]",
       // bg: "bg-gradient-to-br from-[#fffcf7] via-[#fffbfa] to-[#fffdf7]",
     },
     {
@@ -116,7 +116,7 @@ const Projects = () => {
           <SiOpenai />
         </div>
       ),
-      bg: "bg-gradient-to-r from-[#fff3ef] to-[#fffafd]",
+      bg: "bg-gradient-to-r from-[#fff3ef] to-[#eef2fd]",
     },
     {
       title: "bitByBIT",
@@ -136,7 +136,7 @@ const Projects = () => {
           <p className="text-xs">Judge0</p>
         </div>
       ),
-      bg: "bg-gradient-to-br from-[#fffafd] to-[#fcf2f8]",
+      bg: "bg-gradient-to-br from-[#eef2fd] to-[#fcf2f8]",
     },
   ];
 

@@ -75,7 +75,7 @@ const Technologies = () => {
               className="text-tech-openai"
             />
             {vercel && (
-              <p className="absolute text-[10px] -top-[30px]">Vercel</p>
+              <p className="absolute text-[10px] -top-[30px]">OpenAI</p>
             )}
           </div>
 

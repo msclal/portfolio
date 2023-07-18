@@ -121,7 +121,7 @@ const Experience = () => {
       className="w-full md:w-[62%] h-full"
       // className="w-full md:w-[62%] h-full bg-[#ebedee] rounded-[20px] p-5 pr-2 bg-opacity-50 space-y-5 hover:scale-125"
     >
-      <div className="bg-[#ebedee] rounded-[20px] p-5 pr-2 bg-opacity-50 space-y-5 hover:scale-[1.007] duration-300">
+      <div className="bg-[#ebedee] rounded-[20px] p-5 pr-2 bg-opacity-50 space-y-5 md:hover:scale-[1.004] duration-300">
         <p className="font-semibold select-none text-lg">Experience</p>
 
         <div className="overflow-y-auto h-[390px] pr-2 rounded-[10px]">
@@ -160,7 +160,7 @@ const Experience = () => {
                       />
                     </div>
                     <div className="flex flex-col gap-y-2 w-full">
-                      <p className="break-before-all text-xs md:text-sm">
+                      <p className="break-before-all text-xs md:text-sm font-normal">
                         {experience.description}
                       </p>
                       <p className="text-gray-500 font-light text-xs md:text-sm">
