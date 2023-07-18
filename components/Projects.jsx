@@ -1,12 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Project from "./Project";
-import meThinks from "@/public/projects/meThinks.png";
-import Citrus from "@/public/projects/citrus.png";
+import meThinks from "@/public/projects/meThinks2.png";
+import Citrus from "@/public/projects/citrus2.png";
 import bioLink from "@/public/projects/bioLink.png";
-import rparts from "@/public/projects/r-parts.png";
-import garf from "@/public/projects/garfai.png";
-import bbb from "@/public/projects/bbb.png";
+import rparts from "@/public/projects/r-parts2.png";
+import garf from "@/public/projects/garfai2.png";
+import bbb from "@/public/projects/bbb2.png";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiTailwindcss } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
@@ -34,6 +34,8 @@ const Projects = () => {
           <SiSocketdotio />
         </div>
       ),
+      bg: "bg-gradient-to-r from-[#eef2fd] to-[#f9fcff]",
+      // bg: "bg-gradient-to-bl from-[#f5f8ff] to-[#f2f6fd]",
     },
     {
       title: "bioLink",
@@ -53,12 +55,14 @@ const Projects = () => {
           <SiSocketdotio />
         </div>
       ),
+      bg: "bg-gradient-to-br from-[#f9fcff] to-[#ecfbf2]",
+      // bg: "bg-gradient-to-br from-[#f9fcff] via-[#f5f8ff] to-[#f7fffa]",
     },
     {
       title: "Citrus Hack",
       role: "Lead Developer & On-Call Tech Support",
       subTitle:
-        "California Inland Empire's largest hackathon with 725+ hackers",
+        "UCR's Premier Hackathon Event (largest in California Inland Empire) with 725+ hackers",
       description: "Spearheaded Frontend Development",
       image: Citrus,
       github: "https://github.com/citrushack/citrushack2023",
@@ -71,6 +75,8 @@ const Projects = () => {
           <SiMongodb />
         </div>
       ),
+      bg: "bg-gradient-to-r from-[#f0f6fd] to-[#edf6ff]",
+      // bg: "bg-gradient-to-bl from-[#f7fbff] via-[#f7fffa] to-[#f1f8fb]",
     },
     {
       title: "R-Parts",
@@ -89,6 +95,8 @@ const Projects = () => {
           <SiFirebase />
         </div>
       ),
+      bg: "bg-gradient-to-br from-[#f7fbff] to-[#fffbef]",
+      // bg: "bg-gradient-to-br from-[#fffcf7] via-[#fffbfa] to-[#fffdf7]",
     },
     {
       title: "Garf AI",
@@ -96,7 +104,7 @@ const Projects = () => {
       // subTitle:
       //   "Personal AI assistant to enrich my friend group's daily workflows",
       subTitle:
-        "AI-powered personal assistant to enrich our friend group's daily workflows",
+        "AI-powered personal assistant to streamline our friend group's daily workflows",
       description: "Led 4 engineers",
       image: garf,
       github: "https://github.com/msclal/Garf",
@@ -108,6 +116,7 @@ const Projects = () => {
           <SiOpenai />
         </div>
       ),
+      bg: "bg-gradient-to-r from-[#fff3ef] to-[#fffafd]",
     },
     {
       title: "bitByBIT",
@@ -127,6 +136,7 @@ const Projects = () => {
           <p className="text-xs">Judge0</p>
         </div>
       ),
+      bg: "bg-gradient-to-br from-[#fffafd] to-[#fcf2f8]",
     },
   ];
 

@@ -231,7 +231,7 @@ const Hello = () => {
             <ImLinkedin2 />
           </Link>
         </div>
-        <div className="flex flex-col justify-center items-center text-sm">
+        <div className="flex flex-col justify-center items-center text-[15px]">
           <p className="text-center">
             Based in Southern California. Feeling Supersonic 24/5. After hours,
             I eat {"Häagen-Dazs"} + watch the Lakers waste another season of{" "}
