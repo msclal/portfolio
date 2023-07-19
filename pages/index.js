@@ -5,10 +5,12 @@ import Headphones from "@/components/Headphones";
 import Contact from "@/components/Contact";
 import Gallery from "@/components/Gallery";
 import Experience from "@/components/Experience";
+import Sidebar from "@/components/Sidebar";
 
 export default function Home() {
   return (
     <>
+      <Sidebar />
       <div className="space-y-5 md:space-y-6">
         <Hello />
         <Technologies />
