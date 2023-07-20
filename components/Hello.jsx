@@ -186,7 +186,7 @@ const Hello = ({ homeRef }) => {
                 sequence={[
                   `Software Engineer`,
                   7000,
-                  `UX Advocate`,
+                  `UX Junkie`,
                   5000,
                   "E-Scooter Enthusiast",
                   5000,
