@@ -84,7 +84,7 @@ const Gallery = () => {
     >
       <div className="overflow-hidden rounded-[20px] duration-300 md:hover:-translate-y-[2px]">
         <div
-          className="whitespace-nowrap transition-ease rounded-[20px] duration-300 md:hover:-translate-y-1"
+          className="whitespace-nowrap transition-ease rounded-[20px] duration-[650ms] md:hover:-translate-y-1"
           style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
         >
           {images.map((image, index) => (

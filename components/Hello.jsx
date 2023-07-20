@@ -237,7 +237,7 @@ const Hello = ({ homeRef }) => {
             <ImLinkedin2 />
           </Link>
         </div>
-        <div className="flex flex-col justify-center items-center text-[15px]">
+        <div className="flex flex-col justify-center items-center">
           <p className="text-center">
             Based in Southern California. Feeling Supersonic 24/5. After hours,
             I eat {"Häagen-Dazs"} + watch the Lakers waste another season of{" "}

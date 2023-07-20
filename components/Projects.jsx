@@ -14,6 +14,7 @@ import { SiFirebase } from "react-icons/si";
 import { SiFigma } from "react-icons/si";
 import { SiOpenai } from "react-icons/si";
 import { SiSocketdotio } from "react-icons/si";
+import { TbBrandFramerMotion } from "react-icons/tb";
 
 const Projects = ({ projectsRef }) => {
   const projectsData = [
@@ -73,6 +74,7 @@ const Projects = ({ projectsRef }) => {
           <TbBrandNextjs />
           <SiTailwindcss />
           <SiMongodb />
+          <TbBrandFramerMotion />
         </div>
       ),
       bg: "bg-gradient-to-r from-[#f0f6fd] to-[#e8f4ff]",
