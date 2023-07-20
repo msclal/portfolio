@@ -227,7 +227,7 @@ const Navigation = () => {
 
       <div
         ref={componentRef}
-        className="md:hidden fixed right-2 top-[7px] text-[37px] cursor-pointer z-[100]"
+        className="md:hidden fixed right-3 top-[7px] text-[37px] cursor-pointer z-[100]"
         onClick={() => setToggle(!toggle)}
       >
         <BsToggles
