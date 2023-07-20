@@ -120,7 +120,7 @@ const Experience = ({ experienceRef }) => {
       initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: 0, transition: { delay: 3 } }}
       exit={{ opacity: 0, y: 0 }}
-      className="w-full md:w-[62%] h-full duration-300 md:hover:-translate-y-[2px]"
+      className="w-full md:w-[62%] h-full duration-300 md:hover:-translate-y-[3px]"
     >
       <div className="bg-[#ebedee] rounded-[20px] p-5 pr-2 bg-opacity-50 space-y-5 duration-300 md:hover:-translate-y-1">
         <p className="font-semibold select-none text-lg">Experience</p>

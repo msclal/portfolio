@@ -82,7 +82,7 @@ const Gallery = () => {
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
-      <div className="overflow-hidden rounded-[20px] duration-300 md:hover:-translate-y-[2px]">
+      <div className="overflow-hidden rounded-[20px] duration-300 md:hover:-translate-y-[3px]">
         <div
           className="whitespace-nowrap transition-ease rounded-[20px] duration-[650ms] md:hover:-translate-y-1"
           style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}

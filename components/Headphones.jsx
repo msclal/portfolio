@@ -11,7 +11,7 @@ const Headphones = () => {
         className="max-sm:hidden w-full md:w-1/2"
         // className="max-sm:hidden w-full md:w-1/2 sm:h-[550px] bg-gradient-to-bl to-[#c1dff9] from-[#fcf5eb] bg-opacity-50 rounded-[20px] max-sm:pb-1 p-5 md:p-5 space-y-3"
       >
-        <div className="duration-300 md:hover:-translate-y-[2px] bg-gradient-to-br to-[#c1dff9] from-[#547fa5] bg-opacity-50 rounded-[20px] max-sm:pb-1 p-5 md:p-5 space-y-3 sm:h-[550px]">
+        <div className="duration-300 md:hover:-translate-y-[3px] bg-gradient-to-br to-[#c1dff9] from-[#547fa5] bg-opacity-50 rounded-[20px] max-sm:pb-1 p-5 md:p-5 space-y-3 sm:h-[550px]">
           <p className="font-semibold text-xl select-none text-[#fefefe]">
             {"What's on my Headphones?"}
           </p>

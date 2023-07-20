@@ -63,7 +63,7 @@ const Contact = ({ contactRef }) => {
       exit={{ opacity: 0, y: 0 }}
       className="w-full md:w-1/2 h-[520px] md:h-[550px]"
     >
-      <div className="duration-300 md:hover:-translate-y-[2px] p-5 bg-[#ebedee] rounded-[20px] bg-opacity-50 flex flex-col gap-y-5">
+      <div className="duration-300 md:hover:-translate-y-[3px] p-5 bg-[#ebedee] rounded-[20px] bg-opacity-50 flex flex-col gap-y-5">
         <p className="font-semibold text-lg select-none">Contact</p>
         <div className="flex justify-between items-center">
           <p className="font-medium max-xs:text-sm">Resume</p>
