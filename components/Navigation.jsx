@@ -227,11 +227,11 @@ const Navigation = () => {
 
       <div
         ref={componentRef}
-        className="md:hidden fixed right-3 top-[10px] text-[37px] cursor-pointer z-[100]"
+        className="md:hidden fixed right-2 top-[7px] text-[37px] cursor-pointer z-[100]"
         onClick={() => setToggle(!toggle)}
       >
         <BsToggles
-          className={`cursor-pointer transition-all ease-in-out duration-100 text-[33px] ${
+          className={`cursor-pointer transition-all ease-in-out duration-100 text-[35px] ${
             scrollNav ? `bg-gray-200 p-2 rounded-[5px] bg-opacity-70` : `p-2`
           }
             ${toggle ? `bg-gray-200 p-2 rounded-[5px] bg-opacity-70` : `p-2`}`}
