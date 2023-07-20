@@ -115,6 +115,7 @@ const Experience = () => {
   ];
   return (
     <motion.div
+      id="experience"
       initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: 0, transition: { delay: 3 } }}
       exit={{ opacity: 0, y: 0 }}
