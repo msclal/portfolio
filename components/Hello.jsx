@@ -44,7 +44,7 @@ const Hello = ({ homeRef }) => {
       >
         <div className="rounded-[20px] flex p-10 max-md:hidden bg-opacity-50 bg-gradient-to-r from-[#f3e7e9] to-[#e3eeff] duration-300 md:hover:-translate-y-[3px]">
           <div className="flex flex-wrap justify-between items-center ">
-            <div className="space-y-20 lg:space-y-14 w-[60%]">
+            <div className="space-y-20 lg:space-y-14 w-[50%]">
               <div className="space-y-5 break-before-all">
                 <p className="text-3xl font-semibold select-none">
                   Hello, {"I'm"} Mika!
@@ -180,8 +180,8 @@ const Hello = ({ homeRef }) => {
             placeholder="blur"
           />
           <div className="text-center">
-            <p className="text-lg font-medium">Mika Shanela Carodan</p>
-            <div className="h-[28px] min-w-[310px] flex justify-center items-center text-center">
+            <p className="text-lg font-semibold">Mika Shanela Carodan</p>
+            <div className="h-[28px] min-w-[310px] flex justify-center items-center text-center font-medium">
               <TypeAnimation
                 sequence={[
                   `Software Engineer`,
