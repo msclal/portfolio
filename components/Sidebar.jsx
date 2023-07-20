@@ -11,7 +11,7 @@ const Sidebar = () => {
   const [selected, setSelected] = useState("Home");
   console.log(selected);
   return (
-    <div className="fixed left-[7%] top-[10%] z-[100] gap-y-[10px] flex flex-col">
+    <div className="fixed left-[7%] top-[10%] z-[100] gap-y-[10px] flex flex-col max-xl:hidden">
       <Link smooth={true} duration={50}>
         <motion.div
           whileHover={{ scale: 1.05, x: 10 }}
