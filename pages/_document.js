@@ -4,7 +4,8 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <link rel="icon" href="/m.png" />
+      <title>Mika Shanela</title>
+      <link rel="icon" href="/assets/m.png" />
       <body>
         <Main />
         <NextScript />

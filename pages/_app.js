@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 // import { Outfit } from "next/font/google";
 /* eslint-disable camelcase */
 import { Noto_Sans } from "next/font/google";
+// import { Manrope } from "next/font/google";
 
 /* eslint-disable new-cap */
 const inter = Inter({
@@ -24,9 +25,15 @@ const notoSans = Noto_Sans({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
+// const manrope = Manrope({
+//   subsets: ["latin"],
+//   variable: "--font-manrope",
+//   weight: ["200", "300", "400", "500", "600", "700", "800"],
+// });
+
 export default function App({ Component, pageProps }) {
   return (
-    <main className={`${inter.variable} ${notoSans.variable}`}>
+    <main className={`${inter.variable} ${notoSans.variable} `}>
       <Layout>
         <Component {...pageProps} />
       </Layout>

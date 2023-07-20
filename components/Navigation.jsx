@@ -4,6 +4,7 @@ import { ToastContainer, toast, Slide } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { motion } from "framer-motion";
 import { BsToggles } from "react-icons/bs";
+import { FiCommand } from "react-icons/fi";
 
 const Navigation = () => {
   const [date, setDate] = useState("");
@@ -53,17 +54,16 @@ const Navigation = () => {
         })
         .replace(/,/g, "");
 
-      const formatteMobileDate = currentDate
-        .toLocaleString("en-US", {
-          weekday: "short",
-          // month: "short",
-          // day: "numeric",
-          hour: "numeric",
-          minute: "numeric",
-          hour12: true,
-          timeZone: timeZone,
-        })
-        .replace(/at/i, "");
+      const formatteMobileDate = currentDate.toLocaleString("en-US", {
+        // weekday: "short",
+        // month: "short",
+        // day: "numeric",
+        hour: "numeric",
+        minute: "numeric",
+        hour12: true,
+        timeZone: timeZone,
+      });
+      // .replace(/at/i, "");
 
       setDate(formattedDate);
       setMobileDate(formatteMobileDate);
@@ -93,15 +93,23 @@ const Navigation = () => {
   };
 
   return (
+    // {/* DESKTOP */}
+
     <motion.div
+      id="home"
       initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: 0, transition: { delay: 2 } }}
       exit={{ opacity: 0, y: 0 }}
       ref={componentRef}
-      className="flex justify-between items-center w-full relative mt-2"
+      className="flex justify-between items-center w-full relative mt-2 max-sm:text-sm"
     >
-      <p className="font-medium select-none">mikashanela</p>
-      <div className="flex items-center gap-x-4 max-md:hidden">
+      <span className="font-medium select-none flex items-center gap-x-[6px] md:gap-x-2">
+        <span>
+          <FiCommand />
+        </span>
+        mikashanela
+      </span>
+      <div className="flex items-center justify-center gap-x-4 max-md:hidden">
         <p className="text-right select-none font-medium">{date} PDT</p>
         <div
           className={` duration-300 cursor-pointer text-lg ${
@@ -113,7 +121,7 @@ const Navigation = () => {
         {toggle && (
           <motion.div
             initial={{ opacity: 0, y: 0 }}
-            animate={{ opacity: 1, y: 0, transition: { delay: 0.25 } }}
+            animate={{ opacity: 1, y: 0, transition: { delay: 0.2 } }}
             exit={{ opacity: 0, y: 0 }}
             className="absolute top-12 right-0 rounded-[20px] bg-gray-300 bg-opacity-50 p-3 space-y-3"
           >
@@ -213,18 +221,20 @@ const Navigation = () => {
           </motion.div>
         )}
       </div>
-      <div className="md:hidden absolute right-12">{mobileDate} PDT</div>
+
+      {/* MOBILE */}
+      <div className="md:hidden absolute right-9">{mobileDate} PDT</div>
 
       <div
         ref={componentRef}
-        className="md:hidden fixed right-5 top-[8px] text-[37px] cursor-pointer z-[100]"
+        className="md:hidden fixed right-3 top-[7px] text-[37px] cursor-pointer z-[100]"
         onClick={() => setToggle(!toggle)}
       >
         <BsToggles
-          className={`cursor-pointer transition-all ease-in-out duration-100 ${
-            scrollNav ? `bg-gray-300 p-2 rounded-[5px] bg-opacity-70` : `p-2`
+          className={`cursor-pointer transition-all ease-in-out duration-100 text-[35px] ${
+            scrollNav ? `bg-gray-200 p-2 rounded-[5px] bg-opacity-80` : `p-2`
           }
-            ${toggle ? `bg-gray-300 p-2 rounded-[5px] bg-opacity-70` : `p-2`}`}
+            ${toggle ? `bg-gray-200 p-2 rounded-[5px] bg-opacity-80` : `p-2`}`}
         />
       </div>
       {toggle && (
@@ -232,7 +242,7 @@ const Navigation = () => {
           initial={{ opacity: 0, y: 0 }}
           animate={{ opacity: 1, x: 0, transition: { delay: 0.07 } }}
           exit={{ opacity: 0, y: 0 }}
-          className="md:hidden fixed right-5 top-12 rounded-[10px] bg-gray-300 bg-opacity-70 py-3 px-4 gap-y-4 flex flex-col z-[100]"
+          className="md:hidden fixed right-5 top-12 rounded-[10px] bg-gray-200 bg-opacity-80 py-3 px-4 gap-y-4 flex flex-col z-[100]"
         >
           <div className="flex flex-col gap-y-2 text-center">
             <p onClick={ScrollToTop} className="font-medium select-none">
@@ -247,7 +257,7 @@ const Navigation = () => {
               Projects
             </Link>
             <Link
-              to="experience"
+              to="experience_mobile"
               smooth={true}
               duration={50}
               className="font-medium select-none"
@@ -255,7 +265,7 @@ const Navigation = () => {
               Experience
             </Link>
             <Link
-              to="contact"
+              to="contact_mobile"
               smooth={true}
               duration={50}
               className="font-medium select-none"
