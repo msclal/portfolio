@@ -63,7 +63,12 @@ const Sidebar = ({
   console.log(homeClicked, projectsClicked, experienceClicked, contactClicked);
 
   return (
-    <div className="fixed left-[7%] top-[10%] z-[100] gap-y-[10px] flex flex-col max-xl:hidden">
+    <motion.div
+      initial={{ opacity: 0, y: 0 }}
+      animate={{ opacity: 1, y: 0, transition: { delay: 2 } }}
+      exit={{ opacity: 0, y: 0 }}
+      className="fixed left-[7%] top-[10%] z-[100] gap-y-[10px] flex flex-col max-xl:hidden"
+    >
       <a>
         <motion.div
           whileHover={{ scale: 1.05, x: 10 }}
@@ -191,7 +196,7 @@ const Sidebar = ({
       {/* <p className="">Projects</p>
       <p className="">Experience</p>
       <p className="">Contact</p> */}
-    </div>
+    </motion.div>
   );
 };
 

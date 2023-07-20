@@ -37,9 +37,12 @@ const Hello = ({ homeRef }) => {
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 0, transition: { delay: 2 } }}
         exit={{ opacity: 0, y: 0 }}
+        // whileHover={{ scale: 1.005 }}
+        // transition={{ duration: 0, ease: "linear" }}
+        // whileTap={{ scale: 0.995 }}
         className="w-full max-md:hidden"
       >
-        <div className="rounded-[20px] flex p-10 max-md:hidden bg-opacity-50 bg-gradient-to-r from-[#f3e7e9] to-[#e3eeff] hover:scale-[1.004] duration-300">
+        <div className="rounded-[20px] flex p-10 max-md:hidden bg-opacity-50 bg-gradient-to-r from-[#f3e7e9] to-[#e3eeff] duration-300 md:hover:-translate-y-[3px]">
           <div className="flex flex-wrap justify-between items-center ">
             <div className="space-y-20 lg:space-y-14 w-[60%]">
               <div className="space-y-5 break-before-all">

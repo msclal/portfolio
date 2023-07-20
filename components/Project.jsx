@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/legacy/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Project = ({ project }) => {
   // const [isHover, setIsHover] = useState(false);
@@ -69,11 +70,14 @@ const Project = ({ project }) => {
       </Link> */}
 
       {/* <div className="p-4 flex flex-col w-full rounded-[20px] gap-y-3 bg-[#f5f7f7]"> */}
-      <div
+      <motion.div
+        // whileHover={{ scale: 1.0065 }}
+        // whileTap={{ scale: 0.995 }}
+        transition={{ duration: 0, ease: "linear" }}
         // href={project.link}
         // target="_blank"
         // rel="noreferrer noopener"
-        className={`p-4 flex flex-col w-full rounded-[20px] gap-y-3 border-[1px] border-gray-200 drop-shadow-sm md:hover:scale-[1.006] duration-300 bg-opacity-70 ${project.bg}`}
+        className={`p-4 flex flex-col w-full rounded-[20px] gap-y-3 border-[1px] border-gray-200 drop-shadow-sm bg-opacity-70 duration-300 md:hover:-translate-y-[3px] ${project.bg}`}
       >
         <Image
           src={project.image}
@@ -115,7 +119,7 @@ const Project = ({ project }) => {
           </div>
           {project.tech}
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

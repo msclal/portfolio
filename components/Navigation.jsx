@@ -121,7 +121,7 @@ const Navigation = () => {
         {toggle && (
           <motion.div
             initial={{ opacity: 0, y: 0 }}
-            animate={{ opacity: 1, y: 0, transition: { delay: 0.25 } }}
+            animate={{ opacity: 1, y: 0, transition: { delay: 0.2 } }}
             exit={{ opacity: 0, y: 0 }}
             className="absolute top-12 right-0 rounded-[20px] bg-gray-300 bg-opacity-50 p-3 space-y-3"
           >

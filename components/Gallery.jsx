@@ -74,14 +74,17 @@ const Gallery = () => {
       initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: 0, transition: { delay: 3 } }}
       exit={{ opacity: 0, y: 0 }}
+      // whileHover={{ scale: 1.005 }}
+      // transition={{ duration: 0, ease: "linear" }}
+      // className="w-full h-full md:w-[38%] duration-300 md:hover:-translate-y-1"
       className="w-full h-full md:w-[38%]"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
-      <div className="md:hover:scale-[1.004] duration-300 overflow-hidden rounded-[20px]">
+      <div className="overflow-hidden rounded-[20px] duration-300 md:hover:-translate-y-[2px]">
         <div
-          className="whitespace-nowrap transition-ease duration-1000 rounded-[20px]"
+          className="whitespace-nowrap transition-ease rounded-[20px] duration-300 md:hover:-translate-y-1"
           style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
         >
           {images.map((image, index) => (
