@@ -257,7 +257,7 @@ const Navigation = () => {
               Projects
             </Link>
             <Link
-              to="experience"
+              to="experience_mobile"
               smooth={true}
               duration={50}
               className="font-medium select-none"
@@ -265,7 +265,7 @@ const Navigation = () => {
               Experience
             </Link>
             <Link
-              to="contact"
+              to="contact_mobile"
               smooth={true}
               duration={50}
               className="font-medium select-none"

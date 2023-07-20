@@ -1,18 +1,70 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 
-const Sidebar = () => {
-  const ScrollToTop = () => {
+const Sidebar = ({
+  isHomeVisible,
+  isProjectsVisible,
+  isExperienceVisible,
+  isContactVisible,
+}) => {
+  const scrollToTop = () => {
     setSelected("Home");
     window.scrollTo(0, 0);
   };
 
   const [selected, setSelected] = useState("Home");
-  console.log(selected);
+
+  const [homeClicked, setHomeClicked] = useState(false);
+  const [projectsClicked, setProjectsClicked] = useState(false);
+  const [experienceClicked, setExperienceClicked] = useState(false);
+  const [contactClicked, setContactClicked] = useState(false);
+
+  //   handling case whgen user clicks navbar link, each color in-between does not light up
+  useEffect(() => {
+    if (homeClicked && isHomeVisible) {
+      setHomeClicked(false);
+    } else if (projectsClicked && isProjectsVisible) {
+      setProjectsClicked(false);
+    } else if (experienceClicked && isExperienceVisible) {
+      setExperienceClicked(false);
+    } else if (contactClicked && isContactVisible) {
+      setContactClicked(false);
+    }
+  }, [isHomeVisible, isProjectsVisible, isExperienceVisible, isContactVisible]);
+
+  useEffect(() => {
+    if (
+      !homeClicked &&
+      !projectsClicked &&
+      !experienceClicked &&
+      !contactClicked
+    ) {
+      if (isHomeVisible && !isProjectsVisible) {
+        setSelected("Home");
+      } else if (isProjectsVisible && !isHomeVisible && !isExperienceVisible) {
+        setSelected("Projects");
+      } else if (
+        isExperienceVisible &&
+        !isContactVisible &&
+        !isProjectsVisible
+      ) {
+        setSelected("Experience");
+      } else if (
+        isContactVisible &&
+        !isExperienceVisible &&
+        !isProjectsVisible
+      ) {
+        setSelected("Contact");
+      }
+    }
+  }, [isHomeVisible, isProjectsVisible, isExperienceVisible, isContactVisible]);
+
+  console.log(homeClicked, projectsClicked, experienceClicked, contactClicked);
+
   return (
     <div className="fixed left-[7%] top-[10%] z-[100] gap-y-[10px] flex flex-col max-xl:hidden">
-      <Link smooth={true} duration={50}>
+      <a>
         <motion.div
           whileHover={{ scale: 1.05, x: 10 }}
           whileTap={{ scale: 0.995 }}
@@ -21,12 +73,19 @@ const Sidebar = () => {
               ? `bg-gray-200 rounded-[10px] bg-opacity-70`
               : `hover:bg-gray-100 rounded-[10px] bg-opacity-70`
           }`}
-          onClick={ScrollToTop}
+          onClick={() => {
+            scrollToTop();
+            setHomeClicked(true);
+            // setTimeout(() => {
+            //   setClicked(false);
+            // }, 1000);
+          }}
           // onClick={() => {
           //   setSelected("Home");
           //   ScrollToTop;
           // }}
         >
+          {/* {console.log(scrollNav)} */}
           <div
             className={`w-[15px] h-[15px] rounded-full ${
               selected === "Home" ? `bg-red-300` : `border-[1px] border-red-300`
@@ -35,13 +94,19 @@ const Sidebar = () => {
 
           <p>Home</p>
         </motion.div>
-      </Link>
+      </a>
 
       <Link
         to="projects"
         smooth={true}
         duration={50}
-        onClick={() => setSelected("Projects")}
+        onClick={() => {
+          setSelected("Projects");
+          setProjectsClicked(true);
+          //   setTimeout(() => {
+          //     setClicked(false);
+          //   }, 500);
+        }}
       >
         <motion.div
           whileHover={{ scale: 1.05, x: 10 }}
@@ -67,7 +132,13 @@ const Sidebar = () => {
         to="experience"
         smooth={true}
         duration={50}
-        onClick={() => setSelected("Experience")}
+        onClick={() => {
+          setSelected("Experience");
+          setExperienceClicked(true);
+          //   setTimeout(() => {
+          //     setClicked(false);
+          //   }, 500);
+        }}
       >
         <motion.div
           whileHover={{ scale: 1.05, x: 10 }}
@@ -93,7 +164,10 @@ const Sidebar = () => {
         to="contact"
         smooth={true}
         duration={50}
-        onClick={() => setSelected("Contact")}
+        onClick={() => {
+          setSelected("Contact");
+          setContactClicked(true);
+        }}
       >
         <motion.div
           whileHover={{ scale: 1.05, x: 10 }}

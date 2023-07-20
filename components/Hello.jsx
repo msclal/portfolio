@@ -9,7 +9,7 @@ import { ImLinkedin2 } from "react-icons/im";
 import ProfilePNG from "@/public/gallery/hello.png";
 import ProfileSVG from "@/public/gallery/hello.svg";
 
-const Hello = () => {
+const Hello = ({ homeRef }) => {
   // const [isHovered, setIsHovered] = useState(false);
 
   // let timeout;
@@ -33,6 +33,7 @@ const Hello = () => {
     <>
       {/* Desktop */}
       <motion.div
+        ref={homeRef}
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 0, transition: { delay: 2 } }}
         exit={{ opacity: 0, y: 0 }}

@@ -15,7 +15,7 @@ import { SiFigma } from "react-icons/si";
 import { SiOpenai } from "react-icons/si";
 import { SiSocketdotio } from "react-icons/si";
 
-const Projects = () => {
+const Projects = ({ projectsRef }) => {
   const projectsData = [
     {
       title: "meThinks...",
@@ -146,6 +146,7 @@ const Projects = () => {
       animate={{ opacity: 1, y: 0, transition: { delay: 2.7 } }}
       exit={{ opacity: 0, y: 0 }}
       id="projects"
+      ref={projectsRef}
       className="grid sm:grid-cols-2 gap-5 md:gap-8 pb-0 mb-0 place-items-center"
     >
       {projectsData.map((project, index) => (

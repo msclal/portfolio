@@ -11,7 +11,7 @@ import { ImLinkedin2 } from "react-icons/im";
 import { ImPhone } from "react-icons/im";
 import { GrInstagram } from "react-icons/gr";
 
-const Contact = () => {
+const Contact = ({ contactRef }) => {
   const form = useRef();
 
   const [name, setName] = useState("");
@@ -57,6 +57,7 @@ const Contact = () => {
   return (
     <motion.div
       id="contact"
+      ref={contactRef}
       initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: 0, transition: { delay: 3.2 } }}
       exit={{ opacity: 0, y: 0 }}

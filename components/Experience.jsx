@@ -13,7 +13,7 @@ import citrusHack from "@/public/gallery/citrusHack.png";
 import bioLink from "@/public/gallery/bioLink.png";
 import { RiShareBoxFill } from "react-icons/ri";
 
-const Experience = () => {
+const Experience = ({ experienceRef }) => {
   const experiences = [
     {
       title: "First Line of Code!",
@@ -116,6 +116,7 @@ const Experience = () => {
   return (
     <motion.div
       id="experience"
+      ref={experienceRef}
       initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: 0, transition: { delay: 3 } }}
       exit={{ opacity: 0, y: 0 }}
