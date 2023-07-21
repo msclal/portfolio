@@ -11,7 +11,7 @@ const Headphones = () => {
         className="max-sm:hidden w-full md:w-1/2"
         // className="max-sm:hidden w-full md:w-1/2 sm:h-[550px] bg-gradient-to-bl to-[#c1dff9] from-[#fcf5eb] bg-opacity-50 rounded-[20px] max-sm:pb-1 p-5 md:p-5 space-y-3"
       >
-        <div className="duration-300 md:hover:-translate-y-[3px] bg-gradient-to-br to-[#c1dff9] from-[#547fa5] bg-opacity-50 rounded-[20px] max-sm:pb-1 p-5 md:p-5 space-y-3 sm:h-[550px]">
+        <div className="duration-700 md:hover:-translate-y-[3px] md:hover:drop-shadow-lg drop-shadow-sm bg-gradient-to-br to-[#c1dff9] from-[#547fa5] bg-opacity-50 rounded-[20px] max-sm:pb-1 p-5 md:p-5 space-y-3 sm:h-[550px]">
           <p className="font-semibold text-xl select-none text-[#fefefe]">
             {"What's on my Headphones?"}
           </p>
@@ -32,7 +32,7 @@ const Headphones = () => {
         animate={{ opacity: 1, y: 0, transition: { delay: 3.2 } }}
         exit={{ opacity: 0, y: 0 }}
         // className="sm:hidden w-full h-[150px] bg-gradient-to-br from-[#b4a37b71] to-[#949494] rounded-[20px] pb-1 p-3 space-y-3"
-        className="sm:hidden w-full h-[150px] bg-gradient-to-br from-[#b8a781] to-[#746346] rounded-[20px] pb-1 p-3 space-y-3"
+        className="sm:hidden w-full h-[150px] bg-gradient-to-br from-[#b8a781] to-[#746346] rounded-[20px] pb-1 p-3 space-y-3 drop-shadow-sm"
         // className="sm:hidden w-full h-[150px] bg-gradient-to-br from-[#dbcdb0] to-[#a48c44] rounded-[20px] pb-1 p-3 space-y-3"
       >
         <p className="font-semibold text-lg select-none text-white">

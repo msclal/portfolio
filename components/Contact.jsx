@@ -62,8 +62,9 @@ const Contact = ({ contactRef }) => {
       animate={{ opacity: 1, y: 0, transition: { delay: 3.2 } }}
       exit={{ opacity: 0, y: 0 }}
       className="w-full md:w-1/2 h-[520px] md:h-[550px]"
+      // className="w-full md:w-1/2 h-[520px] md:h-[550px]"
     >
-      <div className="duration-300 md:hover:-translate-y-[3px] p-5 bg-[#ebedee] rounded-[20px] bg-opacity-50 flex flex-col gap-y-5">
+      <div className="duration-700 md:hover:-translate-y-[3px] md:hover:drop-shadow-lg drop-shadow-sm p-5 bg-[#F5F6F6] rounded-[20px] bg-opacity-90 flex flex-col gap-y-6 h-full">
         <p className="font-semibold text-lg select-none">Contact</p>
         <div className="flex justify-between items-center">
           <p className="font-medium max-xs:text-sm">Resume</p>
@@ -83,13 +84,13 @@ const Contact = ({ contactRef }) => {
           <div className="flex gap-x-3 text-lg">
             <Link
               href="mailto:mikashanela.dev@gmail.com"
-              className="w-fit p-3 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
+              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
             >
               <FiMail />
             </Link>
             <Link
               href={"tel:9092145009"}
-              className="w-fit p-3 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
+              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
             >
               <ImPhone />
             </Link>
@@ -102,7 +103,7 @@ const Contact = ({ contactRef }) => {
               href="https://github.com/msclal"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-fit p-3 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
+              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
             >
               <AiFillGithub />
             </Link>
@@ -110,7 +111,7 @@ const Contact = ({ contactRef }) => {
               href="https://www.linkedin.com/in/mika-shanela/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-fit p-3 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
+              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
             >
               <ImLinkedin2 />
             </Link>
@@ -118,14 +119,14 @@ const Contact = ({ contactRef }) => {
               href="https://www.instagram.com/mikashanela/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-fit p-3 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
+              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
             >
               <GrInstagram />
             </Link>
           </div>
         </div>
         <span className="border-[0.7px] border-gray-400 mx-2 my-2"></span>
-        <div className="space-y-3">
+        <div className="space-y-4">
           <p className="font-semibold text-lg select-none">Leave a Note</p>
           <form
             ref={form}
