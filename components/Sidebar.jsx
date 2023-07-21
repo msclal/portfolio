@@ -60,14 +60,12 @@ const Sidebar = ({
     }
   }, [isHomeVisible, isProjectsVisible, isExperienceVisible, isContactVisible]);
 
-  console.log(homeClicked, projectsClicked, experienceClicked, contactClicked);
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: 0, transition: { delay: 2 } }}
       exit={{ opacity: 0, y: 0 }}
-      className="fixed left-[7%] top-[10%] z-[100] gap-y-[10px] flex flex-col max-xl:hidden"
+      className="fixed left-[6.5%] top-[10%] z-[100] gap-y-[10px] flex flex-col max-xl:hidden"
     >
       <a>
         <motion.div
@@ -75,8 +73,8 @@ const Sidebar = ({
           whileTap={{ scale: 0.995 }}
           className={`flex gap-x-3 items-center py-1 px-3 cursor-pointer duration-100 ${
             selected === "Home"
-              ? `bg-gray-200 rounded-[10px] bg-opacity-70`
-              : `hover:bg-gray-100 rounded-[10px] bg-opacity-70`
+              ? `bg-gray-200 rounded-[10px] bg-opacity-70 drop-shadow-sm`
+              : `hover:bg-gray-100 rounded-[10px] bg-opacity-70 hover:drop-shadow-sm`
           }`}
           onClick={() => {
             scrollToTop();
@@ -118,8 +116,8 @@ const Sidebar = ({
           whileTap={{ scale: 0.995 }}
           className={`flex gap-x-3 items-center py-1 px-3 cursor-pointer duration-100 ${
             selected === "Projects"
-              ? `bg-gray-200 rounded-[10px] bg-opacity-70`
-              : `hover:bg-gray-100 rounded-[10px] bg-opacity-70`
+              ? `bg-gray-200 rounded-[10px] bg-opacity-70 drop-shadow-sm`
+              : `hover:bg-gray-100 hover:drop-shadow-sm rounded-[10px] bg-opacity-70`
           }`}
         >
           <div
@@ -150,8 +148,8 @@ const Sidebar = ({
           whileTap={{ scale: 0.995 }}
           className={`flex gap-x-3 items-center py-1 px-3 cursor-pointer duration-100 ${
             selected === "Experience"
-              ? `bg-gray-200 rounded-[10px] bg-opacity-70`
-              : `hover:bg-gray-100 rounded-[10px] bg-opacity-70`
+              ? `bg-gray-200 rounded-[10px] bg-opacity-70 drop-shadow-sm`
+              : `hover:bg-gray-100 rounded-[10px] bg-opacity-70 hover:drop-shadow-sm`
           }`}
         >
           <div
@@ -179,8 +177,8 @@ const Sidebar = ({
           whileTap={{ scale: 0.995 }}
           className={`flex gap-x-3 items-center py-1 px-3 cursor-pointer duration-100 ${
             selected === "Contact"
-              ? `bg-gray-200 rounded-[10px] bg-opacity-70`
-              : `hover:bg-gray-100 rounded-[10px] bg-opacity-70`
+              ? `bg-gray-200 rounded-[10px] bg-opacity-70 drop-shadow-sm`
+              : `hover:bg-gray-100 rounded-[10px] bg-opacity-70 hover:drop-shadow-sm`
           }`}
         >
           <div

@@ -123,9 +123,9 @@ const Navigation = () => {
             initial={{ opacity: 0, y: 0 }}
             animate={{ opacity: 1, y: 0, transition: { delay: 0.2 } }}
             exit={{ opacity: 0, y: 0 }}
-            className="absolute top-12 right-0 rounded-[20px] bg-gray-300 bg-opacity-50 p-3 space-y-3"
+            className="shadow-lg absolute top-12 right-0 rounded-[20px] bg-gray-300 bg-opacity-50 p-3 space-y-3 z-[100]"
           >
-            <div className="flex w-full justify-between items-center bg-gray-200 rounded-[20px] p-3 cursor-pointer pr-0">
+            <div className="flex w-full justify-between items-center bg-gray-200 rounded-[20px] p-3 cursor-pointer pr-0 shadow-sm">
               <div className="flex gap-x-3 items-center">
                 <div
                   className={`w-[35px] h-[35px] bg-white rounded-full hover:border-[1.8px] hover:border-gray-400 ${
@@ -216,7 +216,7 @@ const Navigation = () => {
               as="style"
               priority="low"
               loading="lazy"
-              className="select-none"
+              className="select-none drop-shadow-sm"
             />
           </motion.div>
         )}
@@ -293,18 +293,18 @@ const Navigation = () => {
                 setDark(true);
                 setSuperDuper(false);
 
-                toast.info("Feature Coming Soon!", {
-                  position: "top-right",
-                  autoClose: 1500,
-                  hideProgressBar: true,
-                  closeOnClick: true,
-                  pauseOnHover: true,
-                  draggable: true,
-                  progress: undefined,
-                  transition: Slide,
-                  theme: "colored",
-                  toastId: "dark",
-                });
+                // toast.info("Feature Coming Soon!", {
+                //   position: "top-right",
+                //   autoClose: 1500,
+                //   hideProgressBar: true,
+                //   closeOnClick: true,
+                //   pauseOnHover: true,
+                //   draggable: true,
+                //   progress: undefined,
+                //   transition: Slide,
+                //   theme: "colored",
+                //   toastId: "dark",
+                // });
               }}
             />
             <div
@@ -316,18 +316,18 @@ const Navigation = () => {
                 setDark(false);
                 setSuperDuper(true);
 
-                toast.info("Feature Coming Soon!", {
-                  position: "top-right",
-                  autoClose: 1500,
-                  hideProgressBar: true,
-                  closeOnClick: true,
-                  pauseOnHover: true,
-                  draggable: true,
-                  progress: undefined,
-                  transition: Slide,
-                  theme: "colored",
-                  toastId: "dark",
-                });
+                // toast.info("Feature Coming Soon!", {
+                //   position: "top-right",
+                //   autoClose: 1500,
+                //   hideProgressBar: true,
+                //   closeOnClick: true,
+                //   pauseOnHover: true,
+                //   draggable: true,
+                //   progress: undefined,
+                //   transition: Slide,
+                //   theme: "colored",
+                //   toastId: "dark",
+                // });
               }}
             ></div>
           </div>

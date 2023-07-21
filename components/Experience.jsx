@@ -120,12 +120,12 @@ const Experience = ({ experienceRef }) => {
       initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: 0, transition: { delay: 3 } }}
       exit={{ opacity: 0, y: 0 }}
-      className="w-full md:w-[62%] h-full duration-300 md:hover:-translate-y-[3px]"
+      className="w-full md:w-[62%] h-full"
     >
-      <div className="bg-[#ebedee] rounded-[20px] p-5 pr-2 bg-opacity-50 space-y-5 duration-300 md:hover:-translate-y-1">
+      <div className="bg-[#F5F6F6] rounded-[20px] p-5 pr-3 bg-opacity-90 space-y-5 duration-700 md:hover:-translate-y-[3px] md:hover:drop-shadow-lg drop-shadow-sm scroll-smooth	">
         <p className="font-semibold select-none text-lg">Experience</p>
 
-        <div className="overflow-y-auto h-[390px] pr-2 rounded-[10px]">
+        <div className="overflow-y-auto h-[390px] pr-3 rounded-[10px] scroll-smooth">
           {experiences.map((experience, index) => {
             return (
               <div

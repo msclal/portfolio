@@ -40,7 +40,7 @@ const Technologies = () => {
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 0, transition: { delay: 2.3 } }}
         exit={{ opacity: 0, y: 0 }}
-        className="max-md:hidden bg-gradient-to-br from-[#f3e7e9] via-[#e3eeff] to-[#ffffff] rounded-[20px] px-2 py-3 xl:py-2 space-y-5 bg-opacity-50"
+        className="max-md:hidden bg-gradient-to-br from-[#f3e7e9] via-[#e3eeff] to-[#ffffff] rounded-[20px] px-2 py-3 xl:py-2 space-y-5 bg-opacity-50 drop-shadow-sm"
       >
         <div className="flex flex-wrap justify-between items-center text-3xl xl:text-4xl gap-y-2 select-none">
           <div className="relative hover:scale-[1.08] hover:-translate-y-1 duration-300 flex justify-center">
@@ -229,7 +229,7 @@ const Technologies = () => {
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 0, transition: { delay: 2.3 } }}
         exit={{ opacity: 0, y: 0 }}
-        className="md:hidden bg-gradient-to-br from-[#f1f9f0] via-[#e3eeff] to-[#ffffff] rounded-[20px] p-3 pt-0 space-y-1 bg-opacity-50"
+        className="md:hidden bg-gradient-to-br from-[#f1f9f0] via-[#e3eeff] to-[#ffffff] rounded-[20px] p-3 pt-0 space-y-1 bg-opacity-50 drop-shadow-sm"
       >
         <div className="flex flex-wrap justify-center items-center text-2xl gap-x-5 gap-y-2 drop-shadow-md">
           <TbBrandNextjs className="text-2xl stroke-[1.3px]" />

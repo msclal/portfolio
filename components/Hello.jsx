@@ -42,7 +42,7 @@ const Hello = ({ homeRef }) => {
         // whileTap={{ scale: 0.995 }}
         className="w-full max-md:hidden"
       >
-        <div className="rounded-[20px] flex p-10 max-md:hidden bg-opacity-50 bg-gradient-to-r from-[#f3e7e9] to-[#e3eeff] duration-300 md:hover:-translate-y-[3px]">
+        <div className="rounded-[20px] flex p-10 max-md:hidden bg-opacity-50 bg-gradient-to-r from-[#f3e7e9] to-[#e3eeff] duration-700 md:hover:-translate-y-[3px] md:hover:drop-shadow-lg drop-shadow-sm">
           <div className="flex flex-wrap justify-between items-center ">
             <div className="space-y-20 lg:space-y-14 w-[50%]">
               <div className="space-y-5 break-before-all">
