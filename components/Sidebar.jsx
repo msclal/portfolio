@@ -60,8 +60,6 @@ const Sidebar = ({
     }
   }, [isHomeVisible, isProjectsVisible, isExperienceVisible, isContactVisible]);
 
-  console.log(homeClicked, projectsClicked, experienceClicked, contactClicked);
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 0 }}
