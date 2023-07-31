@@ -2,7 +2,7 @@ import { WakaTime } from "wakatime";
 
 export default async function handler(req, res) {
   const wakaTimeInstance = new WakaTime(
-    "waka_928e55e2-2c32-4538-8e3c-4837e6a36506"
+    "waka_9c6d9ee6-27e4-4776-b696-ec1bfabc71b0"
   );
 
   try {

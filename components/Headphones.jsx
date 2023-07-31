@@ -1,29 +1,29 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 const Headphones = () => {
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("/api/wakatime");
-        if (!response.ok) {
-          throw new Error("Failed to fetch Wakatime data");
-        }
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await fetch("/api/wakatime");
+  //       if (!response.ok) {
+  //         throw new Error("Failed to fetch Wakatime data");
+  //       }
 
-        const wakaData = await response.json();
-        console.log(wakaData.data);
-        // Process the data as required to prepare the chartData object
-        // const chartData = {
-        //   // Your chart configuration here (labels, datasets, etc.)
-        // };
+  //       const wakaData = await response.json();
+  //       console.log(wakaData.data);
+  //       // Process the data as required to prepare the chartData object
+  //       // const chartData = {
+  //       //   // Your chart configuration here (labels, datasets, etc.)
+  //       // };
 
-        // setChartData(chartData);
-      } catch (error) {
-        console.error("Error fetching Wakatime data:", error);
-      }
-    };
+  //       // setChartData(chartData);
+  //     } catch (error) {
+  //       console.error("Error fetching Wakatime data:", error);
+  //     }
+  //   };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
   return (
     <>
       {/* Desktop */}
