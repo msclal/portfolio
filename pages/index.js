@@ -7,6 +7,7 @@ import Contact from "@/components/Contact";
 import Gallery from "@/components/Gallery";
 import Experience from "@/components/Experience";
 import Sidebar from "@/components/Sidebar";
+import Stats from "@/components/Stats";
 
 export default function Home() {
   const homeRef = useRef(null);
@@ -50,16 +51,22 @@ export default function Home() {
         isContactVisible={isContactVisible}
       />
       <div className="space-y-5 md:space-y-6">
-        <Hello homeRef={homeRef} />
+        <div className="flex gap-x-4 h-full">
+          <Hello homeRef={homeRef} />
+          <div className="max-md:hidden h-full md:w-[55%]">
+            <Gallery />
+          </div>
+        </div>
         <Technologies />
       </div>
       <Projects projectsRef={projectsRef} />
 
-      {/* DESKTOP */}
+      {/*  DESKTOP */}
       <div className="flex gap-x-8 max-md:hidden h-full">
-        <Gallery />
+        <Stats />
         <Experience experienceRef={experienceRef} />
       </div>
+
       {/* MOBILE */}
       <div className="md:hidden space-y-5">
         <div id="experience_mobile">
