@@ -362,7 +362,7 @@ const Stats = () => {
               </div>
               <div className="flex gap-x-5 text-gray-400">
                 <p>{">"}</p>
-                <p>{bestDay || `10 hrs 31 mins`}</p>
+                <p>{bestDay || `10 hrs 9 mins`}</p>
               </div>
             </div>
             <div className="">

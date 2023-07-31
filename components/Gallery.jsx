@@ -5,14 +5,15 @@ import Bean from "@/public/gallery/bean.jpeg";
 import Cat from "@/public/gallery/cat.jpeg";
 // import Sas from "@/public/gallery/sas.jpg";
 import Grad from "@/public/gallery/grad.jpeg";
-import Tacos from "@/public/gallery/tacos.jpeg";
+import Beach from "@/public/gallery/beach.jpeg";
+// import Tacos from "@/public/gallery/tacos.jpeg";
 import Norm from "@/public/gallery/norm.jpeg";
 
 const images = [
   { image: Cat, alt: "Mika with Cat" },
   { image: Bean, alt: "Mika in a Beanie" },
   { image: Grad, alt: "Grad Pic" },
-  { image: Tacos, alt: "Taco Tuesday" },
+  { image: Beach, alt: "Beach" },
   { image: Norm, alt: "Norm the Navel" },
 ];
 const delay = 5000;
