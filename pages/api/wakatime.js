@@ -1,10 +1,7 @@
 import { WakaTime } from "wakatime";
 
 export default async function handler(req, res) {
-  const wakaTimeInstance = new WakaTime(
-    "waka_9c6d9ee6-27e4-4776-b696-ec1bfabc71b0"
-  );
-
+  const wakaTimeInstance = new WakaTime(process.env.WAKA);
   try {
     const response = await wakaTimeInstance
       .stats("last_30_days")
