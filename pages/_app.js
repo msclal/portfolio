@@ -3,7 +3,9 @@ import Layout from "@/components/Layout";
 import { Inter } from "next/font/google";
 // import { Outfit } from "next/font/google";
 /* eslint-disable camelcase */
-import { Noto_Sans } from "next/font/google";
+// import { Noto_Sans } from "next/font/google";
+import { Roboto_Mono } from "next/font/google";
+// import { Menlo } from "next/font/google";
 // import { Manrope } from "next/font/google";
 
 /* eslint-disable new-cap */
@@ -19,10 +21,16 @@ const inter = Inter({
 //   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 // });
 
-const notoSans = Noto_Sans({
+// const notoSans = Noto_Sans({
+//   subsets: ["latin"],
+//   variable: "--font-notoSans",
+//   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+// });
+
+const robotoMono = Roboto_Mono({
   subsets: ["latin"],
-  variable: "--font-notoSans",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-robotoMono",
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
 
 // const manrope = Manrope({
@@ -33,7 +41,7 @@ const notoSans = Noto_Sans({
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={`${inter.variable} ${notoSans.variable} `}>
+    <main className={`${inter.variable} ${robotoMono.variable} `}>
       <Layout>
         <Component {...pageProps} />
       </Layout>

@@ -293,18 +293,18 @@ const Navigation = () => {
                 setDark(true);
                 setSuperDuper(false);
 
-                // toast.info("Feature Coming Soon!", {
-                //   position: "top-right",
-                //   autoClose: 1500,
-                //   hideProgressBar: true,
-                //   closeOnClick: true,
-                //   pauseOnHover: true,
-                //   draggable: true,
-                //   progress: undefined,
-                //   transition: Slide,
-                //   theme: "colored",
-                //   toastId: "dark",
-                // });
+                toast.info("Feature Coming Soon!", {
+                  position: "top-right",
+                  autoClose: 1500,
+                  hideProgressBar: true,
+                  closeOnClick: true,
+                  pauseOnHover: true,
+                  draggable: true,
+                  progress: undefined,
+                  transition: Slide,
+                  theme: "colored",
+                  toastId: "dark",
+                });
               }}
             />
             <div
@@ -316,18 +316,18 @@ const Navigation = () => {
                 setDark(false);
                 setSuperDuper(true);
 
-                // toast.info("Feature Coming Soon!", {
-                //   position: "top-right",
-                //   autoClose: 1500,
-                //   hideProgressBar: true,
-                //   closeOnClick: true,
-                //   pauseOnHover: true,
-                //   draggable: true,
-                //   progress: undefined,
-                //   transition: Slide,
-                //   theme: "colored",
-                //   toastId: "dark",
-                // });
+                toast.info("Feature Coming Soon!", {
+                  position: "top-right",
+                  autoClose: 1500,
+                  hideProgressBar: true,
+                  closeOnClick: true,
+                  pauseOnHover: true,
+                  draggable: true,
+                  progress: undefined,
+                  transition: Slide,
+                  theme: "colored",
+                  toastId: "dark",
+                });
               }}
             ></div>
           </div>

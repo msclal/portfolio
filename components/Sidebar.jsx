@@ -31,7 +31,16 @@ const Sidebar = ({
     } else if (contactClicked && isContactVisible) {
       setContactClicked(false);
     }
-  }, [isHomeVisible, isProjectsVisible, isExperienceVisible, isContactVisible]);
+  }, [
+    homeClicked,
+    isHomeVisible,
+    projectsClicked,
+    isProjectsVisible,
+    experienceClicked,
+    isExperienceVisible,
+    contactClicked,
+    isContactVisible,
+  ]);
 
   useEffect(() => {
     if (
@@ -184,8 +193,8 @@ const Sidebar = ({
           <div
             className={`w-[15px] h-[15px] rounded-full ${
               selected === "Contact"
-                ? `bg-orange-300`
-                : `border-[1px] border-orange-300`
+                ? `bg-purple-300`
+                : `border-[1px] border-purple-300`
             }`}
           ></div>
           <p>Contact</p>
