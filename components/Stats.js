@@ -270,7 +270,7 @@ const Stats = () => {
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
     >
-      <div className="rounded-[15px] rounded-t-[10px] bg-[#17171a] bg-opacity-80 text-green-600 absolute duration-700 md:hover:-translate-y-[3px] md:hover:drop-shadow-lg h-[480px]">
+      <div className="rounded-[15px] rounded-t-[10px] bg-[#17171a] bg-opacity-80 text-green-600 absolute duration-700 md:hover:-translate-y-[3px] md:hover:drop-shadow-lg h-[480px] text-sm lg:text-[15px]">
         {/* <motion.div className="duration-700 md:hover:-translate-y-[3px] md:hover:drop-shadow-lg"> */}
         {/* <div>
         <span className="h-[15px] w-[15px] bg-red-100">f</span>
@@ -310,8 +310,8 @@ const Stats = () => {
           </div>
         </div>
 
-        <div className="p-5 mt-5 lg:mt-7">
-          <div className="space-y-4 max-[800px]:text-sm max-xl:text-[15px]">
+        <div className="p-5 mt-5 xl:mt-7 font-robotoMono">
+          <div className="space-y-4 xl:space-y-6 xlg:space-y-2 max-[800px]:text-sm max-xl:text-[15px]">
             <div className="">
               <div className="flex gap-x-5">
                 <p>$</p>

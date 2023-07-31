@@ -15,6 +15,7 @@ module.exports = {
         sm: "640px",
         md: "768px",
         lg: "1024px",
+        // xlg: { min: "1280px", max: "1490px" },
         xl: "1280px",
       },
       fontFamily: {
@@ -22,6 +23,7 @@ module.exports = {
         outfit: ["var(--font-outfit)", "sans-serif"],
         notoSans: ["var(--font-notoSans)", "sans-serif"],
         manrope: ["var(--font-manrope)", "sans-serif"],
+        robotoMono: ["var(--font-robotoMono)", "monospace"],
       },
       colors: {
         tech: {
