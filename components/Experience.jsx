@@ -21,7 +21,7 @@ const Experience = ({ experienceRef }) => {
       image: Scott,
       alt: "UC Riverside",
       description:
-        "C++ in CS010! This was also the start of undergrad life studying Computer Science and Business at UC Riverside. Chef's kiss, 10/10 people.",
+        "C++ in CS010 at UC Riverside! This is also where I earned my Bachelor's in Computer Science and Business, graduating with Cum Laude honors. Chef's kiss, 10/10 people.",
     },
     {
       title: "GPU Research Intern",
@@ -80,7 +80,7 @@ const Experience = ({ experienceRef }) => {
       image: ACM,
       alt: "ACM",
       description:
-        "UC Riverside's Computer Science club! We build projects that enhance student experience at the school. I took part in building the 'bitByBit' and 'R'Parts' projects as a full-stack developer.",
+        "UC Riverside's Computer Science club! We build projects that enhance student life experience at the school. I took part in building the 'bitByBit' and 'R'Parts' projects as a full-stack developer.",
     },
     {
       title: "Web Developer Lead",
@@ -125,7 +125,10 @@ const Experience = ({ experienceRef }) => {
       <div className="bg-[#F5F6F6] rounded-[20px] p-5 pr-3 bg-opacity-90 space-y-5 duration-700 md:hover:-translate-y-[3px] md:hover:drop-shadow-lg drop-shadow-sm scroll-smooth	">
         <p className="font-semibold select-none text-lg">Experience</p>
 
-        <div className="overflow-y-auto h-[390px] pr-3 rounded-[10px] scroll-smooth">
+        <div
+          className="overflow-y-auto h-[390px] pr-3 rounded-[10px] scroll-smooth"
+          style={{ scrollBehavior: "smooth" }}
+        >
           {experiences.map((experience, index) => {
             return (
               <div

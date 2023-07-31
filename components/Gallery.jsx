@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-// import Bean from "@/public/gallery/bean.jpeg";
+import Bean from "@/public/gallery/bean.jpeg";
 import Cat from "@/public/gallery/cat.jpeg";
 // import Sas from "@/public/gallery/sas.jpg";
 import Grad from "@/public/gallery/grad.jpeg";
@@ -10,7 +10,7 @@ import Norm from "@/public/gallery/norm.jpeg";
 
 const images = [
   { image: Cat, alt: "Mika with Cat" },
-  // { image: Bean, alt: "Mika in a Beanie" },
+  { image: Bean, alt: "Mika in a Beanie" },
   { image: Grad, alt: "Grad Pic" },
   { image: Tacos, alt: "Taco Tuesday" },
   { image: Norm, alt: "Norm the Navel" },
@@ -72,12 +72,12 @@ const Gallery = () => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 0 }}
-      animate={{ opacity: 1, y: 0, transition: { delay: 3 } }}
+      animate={{ opacity: 1, y: 0, transition: { delay: 2 } }}
       exit={{ opacity: 0, y: 0 }}
       // whileHover={{ scale: 1.005 }}
       // transition={{ duration: 0, ease: "linear" }}
       // className="w-full h-full md:w-[38%] duration-300 md:hover:-translate-y-1"
-      className="w-full h-full md:w-[38%]"
+      className="w-full h-full"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
