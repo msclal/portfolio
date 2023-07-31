@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 // import { Outfit } from "next/font/google";
 /* eslint-disable camelcase */
 import { Noto_Sans } from "next/font/google";
+// import { Menlo } from "next/font/google";
 // import { Manrope } from "next/font/google";
 
 /* eslint-disable new-cap */

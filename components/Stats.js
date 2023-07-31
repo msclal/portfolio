@@ -266,7 +266,7 @@ const Stats = () => {
       initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: 0, transition: { delay: 3 } }}
       exit={{ opacity: 0, y: 0 }}
-      className="max-md:hidden md:w-[38%] h-full relative"
+      className=" md:w-[38%] h-full relative"
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
     >
@@ -310,7 +310,7 @@ const Stats = () => {
           </div>
         </div>
 
-        <div className="p-5 mt-7">
+        <div className="p-5 mt-5 lg:mt-7">
           <div className="space-y-4 max-[800px]:text-sm max-xl:text-[15px]">
             <div className="">
               <div className="flex gap-x-5">
