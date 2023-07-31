@@ -116,9 +116,9 @@ const Hello = ({ homeRef }) => {
                   7000,
                   `UX Junkie`,
                   5000,
-                  "E-Scooter Enthusiast",
-                  5000,
                   "Professional Kareoke Singer",
+                  5000,
+                  "E-Scooter Enthusiast",
                   5000,
                   "Hot Sauce Hoarder",
                   5000,
@@ -164,11 +164,15 @@ const Hello = ({ homeRef }) => {
           <p className="text-center">
             Based in Southern California. Feeling Supersonic 24/5. After hours,
             I eat {"Häagen-Dazs"} + watch the Lakers waste another season of{" "}
-            {"Lebron's"} career. Also,
+            {"Austin Reaves'"} career. Also,{" "}
+            <span className="font-medium text-[#a1b8da]">
+              {" "}
+              #HayleyWilliamsTop5Ever🗿
+            </span>
           </p>
-          <p className="font-medium text-[#a1b8da]">
+          {/* <p className="font-medium text-[#a1b8da]">
             #HayleyWilliamsTop5Ever🗿
-          </p>
+          </p> */}
         </div>
       </motion.div>
     </>
