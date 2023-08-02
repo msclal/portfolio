@@ -129,6 +129,7 @@ const Hello = ({ homeRef }) => {
                 deletionSpeed={66}
                 wrapper="span"
                 cursor={false}
+                x
                 repeat={Infinity}
                 preRenderFirstString={true}
                 className="max-[375px]:text-base text-[#a888b7] font-medium h-full"

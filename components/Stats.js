@@ -296,14 +296,14 @@ const Stats = () => {
             <div className="flex items-center justify-center gap-x-1 text-sm max-xl:hidden">
               {/* <div className="flex items-center justify-center gap-x-1 absolute left-[22%] top-[4.5px] text-sm max-[800px]:hidden"> */}
               <MdFolderShared className="text-blue-300" />
-              <p className="text-center font-semibold max-md:text-sm">
+              <p className="text-center font-semibold max-md:text-sm text-gray-300">
                 mikusroomonfire - ~/wakatime
               </p>
             </div>
             <div className="flex items-center justify-center gap-x-1 text-sm xl:hidden">
               {/* <div className="flex items-center justify-center gap-x-1 absolute left-[22%] top-[4.5px] text-sm max-[800px]:hidden"> */}
               <MdFolderShared className="text-blue-300" />
-              <p className="text-center font-semibold max-md:text-sm">
+              <p className="text-center font-semibold max-md:text-sm text-gray-300">
                 mika - ~/wakatime
               </p>
             </div>
