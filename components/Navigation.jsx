@@ -113,7 +113,9 @@ const Navigation = () => {
         <p className="text-right select-none font-medium">{date} PDT</p>
         <div
           className={` duration-300 cursor-pointer text-lg ${
-            toggle ? `w-fit bg-gray-300 p-1 rounded-[5px] bg-opacity-50` : `p-1`
+            toggle
+              ? `w-fit bg-gray-300 p-1 rounded-[5px] bg-opacity-50`
+              : `p-1 hover:bg-gray-200 duration-300 rounded-[5px]`
           }`}
         >
           <BsToggles onClick={() => setToggle(!toggle)} />
