@@ -94,7 +94,7 @@ const Project = ({ project }) => {
           <p className="text-sm">{project.subTitle}</p>
         </div>
         <div className="space-y-1">
-          <div className="flex gap-x-1 text-blue-700 text-xs">
+          <div className="max-md:hidden flex gap-x-1 text-blue-700 text-xs">
             <Link
               href={project.github}
               target="_blank"
@@ -104,6 +104,29 @@ const Project = ({ project }) => {
               Github
             </Link>
             {project.deployed && (
+              <>
+                <p className="font-thin">•</p>
+                <a
+                  href={project.deployed}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="underline hover:text-purple-900"
+                >
+                  Deployed
+                </a>
+              </>
+            )}
+          </div>
+          <div className="md:hidden flex gap-x-1 text-blue-700 text-xs">
+            <Link
+              href={project.github}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="underline hover:text-purple-900"
+            >
+              Github
+            </Link>
+            {project.deployed && !project.desktop && (
               <>
                 <p className="font-thin">•</p>
                 <a

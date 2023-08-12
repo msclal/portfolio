@@ -23,9 +23,9 @@ const Hello = ({ homeRef }) => {
           <div className="flex flex-wrap justify-between items-start ">
             <div className="space-y-10 xl:space-y-14 w-full">
               <div className="space-y-4 lg:space-y-7 break-before-all">
-                <p className="text-3xl font-semibold select-none">
+                <h1 className="text-5xl font-bold select-none text-gray-700">
                   Hello, {"I'm"} Mika!
-                </p>
+                </h1>
                 <div>
                   <p className="space-x-2 xl:text-lg">
                     <span className="font-medium text-[#a888b7] mr-1">
@@ -108,7 +108,7 @@ const Hello = ({ homeRef }) => {
             placeholder="blur"
           />
           <div className="text-center">
-            <p className="text-lg font-semibold">Mika Shanela Carodan</p>
+            <h1 className="text-lg font-semibold">Mika Shanela Carodan</h1>
             <div className="h-[28px] min-w-[310px] flex justify-center items-center text-center font-medium">
               <TypeAnimation
                 sequence={[

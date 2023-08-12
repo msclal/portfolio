@@ -26,6 +26,7 @@ const Projects = ({ projectsRef }) => {
       image: meThinks,
       github: "https://github.com/msclal/project-methinks",
       deployed: "https://me-thinks.herokuapp.com/feed",
+      desktop: true,
       tech: (
         <div className="flex gap-x-2 text-sm text-gray-500">
           <SiFigma />
@@ -88,7 +89,7 @@ const Projects = ({ projectsRef }) => {
       description: "Led 4 engineers",
       image: rparts,
       github: "https://github.com/shahdivyank/r-parts",
-      deployed: "r-parts.vercel.app",
+      // deployed: "r-parts.vercel.app",
       tech: (
         <div className="flex gap-x-2 text-sm text-gray-500">
           <SiFigma />
