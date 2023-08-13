@@ -70,7 +70,8 @@ const Contact = ({ contactRef }) => {
           <p className="font-medium max-xs:text-sm">Resume</p>
           <Link
             href="resume.pdf"
-            alt="alt text"
+            aria-label="Resume"
+            alt="Resume"
             target="_blank"
             rel="noopener noreferrer"
             className="w-fit gap-x-1 flex items-center cursor-pointer text-gray-500 hover:text-gray-700 duration-300"
@@ -84,12 +85,14 @@ const Contact = ({ contactRef }) => {
           <div className="flex gap-x-3 text-lg">
             <Link
               href="mailto:mikashanela.dev@gmail.com"
+              aria-label="Mail"
               className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
             >
               <FiMail />
             </Link>
             <Link
               href={"tel:9092145009"}
+              aria-label="Phone"
               className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
             >
               <ImPhone />
@@ -101,6 +104,7 @@ const Contact = ({ contactRef }) => {
           <div className="flex gap-x-3 text-lg">
             <Link
               href="https://github.com/msclal"
+              aria-label="Github"
               target="_blank"
               rel="noopener noreferrer"
               className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
@@ -110,6 +114,7 @@ const Contact = ({ contactRef }) => {
             <Link
               href="https://www.linkedin.com/in/mika-shanela/"
               target="_blank"
+              aria-label="LinkedIn"
               rel="noopener noreferrer"
               className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
             >
@@ -118,6 +123,7 @@ const Contact = ({ contactRef }) => {
             <Link
               href="https://www.instagram.com/mikashanela/"
               target="_blank"
+              aria-label="Instagram"
               rel="noopener noreferrer"
               className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
             >
@@ -139,7 +145,7 @@ const Contact = ({ contactRef }) => {
                 type="text"
                 name="name"
                 value={name}
-                className="w-2/3 rounded-[10px] py-1 px-2 focus:outline-none"
+                className="w-2/3 rounded-[10px] py-1 px-2 focus:outline outline-blue-800"
                 autoComplete="off"
                 onChange={(e) => setName(e.target.value)}
                 onKeyUp={handleKeypress}
@@ -150,7 +156,7 @@ const Contact = ({ contactRef }) => {
               <textarea
                 name="message"
                 value={message}
-                className="w-full py-1 px-2 rounded-[10px] focus:outline-none"
+                className="w-full py-1 px-2 rounded-[10px] focus:outline outline-blue-800"
                 autoComplete="off"
                 onChange={(e) => setMessage(e.target.value)}
                 onKeyUp={handleKeypress}

@@ -66,6 +66,7 @@ const Hello = ({ homeRef }) => {
               <div className="flex gap-x-5 text-3xl">
                 <Link
                   href="mailto:mikashanela.dev@gmail.com"
+                  aria-label="Mail"
                   className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[1px]"
                 >
                   <FiMail />
@@ -73,12 +74,14 @@ const Hello = ({ homeRef }) => {
                 <Link
                   href="https://github.com/msclal"
                   target="_blank"
+                  aria-label="Github"
                   rel="noopener noreferrer"
                   className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[1px]"
                 >
                   <AiFillGithub />
                 </Link>
                 <Link
+                  aria-label="LinkedIn"
                   href="https://www.linkedin.com/in/mika-shanela/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -140,12 +143,14 @@ const Hello = ({ homeRef }) => {
         <div className="flex gap-x-5 text-3xl">
           <Link
             href="mailto:mikashanela.dev@gmail.com"
+            aria-label="Mail"
             className="w-fit p-3 bg-gray-100 rounded-[10px] duration-300"
           >
             <FiMail />
           </Link>
           <Link
             href="https://github.com/msclal"
+            aria-label="Github"
             target="_blank"
             rel="noopener noreferrer"
             className="w-fit p-3 bg-gray-100 rounded-[10px] duration-300"
@@ -154,6 +159,7 @@ const Hello = ({ homeRef }) => {
           </Link>
           <Link
             href="https://www.linkedin.com/in/mika-shanela/"
+            aria-label="LinkedIn"
             target="_blank"
             rel="noopener noreferrer"
             className="w-fit p-3 bg-gray-100 rounded-[10px] duration-300"
