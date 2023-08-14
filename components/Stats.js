@@ -211,7 +211,7 @@ const Stats = () => {
         }
 
         const wakaData = await response.json();
-        console.log(wakaData.data);
+        // console.log(wakaData.data);
         setBestDay(wakaData?.data?.best_day?.text);
         // console.log(bestDay);
         setAvg(wakaData?.data?.human_readable_daily_average);

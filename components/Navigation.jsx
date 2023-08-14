@@ -210,7 +210,7 @@ const Navigation = () => {
               loading="lazy"
               className="select-none"
             ></iframe> */}
-            <iframe
+            {/* <iframe
               title="Mika's Spotify Song"
               src="https://open.spotify.com/embed/track/1Bv3h7Vc4AaYA2BcSM3rVd?utm_source=generator"
               width="100%"
@@ -220,7 +220,7 @@ const Navigation = () => {
               priority="low"
               loading="lazy"
               className="select-none drop-shadow-sm"
-            />
+            /> */}
           </motion.div>
         )}
       </div>
