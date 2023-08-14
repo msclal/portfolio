@@ -21,8 +21,8 @@ const Hello = ({ homeRef }) => {
       >
         <div className="rounded-[20px] max-h-[480px] h-full flex p-14 pl-12 max-md:hidden bg-opacity-50 bg-gradient-to-r from-[#f3e7e9] to-[#e3eeff] duration-700 md:hover:-translate-y-[3px] md:hover:drop-shadow-lg drop-shadow-sm">
           <div className="flex flex-wrap justify-between items-start ">
-            <div className="space-y-10 xl:space-y-14 w-full">
-              <div className="space-y-4 lg:space-y-7 break-before-all">
+            <div className="space-y-10 xl:space-y-9 w-full">
+              <div className="space-y-4 lg:space-y-7 xl:space-y-6 break-before-all">
                 <h1 className="text-5xl font-bold select-none text-gray-700">
                   Hello, {"I'm"} Mika!
                 </h1>

@@ -211,7 +211,7 @@ const Stats = () => {
         }
 
         const wakaData = await response.json();
-        // console.log(wakaData.data);
+        console.log(wakaData.data);
         setBestDay(wakaData?.data?.best_day?.text);
         // console.log(bestDay);
         setAvg(wakaData?.data?.human_readable_daily_average);
@@ -260,6 +260,7 @@ const Stats = () => {
   //     };
   //   }, []);
   //   console.log(date);
+  // console.log(first)
 
   return (
     <motion.div
@@ -297,7 +298,7 @@ const Stats = () => {
               {/* <div className="flex items-center justify-center gap-x-1 absolute left-[22%] top-[4.5px] text-sm max-[800px]:hidden"> */}
               <MdFolderShared className="text-blue-300" />
               <p className="text-center font-semibold max-md:text-sm text-gray-300">
-                mikusroomonfire - ~/wakatime
+                mika - ~/wakatime
               </p>
             </div>
             <div className="flex items-center justify-center gap-x-1 text-sm xl:hidden">
@@ -310,8 +311,9 @@ const Stats = () => {
           </div>
         </div>
 
-        <div className="p-5 mt-5 xl:mt-7 font-robotoMono">
-          <div className="space-y-4 xl:space-y-6 xlg:space-y-2 max-[800px]:text-sm max-xl:text-[15px]">
+        <div className="p-5 mt-5 xl:mt-6 font-robotoMono">
+          <div className="space-y-4 xl:space-y-6 xlg:space-y-2 text-xs xl:text-[13px]">
+            {/* <div className="space-y-4 xl:space-y-6 xlg:space-y-2 max-[800px]:text-sm max-xl:text-[15px]"> */}
             <div className="">
               <div className="flex gap-x-5">
                 <p>$</p>
