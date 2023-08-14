@@ -211,6 +211,7 @@ const Navigation = () => {
               className="select-none"
             ></iframe> */}
             <iframe
+              title="Mika's Spotify Song"
               src="https://open.spotify.com/embed/track/1Bv3h7Vc4AaYA2BcSM3rVd?utm_source=generator"
               width="100%"
               height="80"

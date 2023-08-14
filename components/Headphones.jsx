@@ -42,6 +42,7 @@ const Headphones = () => {
           </p>
           <div className="w-full h-full">
             <iframe
+              title="Mika's Spotify Playlist"
               src="https://open.spotify.com/embed/playlist/42UDhwHjTGGg7J5ny0WVXU?utm_source=generator"
               width="100%"
               loading="lazy"
@@ -65,6 +66,7 @@ const Headphones = () => {
         </p>
         <div className="w-full h-full">
           <iframe
+            title="Mika's Favorite Spotify Song"
             src="https://open.spotify.com/embed/track/7wYCva1bI1AkHRQoVXhy8F?utm_source=generator"
             width="100%"
             loading="lazy"
