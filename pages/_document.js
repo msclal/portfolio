@@ -13,7 +13,7 @@ export default function Document() {
       <meta name="robots" content="index,follow"></meta>
       <link rel="icon" href="/assets/head.png" />
       <body>
-        <Main />x
+        <Main />
         <NextScript />
       </body>
     </Html>
