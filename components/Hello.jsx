@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { event } from "../lib/ga";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { FiMail } from "react-icons/fi";
@@ -68,6 +69,14 @@ const Hello = ({ homeRef }) => {
                   href="mailto:mikashanela.dev@gmail.com"
                   aria-label="Mail"
                   className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[1px]"
+                  onClick={() =>
+                    event({
+                      action: "home_click",
+                      params: {
+                        link: "mail",
+                      },
+                    })
+                  }
                 >
                   <FiMail />
                 </Link>
@@ -77,6 +86,14 @@ const Hello = ({ homeRef }) => {
                   aria-label="Github"
                   rel="noopener noreferrer"
                   className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[1px]"
+                  onClick={() =>
+                    event({
+                      action: "home_click",
+                      params: {
+                        link: "Github",
+                      },
+                    })
+                  }
                 >
                   <AiFillGithub />
                 </Link>
@@ -86,6 +103,14 @@ const Hello = ({ homeRef }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[1px]"
+                  onClick={() =>
+                    event({
+                      action: "home_click",
+                      params: {
+                        link: "LinkedIn",
+                      },
+                    })
+                  }
                 >
                   <ImLinkedin2 />
                 </Link>
@@ -143,6 +168,14 @@ const Hello = ({ homeRef }) => {
             href="mailto:mikashanela.dev@gmail.com"
             aria-label="Mail"
             className="w-fit p-3 bg-gray-100 rounded-[10px] duration-300"
+            onClick={() =>
+              event({
+                action: "home_click",
+                params: {
+                  link: "mail",
+                },
+              })
+            }
           >
             <FiMail />
           </Link>
@@ -152,6 +185,14 @@ const Hello = ({ homeRef }) => {
             target="_blank"
             rel="noopener noreferrer"
             className="w-fit p-3 bg-gray-100 rounded-[10px] duration-300"
+            onClick={() =>
+              event({
+                action: "home_click",
+                params: {
+                  link: "Github",
+                },
+              })
+            }
           >
             <AiFillGithub />
           </Link>
@@ -161,6 +202,14 @@ const Hello = ({ homeRef }) => {
             target="_blank"
             rel="noopener noreferrer"
             className="w-fit p-3 bg-gray-100 rounded-[10px] duration-300"
+            onClick={() =>
+              event({
+                action: "home_click",
+                params: {
+                  link: "LinkedIn",
+                },
+              })
+            }
           >
             <ImLinkedin2 />
           </Link>

@@ -1,12 +1,14 @@
 import "../styles/globals.css";
 import Layout from "@/components/Layout";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+import { pageview } from "../lib/ga";
+
+/* eslint-disable camelcase */
 import { Inter } from "next/font/google";
 // import { Outfit } from "next/font/google";
-/* eslint-disable camelcase */
 // import { Noto_Sans } from "next/font/google";
 import { Roboto_Mono } from "next/font/google";
-// import { Menlo } from "next/font/google";
-// import { Manrope } from "next/font/google";
 
 /* eslint-disable new-cap */
 const inter = Inter({
@@ -33,13 +35,25 @@ const robotoMono = Roboto_Mono({
   weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
 
-// const manrope = Manrope({
-//   subsets: ["latin"],
-//   variable: "--font-manrope",
-//   weight: ["200", "300", "400", "500", "600", "700", "800"],
-// });
-
 export default function App({ Component, pageProps }) {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      pageview(url);
+    };
+
+    // When the component is mounted, subscribe to router changes
+    // and log those page views
+    router.events.on("routeChangeComplete", handleRouteChange);
+
+    // If the component is unmounted, unsubscribe
+    // from the event with the `off` method
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
+
   return (
     <main className={`${inter.variable} ${robotoMono.variable} `}>
       <Layout>

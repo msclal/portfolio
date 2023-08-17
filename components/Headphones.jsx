@@ -1,4 +1,5 @@
 import React from "react";
+import { event } from "../lib/ga";
 import { motion } from "framer-motion";
 const Headphones = () => {
   return (
@@ -21,6 +22,14 @@ const Headphones = () => {
               width="100%"
               loading="lazy"
               className="h-[90%]"
+              onClick={() =>
+                event({
+                  action: "headphones_clicked",
+                  params: {
+                    link: "spotify",
+                  },
+                })
+              }
             ></iframe>
           </div>
         </div>
@@ -43,6 +52,14 @@ const Headphones = () => {
             width="100%"
             loading="lazy"
             className="h-[75%]"
+            onClick={() =>
+              event({
+                action: "headphones_clicked",
+                params: {
+                  link: "spotify",
+                },
+              })
+            }
           ></iframe>
         </div>
       </motion.div>

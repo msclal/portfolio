@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import Link from "next/link";
+import { event } from "../lib/ga";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast, Slide } from "react-toastify";
@@ -74,6 +75,14 @@ const Contact = ({ contactRef }) => {
             target="_blank"
             rel="noopener noreferrer"
             className="w-fit gap-x-1 flex items-center cursor-pointer text-gray-500 hover:text-gray-700 duration-300"
+            onClick={() =>
+              event({
+                action: "contact_click",
+                params: {
+                  link: "resume",
+                },
+              })
+            }
           >
             View
             <AiOutlineLink className="text-2xl" />
@@ -86,6 +95,14 @@ const Contact = ({ contactRef }) => {
               href="mailto:mikashanela.dev@gmail.com"
               aria-label="Mail"
               className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
+              onClick={() =>
+                event({
+                  action: "contact_click",
+                  params: {
+                    link: "mail",
+                  },
+                })
+              }
             >
               <FiMail />
             </Link>
@@ -93,6 +110,14 @@ const Contact = ({ contactRef }) => {
               href={"tel:9092145009"}
               aria-label="Phone"
               className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
+              onClick={() =>
+                event({
+                  action: "contact_click",
+                  params: {
+                    link: "phone",
+                  },
+                })
+              }
             >
               <ImPhone />
             </Link>
@@ -107,6 +132,14 @@ const Contact = ({ contactRef }) => {
               target="_blank"
               rel="noopener noreferrer"
               className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
+              onClick={() =>
+                event({
+                  action: "contact_click",
+                  params: {
+                    link: "Github",
+                  },
+                })
+              }
             >
               <AiFillGithub />
             </Link>
@@ -116,6 +149,14 @@ const Contact = ({ contactRef }) => {
               aria-label="LinkedIn"
               rel="noopener noreferrer"
               className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
+              onClick={() =>
+                event({
+                  action: "contact_click",
+                  params: {
+                    link: "LinkedIn",
+                  },
+                })
+              }
             >
               <ImLinkedin2 />
             </Link>
@@ -125,6 +166,14 @@ const Contact = ({ contactRef }) => {
               aria-label="Instagram"
               rel="noopener noreferrer"
               className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
+              onClick={() =>
+                event({
+                  action: "contact_click",
+                  params: {
+                    link: "instagram",
+                  },
+                })
+              }
             >
               <GrInstagram />
             </Link>
