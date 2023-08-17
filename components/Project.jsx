@@ -69,22 +69,13 @@ const Project = ({ project }) => {
         />
       </Link> */}
 
-      {/* <div className="p-4 flex flex-col w-full rounded-[20px] gap-y-3 bg-[#f5f7f7]"> */}
       <motion.div
-        // whileHover={{ scale: 1.0065 }}
-        // whileTap={{ scale: 0.995 }}
         transition={{ duration: 0, ease: "linear" }}
-        // href={project.link}
-        // target="_blank"
-        // rel="noreferrer noopener"
-        className={`p-4 flex flex-col w-full rounded-[20px] gap-y-3 border-[1px] border-gray-200 drop-shadow-sm bg-opacity-70 duration-700 md:hover:-translate-y-[3px] md:hover:drop-shadow-lg ${project.bg}`}
+        className={`p-4 flex flex-col w-full rounded-[20px] gap-y-3 border-[1px] border-gray-200 shadow-sm bg-opacity-70 duration-700 md:hover:-translate-y-[3px] md:hover:shadow-lg ${project.bg}`}
       >
         <Image
           src={project.image}
-          // height={800}
           alt="meThinks"
-          // layout="fill"
-          // objectFit="cover"
           className={`rounded-[20px] h-1/3`}
           placeholder="blur"
         />

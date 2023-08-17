@@ -22,7 +22,6 @@ const Projects = ({ projectsRef }) => {
       title: "meThinks...",
       role: "Lead Developer & Product Manager",
       subTitle: "Twitter-BeReal Style thought posting",
-      description: "Led a team of 4 people ",
       image: meThinks,
       github: "https://github.com/msclal/project-methinks",
       deployed: "https://me-thinks.herokuapp.com/feed",
@@ -44,7 +43,6 @@ const Projects = ({ projectsRef }) => {
       role: "Front-end Developer",
       subTitle:
         "AI-driven health insights and live chatting with local experts",
-      description: "",
       image: bioLink,
       github: "https://github.com/minsooerickim/bioLink",
       deployed: null,
@@ -65,7 +63,6 @@ const Projects = ({ projectsRef }) => {
       role: "Lead Developer & On-Call Support Engineer",
       subTitle:
         "UCR's Premier Hackathon Event (largest in California Inland Empire) with 725+ hackers",
-      description: "Spearheaded Frontend Development",
       image: Citrus,
       github: "https://github.com/citrushack/citrushack2023",
       deployed: "https://www.citrushack.com/",
@@ -86,7 +83,6 @@ const Projects = ({ projectsRef }) => {
       role: "Front-end Developer",
       subTitle:
         "Secondhand Marketplace for UCR students seeking parts for engineering classes",
-      description: "Led 4 engineers",
       image: rparts,
       github: "https://github.com/shahdivyank/r-parts",
       // deployed: "r-parts.vercel.app",
@@ -108,7 +104,6 @@ const Projects = ({ projectsRef }) => {
       //   "Personal AI assistant to enrich my friend group's daily workflows",
       subTitle:
         "AI-powered personal assistant to streamline our friend group's daily workflows",
-      description: "Led 4 engineers",
       image: garf,
       github: "https://github.com/msclal/Garf",
       deployed: "https://garfai.vercel.app/",
@@ -126,7 +121,6 @@ const Projects = ({ projectsRef }) => {
       role: "Full-stack Developer",
       subTitle:
         "Leetcode-esque platform for beginner UCR students to improve programming fundamentals",
-      description: "Led 4 engineers",
       image: bbb,
       github: "https://github.com/acm-ucr/bitByBIT",
       deployed: null,

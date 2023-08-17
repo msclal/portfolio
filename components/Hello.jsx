@@ -19,9 +19,9 @@ const Hello = ({ homeRef }) => {
         exit={{ opacity: 0, y: 0 }}
         className="w-full max-md:hidden"
       >
-        <div className="rounded-[20px] max-h-[480px] h-full flex p-14 pl-12 max-md:hidden bg-opacity-50 bg-gradient-to-r from-[#f3e7e9] to-[#e3eeff] duration-700 md:hover:-translate-y-[3px] md:hover:drop-shadow-lg drop-shadow-sm">
+        <div className="rounded-[20px] max-h-[480px] h-full flex p-14 pl-12 max-md:hidden bg-opacity-50 bg-gradient-to-r from-[#f3e7e9] to-[#e3eeff] duration-700 md:hover:-translate-y-[3px] md:hover:shadow-lg shadow-sm">
           <div className="flex flex-wrap justify-between items-start ">
-            <div className="space-y-10 xl:space-y-9 w-full">
+            <div className="space-y-10 xl:space-y-12 w-full">
               <div className="space-y-4 lg:space-y-7 xl:space-y-6 break-before-all">
                 <h1 className="text-5xl font-bold select-none text-gray-700">
                   Hello, {"I'm"} Mika!
@@ -48,7 +48,7 @@ const Hello = ({ homeRef }) => {
                       sequence={[
                         "Hayley Williams from Paramore!",
                         6500,
-                        "Calamari + All the Hot Sauces.",
+                        "In-N-Out Chili Peppers.",
                         5000,
                         "A Karaoke Mic.",
                         5000,
@@ -63,7 +63,7 @@ const Hello = ({ homeRef }) => {
                   </span>
                 </div>
               </div>
-              <div className="flex gap-x-5 text-3xl">
+              <div className="flex gap-x-5 text-3xl min-[1300px]:hidden min-[1350px]:flex">
                 <Link
                   href="mailto:mikashanela.dev@gmail.com"
                   aria-label="Mail"
@@ -100,7 +100,7 @@ const Hello = ({ homeRef }) => {
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 0, transition: { delay: 2 } }}
         exit={{ opacity: 0, y: 0 }}
-        className="md:hidden bg-gradient-to-br from-[#f1f9f0] to-[#e3eeff] rounded-[20px] flex flex-col p-8 px-5 justify-center items-center gap-y-5"
+        className="md:hidden bg-gradient-to-br from-[#f1f9f0] to-[#e3eeff] rounded-[20px] flex flex-col p-8 px-5 justify-center items-center gap-y-5 shadow-sm"
       >
         <div className="flex flex-col items-center">
           <Image
@@ -117,15 +117,13 @@ const Hello = ({ homeRef }) => {
                 sequence={[
                   `Software Engineer`,
                   7000,
-                  `UX Junkie`,
+                  `User Experience Junkie`,
                   5000,
                   "Professional Kareoke Singer",
                   5000,
-                  "E-Scooter Enthusiast",
-                  5000,
                   "Hot Sauce Hoarder",
                   5000,
-                  "Proud Mom (of 15 Cats)",
+                  "Proud Mom (of 14 Cats)",
                   5000,
                 ]}
                 speed={50}
@@ -177,9 +175,6 @@ const Hello = ({ homeRef }) => {
               #HayleyWilliamsTop5Ever🗿
             </span>
           </p>
-          {/* <p className="font-medium text-[#a1b8da]">
-            #HayleyWilliamsTop5Ever🗿
-          </p> */}
         </div>
       </motion.div>
     </>

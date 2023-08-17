@@ -62,9 +62,8 @@ const Contact = ({ contactRef }) => {
       animate={{ opacity: 1, y: 0, transition: { delay: 3.2 } }}
       exit={{ opacity: 0, y: 0 }}
       className="w-full md:w-1/2 h-[520px] md:h-[550px]"
-      // className="w-full md:w-1/2 h-[520px] md:h-[550px]"
     >
-      <div className="duration-700 md:hover:-translate-y-[3px] md:hover:drop-shadow-lg shadow-sm p-5 bg-[#F5F6F6] rounded-[20px] bg-opacity-90 flex flex-col gap-y-6 h-full">
+      <div className="duration-700 md:hover:-translate-y-[3px] md:hover:shadow-lg shadow-sm p-5 bg-[#F5F6F6] rounded-[20px] bg-opacity-90 flex flex-col gap-y-6 h-full">
         <p className="font-semibold text-lg select-none">Contact</p>
         <div className="flex justify-between items-center">
           <p className="font-medium max-xs:text-sm">Resume</p>
