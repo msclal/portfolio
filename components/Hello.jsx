@@ -65,10 +65,10 @@ const Hello = ({ homeRef }) => {
                 </div>
               </div>
               <div className="flex gap-x-5 text-3xl min-[1300px]:hidden min-[1350px]:flex">
-                <Link
+                {/* <Link
                   href="mailto:mikashanela.dev@gmail.com"
                   aria-label="Mail"
-                  className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[1px]"
+                  className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[1px] border-[1px] border-gray-200 text-gray-500"
                   onClick={() =>
                     event({
                       action: "home_click",
@@ -79,13 +79,13 @@ const Hello = ({ homeRef }) => {
                   }
                 >
                   <FiMail />
-                </Link>
+                </Link> */}
                 <Link
                   href="https://github.com/msclal"
                   target="_blank"
                   aria-label="Github"
                   rel="noopener noreferrer"
-                  className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[1px]"
+                  className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[1px]  border-[0.5px] border-gray-200 text-gray-500"
                   onClick={() =>
                     event({
                       action: "home_click",
@@ -102,7 +102,7 @@ const Hello = ({ homeRef }) => {
                   href="https://www.linkedin.com/in/mika-shanela/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[1px]"
+                  className="w-fit p-3 bg-white hover:bg-gray-100 cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[1px]  border-[0.5px] border-gray-200 text-gray-500"
                   onClick={() =>
                     event({
                       action: "home_click",
@@ -113,6 +113,24 @@ const Hello = ({ homeRef }) => {
                   }
                 >
                   <ImLinkedin2 />
+                </Link>
+                <Link
+                  href="resume.pdf"
+                  aria-label="Resume"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-fit p-3 hover:bg-[#d4e0f5] cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[1.5px] text-lg font-medium bg-[#dbe9fc]  border-[0.5px] border-gray-300 flex justify-center items-center text-gray-500"
+                  onClick={() =>
+                    event({
+                      action: "home_click",
+                      params: {
+                        link: "LinkedIn",
+                      },
+                    })
+                  }
+                >
+                  {/* <ImLinkedin2 /> */}
+                  <p>Resume</p>
                 </Link>
               </div>
             </div>
@@ -167,7 +185,7 @@ const Hello = ({ homeRef }) => {
           <Link
             href="mailto:mikashanela.dev@gmail.com"
             aria-label="Mail"
-            className="w-fit p-3 bg-gray-100 rounded-[10px] duration-300"
+            className="w-fit p-3 bg-gray-100 rounded-[10px] border-[0.5px] border-gray-200 duration-300 text-gray-500"
             onClick={() =>
               event({
                 action: "home_click",
@@ -184,7 +202,7 @@ const Hello = ({ homeRef }) => {
             aria-label="Github"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-fit p-3 bg-gray-100 rounded-[10px] duration-300"
+            className="w-fit p-3 bg-gray-100 rounded-[10px]  border-[0.5px] border-gray-200 duration-300 text-gray-500"
             onClick={() =>
               event({
                 action: "home_click",
@@ -201,7 +219,7 @@ const Hello = ({ homeRef }) => {
             aria-label="LinkedIn"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-fit p-3 bg-gray-100 rounded-[10px] duration-300"
+            className="w-fit p-3 bg-gray-100 rounded-[10px] border-[0.5px] border-gray-200 duration-300 text-gray-500"
             onClick={() =>
               event({
                 action: "home_click",

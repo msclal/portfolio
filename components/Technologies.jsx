@@ -16,6 +16,7 @@ import { SiCypress } from "react-icons/si";
 import { FaGit } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { SiOpenai } from "react-icons/si";
+import { SiGoogleanalytics } from "react-icons/si";
 
 const Technologies = () => {
   const [next, setNext] = useState(false);
@@ -150,13 +151,14 @@ const Technologies = () => {
           </div>
 
           <div className="relative hover:scale-[1.08] hover:-translate-y-1 duration-300 flex justify-center">
-            <SiFirebase
+            <span className="absolute -bottom-[10px] w-[6px] h-[6px] bg-[#e8e0df] rounded-full"></span>
+            <SiGoogleanalytics
               className="text-tech-firebase"
               onMouseEnter={() => setFirebase(true)}
               onMouseLeave={() => setFirebase(false)}
             />
             {firebase && (
-              <p className="absolute text-[10px] -top-[30px]">Firebase</p>
+              <p className="absolute text-[10px] -top-[30px]">Analytics</p>
             )}
           </div>
 
