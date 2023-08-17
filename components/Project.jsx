@@ -86,8 +86,10 @@ const Project = ({ project }) => {
         </div>
         <div className="space-y-1">
           <div className="max-md:hidden flex gap-x-1 text-blue-700 text-xs">
+            {/* Desktop */}
             <Link
               href={project.github}
+              aria-label={`${project.title} Github`}
               target="_blank"
               rel="noreferrer noopener"
               className="underline hover:text-purple-900"
@@ -99,17 +101,21 @@ const Project = ({ project }) => {
                 <p className="font-thin">•</p>
                 <a
                   href={project.deployed}
+                  aria-label={`${project.title} Live Version`}
                   target="_blank"
                   rel="noreferrer noopener"
                   className="underline hover:text-purple-900"
                 >
-                  Deployed
+                  Live
                 </a>
               </>
             )}
           </div>
+
+          {/* Mobile (some deployed versions arent mobile friendly!) */}
           <div className="md:hidden flex gap-x-1 text-blue-700 text-xs">
             <Link
+              aria-label={`${project.title} Github`}
               href={project.github}
               target="_blank"
               rel="noreferrer noopener"
@@ -122,11 +128,12 @@ const Project = ({ project }) => {
                 <p className="font-thin">•</p>
                 <a
                   href={project.deployed}
+                  aria-label={`${project.title} Live Version`}
                   target="_blank"
                   rel="noreferrer noopener"
                   className="underline hover:text-purple-900"
                 >
-                  Deployed
+                  Live
                 </a>
               </>
             )}

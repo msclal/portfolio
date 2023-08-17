@@ -11,6 +11,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { ImLinkedin2 } from "react-icons/im";
 import { ImPhone } from "react-icons/im";
 import { GrInstagram } from "react-icons/gr";
+import { SiSpotify } from "react-icons/si";
 
 const Contact = ({ contactRef }) => {
   const form = useRef();
@@ -37,7 +38,7 @@ const Contact = ({ contactRef }) => {
     setName("");
     setMessage("");
 
-    console.log("message sent");
+    // console.log("message sent");
 
     emailjs.sendForm(
       "service_b4zeagj",
@@ -64,6 +65,7 @@ const Contact = ({ contactRef }) => {
       exit={{ opacity: 0, y: 0 }}
       className="w-full md:w-1/2 h-[520px] md:h-[550px]"
     >
+      <ToastContainer />
       <div className="duration-700 md:hover:-translate-y-[3px] md:hover:shadow-lg shadow-sm p-5 bg-[#F5F6F6] rounded-[20px] bg-opacity-90 flex flex-col gap-y-6 h-full">
         <p className="font-semibold text-lg select-none">Contact</p>
         <div className="flex justify-between items-center">
@@ -94,7 +96,7 @@ const Contact = ({ contactRef }) => {
             <Link
               href="mailto:mikashanela.dev@gmail.com"
               aria-label="Mail"
-              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
+              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px] md:hover:text-yellow-200"
               onClick={() =>
                 event({
                   action: "contact_click",
@@ -109,7 +111,7 @@ const Contact = ({ contactRef }) => {
             <Link
               href={"tel:9092145009"}
               aria-label="Phone"
-              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
+              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px] md:hover:text-yellow-200"
               onClick={() =>
                 event({
                   action: "contact_click",
@@ -131,7 +133,7 @@ const Contact = ({ contactRef }) => {
               aria-label="Github"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
+              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px] md:hover:text-gray-300"
               onClick={() =>
                 event({
                   action: "contact_click",
@@ -148,7 +150,7 @@ const Contact = ({ contactRef }) => {
               target="_blank"
               aria-label="LinkedIn"
               rel="noopener noreferrer"
-              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
+              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px] md:hover:text-blue-200"
               onClick={() =>
                 event({
                   action: "contact_click",
@@ -165,7 +167,7 @@ const Contact = ({ contactRef }) => {
               target="_blank"
               aria-label="Instagram"
               rel="noopener noreferrer"
-              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
+              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px] md:hover:text-red-200"
               onClick={() =>
                 event({
                   action: "contact_click",
@@ -176,6 +178,23 @@ const Contact = ({ contactRef }) => {
               }
             >
               <GrInstagram />
+            </Link>
+            <Link
+              href="https://open.spotify.com/user/msclal?si=6bebb6c33fe24174"
+              target="_blank"
+              aria-label="Spotify"
+              rel="noopener noreferrer"
+              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px] md:hover:text-green-200"
+              onClick={() =>
+                event({
+                  action: "contact_click",
+                  params: {
+                    link: "spotify",
+                  },
+                })
+              }
+            >
+              <SiSpotify />
             </Link>
           </div>
         </div>
@@ -216,7 +235,6 @@ const Contact = ({ contactRef }) => {
               className="bg-gray-500 hover:bg-gray-600 cursor-pointer text-sm w-fit text-white px-2 py-1 rounded-[10px] select-none duration-300 hover:-translate-y-[0.7px] max-xs:text-sm"
             />
           </form>
-          <ToastContainer />
         </div>
       </div>
     </motion.div>

@@ -20,6 +20,7 @@ const Footer = () => {
       </p>
       <p>{"All right reserved"}</p>
       <Link
+        aria-label="Spotify"
         href={
           "https://open.spotify.com/artist/74XFHRwlV6OrjEM0A2NCMF?si=d7JGuPJ3RW6FqVGrap3M8A"
         }

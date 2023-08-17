@@ -30,7 +30,7 @@ const Experience = ({ experienceRef }) => {
       alt: "MacREU Research",
       description:
         "Explored ways in improving power-saving mechanisms in AMD GPUs. Wrote a research paper and presented at multiple conferences.",
-      link: "https://github.com/msclal/AMD-GPU-Research",
+      link: "https://ieeexplore.ieee.org/document/9651148",
     },
     {
       title: "Rookie Success",
@@ -140,6 +140,7 @@ const Experience = ({ experienceRef }) => {
                 <div className="flex flex-col gap-y-2">
                   <a
                     href={experience.link}
+                    aria-label={`${experience.alt}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-x-1 md:gap-x-2"
