@@ -38,7 +38,7 @@ const Contact = ({ contactRef }) => {
     setName("");
     setMessage("");
 
-    console.log("message sent");
+    // console.log("message sent");
 
     emailjs.sendForm(
       "service_b4zeagj",
@@ -65,6 +65,7 @@ const Contact = ({ contactRef }) => {
       exit={{ opacity: 0, y: 0 }}
       className="w-full md:w-1/2 h-[520px] md:h-[550px]"
     >
+      <ToastContainer />
       <div className="duration-700 md:hover:-translate-y-[3px] md:hover:shadow-lg shadow-sm p-5 bg-[#F5F6F6] rounded-[20px] bg-opacity-90 flex flex-col gap-y-6 h-full">
         <p className="font-semibold text-lg select-none">Contact</p>
         <div className="flex justify-between items-center">
@@ -234,7 +235,6 @@ const Contact = ({ contactRef }) => {
               className="bg-gray-500 hover:bg-gray-600 cursor-pointer text-sm w-fit text-white px-2 py-1 rounded-[10px] select-none duration-300 hover:-translate-y-[0.7px] max-xs:text-sm"
             />
           </form>
-          <ToastContainer />
         </div>
       </div>
     </motion.div>
