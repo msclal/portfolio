@@ -22,7 +22,7 @@ export default function Document() {
       <meta property="og:locale" content="en_IE" />
       <meta name="robots" content="index,follow" />
       <meta property="og:title" content="Home" />
-      <meta name="next-head-count" content="10" /> {/* </head> */}
+      {/* </head> */}
       <link rel="icon" href="/assets/head.png" />
       <body>
         <Main />
