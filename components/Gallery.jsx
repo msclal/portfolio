@@ -85,7 +85,7 @@ const Gallery = () => {
     >
       <div className="overflow-hidden rounded-[20px] duration-700 md:hover:-translate-y-[3px] md:hover:shadow-xl shadow-sm">
         <div
-          className="whitespace-nowrap transition-ease rounded-[20px] duration-[650ms] md:hover:-translate-y-1"
+          className="relative whitespace-nowrap transition-ease rounded-[20px] duration-[650ms] md:hover:-translate-y-1"
           style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
         >
           {images.map((image, index) => (
@@ -98,6 +98,7 @@ const Gallery = () => {
               className="inline-block max-sm:h-[450px] aspect-square h-[480px] w-full rounded-[20px]"
             />
           ))}
+          <div className="absolute bg-red-500">hello</div>
         </div>
       </div>
     </motion.div>
