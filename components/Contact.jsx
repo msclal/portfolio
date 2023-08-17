@@ -11,6 +11,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { ImLinkedin2 } from "react-icons/im";
 import { ImPhone } from "react-icons/im";
 import { GrInstagram } from "react-icons/gr";
+import { SiSpotify } from "react-icons/si";
 
 const Contact = ({ contactRef }) => {
   const form = useRef();
@@ -94,7 +95,7 @@ const Contact = ({ contactRef }) => {
             <Link
               href="mailto:mikashanela.dev@gmail.com"
               aria-label="Mail"
-              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
+              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px] md:hover:text-yellow-200"
               onClick={() =>
                 event({
                   action: "contact_click",
@@ -109,7 +110,7 @@ const Contact = ({ contactRef }) => {
             <Link
               href={"tel:9092145009"}
               aria-label="Phone"
-              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
+              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px] md:hover:text-yellow-200"
               onClick={() =>
                 event({
                   action: "contact_click",
@@ -131,7 +132,7 @@ const Contact = ({ contactRef }) => {
               aria-label="Github"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
+              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px] md:hover:text-gray-300"
               onClick={() =>
                 event({
                   action: "contact_click",
@@ -148,7 +149,7 @@ const Contact = ({ contactRef }) => {
               target="_blank"
               aria-label="LinkedIn"
               rel="noopener noreferrer"
-              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
+              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px] md:hover:text-blue-200"
               onClick={() =>
                 event({
                   action: "contact_click",
@@ -165,7 +166,7 @@ const Contact = ({ contactRef }) => {
               target="_blank"
               aria-label="Instagram"
               rel="noopener noreferrer"
-              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px]"
+              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px] md:hover:text-red-200"
               onClick={() =>
                 event({
                   action: "contact_click",
@@ -176,6 +177,23 @@ const Contact = ({ contactRef }) => {
               }
             >
               <GrInstagram />
+            </Link>
+            <Link
+              href="https://open.spotify.com/user/msclal?si=6bebb6c33fe24174"
+              target="_blank"
+              aria-label="Spotify"
+              rel="noopener noreferrer"
+              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px] md:hover:text-green-200"
+              onClick={() =>
+                event({
+                  action: "contact_click",
+                  params: {
+                    link: "spotify",
+                  },
+                })
+              }
+            >
+              <SiSpotify />
             </Link>
           </div>
         </div>

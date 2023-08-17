@@ -119,12 +119,12 @@ const Hello = ({ homeRef }) => {
                   aria-label="Resume"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-fit p-3 hover:bg-[#d4e0f5] cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[1.5px] text-lg font-medium bg-[#dbe9fc]  border-[0.5px] border-gray-300 flex justify-center items-center text-gray-500"
+                  className="w-fit p-3 hover:bg-[#e1eaf7] cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[1.5px] text-lg font-medium bg-[#e9f2fe]  border-[0.5px] border-gray-300 flex justify-center items-center text-gray-500"
                   onClick={() =>
                     event({
                       action: "home_click",
                       params: {
-                        link: "LinkedIn",
+                        link: "resume",
                       },
                     })
                   }
