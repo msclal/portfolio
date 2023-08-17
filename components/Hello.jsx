@@ -30,8 +30,8 @@ const Hello = ({ homeRef }) => {
                 <div>
                   <p className="space-x-2 xl:text-lg">
                     <span className="font-medium text-[#a888b7] mr-1">
-                      Full-Stack Software Engineer with a flair for all user
-                      experience related things.
+                      Software Engineer with a flair for all user experience
+                      related things.
                     </span>
                     Based in Southern California. Feeling Supersonic 24/5. After
                     hours, I eat my Salted Caramel {"Häagen-Dazs"} and watch the
@@ -119,7 +119,8 @@ const Hello = ({ homeRef }) => {
                   aria-label="Resume"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-fit p-3 hover:bg-[#e1eaf7] cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[1.5px] text-lg font-medium bg-[#e9f2fe]  border-[0.5px] border-gray-300 flex justify-center items-center text-gray-500"
+                  className="w-fit p-3 bg-[#a1b8da] hover:bg-gray-300 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[1.5px] text-lg font-medium  border-[0.5px] border-gray-300 flex justify-center items-center"
+                  // className="w-fit p-3 hover:bg-[#e1eaf7] cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[1.5px] text-lg font-medium bg-[#e9f2fe]  border-[0.5px] border-gray-300 flex justify-center items-center text-gray-500"
                   onClick={() =>
                     event({
                       action: "home_click",
