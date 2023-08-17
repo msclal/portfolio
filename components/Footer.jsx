@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { event } from "../lib/ga";
 import { motion } from "framer-motion";
 import logo from "@/public/assets/footer_logo.svg";
 import Link from "next/link";
@@ -21,6 +22,14 @@ const Footer = () => {
       <Link
         href={
           "https://open.spotify.com/artist/74XFHRwlV6OrjEM0A2NCMF?si=d7JGuPJ3RW6FqVGrap3M8A"
+        }
+        onClick={() =>
+          event({
+            action: "footer_click",
+            params: {
+              link: "mika_logo",
+            },
+          })
         }
       >
         <Image
