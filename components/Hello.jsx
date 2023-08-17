@@ -48,7 +48,7 @@ const Hello = ({ homeRef }) => {
                       sequence={[
                         "Hayley Williams from Paramore!",
                         6500,
-                        "Calamari + All the Hot Sauces.",
+                        "In-N-Out Chili Peppers.",
                         5000,
                         "A Karaoke Mic.",
                         5000,
@@ -117,11 +117,9 @@ const Hello = ({ homeRef }) => {
                 sequence={[
                   `Software Engineer`,
                   7000,
-                  `UX Junkie`,
+                  `User Experience Junkie`,
                   5000,
                   "Professional Kareoke Singer",
-                  5000,
-                  "E-Scooter Enthusiast",
                   5000,
                   "Hot Sauce Hoarder",
                   5000,
@@ -177,9 +175,6 @@ const Hello = ({ homeRef }) => {
               #HayleyWilliamsTop5Ever🗿
             </span>
           </p>
-          {/* <p className="font-medium text-[#a1b8da]">
-            #HayleyWilliamsTop5Ever🗿
-          </p> */}
         </div>
       </motion.div>
     </>
