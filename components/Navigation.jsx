@@ -234,7 +234,7 @@ const Navigation = () => {
         onClick={() => setToggle(!toggle)}
       >
         <BsToggles
-          className={`cursor-pointer transition-all ease-in-out duration-100 text-[35px] ${
+          className={`cursor-pointer transition-all ease-in-out duration-100 text-[34px] ${
             scrollNav ? `bg-gray-200 p-2 rounded-[5px] bg-opacity-80` : `p-2`
           }
             ${toggle ? `bg-gray-200 p-2 rounded-[5px] bg-opacity-80` : `p-2`}`}
