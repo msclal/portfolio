@@ -51,7 +51,7 @@ export default function Home() {
         isContactVisible={isContactVisible}
       />
       <div className="space-y-5 md:space-y-6">
-        <div className="flex gap-x-4 h-full">
+        <div className="flex gap-x-6 h-full">
           <Hello homeRef={homeRef} />
           <div className="max-md:hidden h-full md:w-[55%]">
             <Gallery />

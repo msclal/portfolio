@@ -122,7 +122,7 @@ const Experience = ({ experienceRef }) => {
       exit={{ opacity: 0, y: 0 }}
       className="w-full md:w-[62%] h-full"
     >
-      <div className="bg-[#F5F6F6] rounded-[20px] p-5 pr-3 bg-opacity-90 space-y-5 duration-700 md:hover:-translate-y-[3px] md:hover:drop-shadow-lg drop-shadow-sm scroll-smooth	">
+      <div className="bg-[#F5F6F6] rounded-[20px] p-5 pr-3 bg-opacity-90 space-y-5 duration-700 md:hover:-translate-y-[3px] md:hover:shadow-lg shadow-sm scroll-smooth	">
         <p className="font-semibold select-none text-lg">Experience</p>
 
         <div

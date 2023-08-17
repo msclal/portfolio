@@ -77,7 +77,7 @@ const Project = ({ project }) => {
         // href={project.link}
         // target="_blank"
         // rel="noreferrer noopener"
-        className={`p-4 flex flex-col w-full rounded-[20px] gap-y-3 border-[1px] border-gray-200 drop-shadow-sm bg-opacity-70 duration-700 md:hover:-translate-y-[3px] md:hover:drop-shadow-lg ${project.bg}`}
+        className={`p-4 flex flex-col w-full rounded-[20px] gap-y-3 border-[1px] border-gray-200 shadow-sm bg-opacity-70 duration-700 md:hover:-translate-y-[3px] md:hover:shadow-lg ${project.bg}`}
       >
         <Image
           src={project.image}
