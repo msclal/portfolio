@@ -115,8 +115,8 @@ const Hello = ({ homeRef }) => {
                   <ImLinkedin2 />
                 </Link>
                 <Link
-                  href="resume.pdf"
-                  aria-label="Resume"
+                  href="mika_shanela_resume.pdf"
+                  aria-label="Mika Shanela Resume"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-fit p-3 bg-[#a1b8da] hover:bg-gray-300 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[1.5px] text-lg font-medium  border-[0.5px] border-gray-300 flex justify-center items-center"

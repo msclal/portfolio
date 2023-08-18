@@ -71,9 +71,9 @@ const Contact = ({ contactRef }) => {
         <div className="flex justify-between items-center">
           <p className="font-medium max-xs:text-sm">Resume</p>
           <Link
-            href="resume.pdf"
-            aria-label="Resume"
-            alt="Resume"
+            href="mika_shanela_resume.pdf"
+            aria-label="Mika Shanela Resume"
+            alt="Mika Shanela Resume"
             target="_blank"
             rel="noopener noreferrer"
             className="w-fit gap-x-1 flex items-center cursor-pointer text-gray-500 hover:text-gray-700 duration-300"
