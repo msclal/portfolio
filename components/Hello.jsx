@@ -34,7 +34,7 @@ const Hello = ({ homeRef }) => {
                       related things.
                     </span>
                     Based in Southern California. Feeling Supersonic 24/5. After
-                    hours, I eat my Salted Caramel {"Häagen-Dazs"} and watch the
+                    hours, I eat my salted caramel {"Häagen-Dazs"} and watch the
                     ill-fated Lakers waste another season of {"Austin Reaves'"}{" "}
                     career.
                     <span className="font-medium text-[#a1b8da]">

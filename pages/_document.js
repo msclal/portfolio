@@ -8,7 +8,7 @@ export default function Document() {
         property="description"
         content="Home page for Mika Shanela's portfolio site!"
       />
-      <meta property="og:image" content="/assets/footer_logo.svg" />
+      <meta property="og:image" content="/assets/meta_logo.png" />
       <meta property="viewport" content="width=device-width, initial-scale=1" />
       <meta charSet="utf-8" />
       <meta property="og:type" content="website" />
