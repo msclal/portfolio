@@ -7,7 +7,7 @@ import { SiJavascript } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
-import { SiFirebase } from "react-icons/si";
+// import { SiFirebase } from "react-icons/si";
 import { SiFigma } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
 import { SiCplusplus } from "react-icons/si";
@@ -242,7 +242,7 @@ const Technologies = () => {
           <SiTypescript className="text-tech-typescript" />
           <DiNodejs className="text-5xl text-tech-node" />
           <SiMongodb className="text-tech-mongo" />
-          <SiFirebase className="text-tech-firebase" />
+          <SiGoogleanalytics className="text-tech-firebase" />
           <SiPostman className="text-tech-postman" />
           <FaPython className="text-tech-python" />
           <SiCplusplus className="text-tech-cpp" />

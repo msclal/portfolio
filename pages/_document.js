@@ -4,7 +4,7 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <title>Mika Shanela</title>
-      <meta name="title" property="og:title" content="Home" />
+      {/* <meta name="title" property="og:title" content="Home" /> */}
       <meta
         name="description"
         property="og:description"
