@@ -5,11 +5,11 @@ export default function Document() {
       <Head />
       <title>Mika Shanela</title>
       <meta
-        name="description"
+        property="description"
         content="Home page for Mika Shanela's portfolio site!"
       />
-      <meta property="og:image" content="/assets/egg.png" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta property="og:image" content="/assets/footer_logo.svg" />
+      <meta property="viewport" content="width=device-width, initial-scale=1" />
       <meta charSet="utf-8" />
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en_IE" />
