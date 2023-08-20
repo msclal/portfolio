@@ -6,9 +6,13 @@ export default function Document() {
       <title>Mika Shanela</title>
       <meta
         name="description"
-        content="Check out Mika Shanela's portfolio site!"
+        content="Home page for Mika Shanela's portfolio site!"
       />
+      <meta property="og:image" content="/assets/egg.png" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta charSet="utf-8" />
+      <meta property="og:type" content="website" />
+      <meta property="og:locale" content="en_IE" />
       <meta name="robots" content="index,follow"></meta>
       {/* <Head />
       <title>Mika Shanela</title>
