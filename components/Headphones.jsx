@@ -42,7 +42,8 @@ const Headphones = () => {
         exit={{ opacity: 0, y: 0 }}
         // className="sm:hidden w-full h-[150px] bg-gradient-to-br from-[#b8b4b4] to-[#4d4b4b] rounded-[20px] pb-1 p-3 space-y-3 shadow-sm"
         // className="sm:hidden w-full h-[150px] bg-gradient-to-br from-[#b8a781] to-[#746346] rounded-[20px] pb-1 p-3 space-y-3 shadow-sm"
-        className="sm:hidden w-full h-[150px] bg-gradient-to-br from-[#cdb77d] to-[#9c7c25] rounded-[20px] pb-1 p-3 space-y-3 shadow-sm"
+        className="sm:hidden w-full h-[150px] bg-gradient-to-br from-[#c4ad72] to-[#95751c] rounded-[20px] pb-1 p-3 space-y-3 shadow-sm"
+        // className="sm:hidden w-full h-[150px] bg-gradient-to-br from-[#cdb77d] to-[#9c7c25] rounded-[20px] pb-1 p-3 space-y-3 shadow-sm"
       >
         <p className="font-semibold text-lg select-none text-white">
           {"What's on my Headphones?"}

@@ -34,7 +34,7 @@ const Hello = ({ homeRef }) => {
                       related things.
                     </span>
                     Based in Southern California. Feeling Supersonic 24/5. After
-                    hours, I eat my Salted Caramel {"Häagen-Dazs"} and watch the
+                    hours, I eat my salted caramel {"Häagen-Dazs"} and watch the
                     ill-fated Lakers waste another season of {"Austin Reaves'"}{" "}
                     career.
                     <span className="font-medium text-[#a1b8da]">
@@ -161,11 +161,13 @@ const Hello = ({ homeRef }) => {
                 sequence={[
                   `Software Engineer`,
                   7000,
-                  `User Experience Junkie`,
+                  `UX Engineer`,
+                  5000,
+                  "Garf LLC President",
                   5000,
                   "Professional Kareoke Singer",
                   5000,
-                  "Hot Sauce Hoarder",
+                  "In-N-Out Chili Pepper Hoarder",
                   5000,
                   "Proud Mom (of 14 Cats)",
                   5000,
