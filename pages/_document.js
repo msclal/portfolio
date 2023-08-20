@@ -2,15 +2,15 @@ import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   return (
     <Html lang="en">
-      {/* <Head> */}
-      {/* <title>Mika Shanela</title>
+      <Head />
+      <title>Mika Shanela</title>
       <meta
-      name="description"
-      content="Check out Mika Shanela's portfolio site!"
+        name="description"
+        content="Check out Mika Shanela's portfolio site!"
       />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="index,follow"></meta> */}
-      <Head />
+      <meta name="robots" content="index,follow"></meta>
+      {/* <Head />
       <title>Mika Shanela</title>
       <meta property="og:title" content="Home" />
       <meta
@@ -22,7 +22,7 @@ export default function Document() {
       <meta charSet="utf-8" />
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en_IE" />
-      <meta name="robots" content="index,follow" />
+      <meta name="robots" content="index,follow" /> */}
       <link rel="icon" href="/assets/egg.png" />
 
       {/* <!-- Google tag (gtag.js) --> */}
