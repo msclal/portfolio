@@ -4,15 +4,21 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <title>Mika Shanela</title>
+      <meta name="title" property="og:title" content="Home" />
       <meta
-        property="description"
+        name="description"
+        property="og:description"
         content="Home page for Mika Shanela's portfolio site!"
       />
-      <meta property="og:image" content="/assets/meta_logo.png" />
-      <meta property="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="image" property="og:image" content="/assets/gude.png" />
+      <meta name="type" property="og:type" content="website" />
+      <meta name="locale" property="og:locale" content="en_IE" />
       <meta charSet="utf-8" />
-      <meta property="og:type" content="website" />
-      <meta property="og:locale" content="en_IE" />
+      <meta
+        name="viewport"
+        property="viewport"
+        content="width=device-width, initial-scale=1"
+      />
       <meta name="robots" content="index,follow"></meta>
       {/* <Head />
       <title>Mika Shanela</title>
@@ -27,7 +33,7 @@ export default function Document() {
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en_IE" />
       <meta name="robots" content="index,follow" /> */}
-      <link rel="icon" href="/assets/egg.png" />
+      <link rel="icon" href="/assets/gude.png" />
 
       {/* <!-- Google tag (gtag.js) --> */}
       <script
