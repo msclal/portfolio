@@ -33,6 +33,8 @@ const Projects = ({ projectsRef }) => {
           <SiTailwindcss />
           <SiMongodb />
           <SiSocketdotio />
+          <p className="text-xs">NextAuth</p>
+          {/* <p>NextAuth</p> */}
         </div>
       ),
       bg: "bg-gradient-to-r from-[#eef2fd] to-[#ecf5fe]",
@@ -53,6 +55,7 @@ const Projects = ({ projectsRef }) => {
           <SiMongodb />
           <SiOpenai />
           <SiSocketdotio />
+          <p className="text-xs">NextAuth</p>
         </div>
       ),
       bg: "bg-gradient-to-br from-[#ecf5fe] to-[#f3fef7]",
@@ -73,6 +76,7 @@ const Projects = ({ projectsRef }) => {
           <SiTailwindcss />
           <SiMongodb />
           <TbBrandFramerMotion />
+          <p className="text-xs">NextAuth</p>
         </div>
       ),
       bg: "bg-gradient-to-r from-[#f0f6fd] to-[#e8f4ff]",
@@ -92,6 +96,7 @@ const Projects = ({ projectsRef }) => {
           <TbBrandNextjs />
           <SiTailwindcss />
           <SiFirebase />
+          <p className="text-xs">NextAuth</p>
         </div>
       ),
       bg: "bg-gradient-to-br from-[#e8f4ff] to-[#fffbef]",

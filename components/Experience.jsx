@@ -33,7 +33,7 @@ const Experience = ({ experienceRef }) => {
       link: "https://ieeexplore.ieee.org/document/9651148",
     },
     {
-      title: "Rookie Success",
+      title: "Hack I: Rookie Success",
       subTitle: "January 2022 - Rose Hack",
       image: planetHer,
       alt: "Planet Her",
@@ -41,7 +41,7 @@ const Experience = ({ experienceRef }) => {
       link: "https://devpost.com/software/planether",
     },
     {
-      title: "Back To Back",
+      title: "Hack II: Back To Back",
       subTitle: "April 2022 - Citrus Hack",
       image: scottyMaps,
       alt: "ScottyMaps",
@@ -66,7 +66,7 @@ const Experience = ({ experienceRef }) => {
         "Assisted in teaching 15 High-Schoolers learn basic HTML, CSS, JavaScript, and React.",
     },
     {
-      title: `Standout Intern Takes Home Silver`,
+      title: `Hack III: Intern Takes Home Silver`,
       subTitle: "Summer 2022 - Northwestern Mutual Tech Intern Hackathon",
       image: wrxSpace,
       alt: "wrxSpace",
@@ -104,7 +104,7 @@ const Experience = ({ experienceRef }) => {
       ),
     },
     {
-      title: "Last Dance",
+      title: "Hack IV: Last Dance",
       subTitle: "May 2023 - Bio Hack",
       image: bioLink,
       alt: "bioLink",
