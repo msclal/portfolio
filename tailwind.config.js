@@ -41,6 +41,7 @@ module.exports = {
           cypress: "#526870",
           git: "#e15a39",
           cpp: "#5E97D0",
+          prisma: "#0C344B",
         },
       },
     },
