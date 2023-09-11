@@ -8,6 +8,7 @@ import { SiTypescript } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 // import { SiFirebase } from "react-icons/si";
+import { SiPrisma } from "react-icons/si";
 import { SiFigma } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
 import { SiCplusplus } from "react-icons/si";
@@ -45,7 +46,7 @@ const Technologies = () => {
       >
         <div className="flex flex-wrap justify-between items-center text-3xl xl:text-4xl gap-y-2 select-none">
           <div className="relative hover:scale-[1.08] hover:-translate-y-1 duration-300 flex justify-center">
-            <span className="absolute -bottom-[7px] xl:-bottom-[7px] w-[6px] h-[6px] bg-[#e8e0df] rounded-full"></span>
+            <span className="absolute -bottom-[7px] xl:-bottom-[7px] w-[6px] h-[6px] bg-[#a1b8da] rounded-full"></span>
             <TbBrandNextjs
               className="text-4xl xl:text-[42px] stroke-[1.3px]"
               onMouseEnter={() => setNext(true)}
@@ -68,7 +69,7 @@ const Technologies = () => {
           </div> */}
 
           <div className="relative hover:scale-[1.08] hover:-translate-y-1 duration-300 flex justify-center">
-            <span className="absolute -bottom-[10px] w-[6px] h-[6px] bg-[#e8e0df] rounded-full"></span>
+            {/* <span className="absolute -bottom-[10px] w-[6px] h-[6px] bg-[#e8e0df] rounded-full"></span> */}
 
             <SiOpenai
               onMouseEnter={() => setVercel(true)}
@@ -81,7 +82,7 @@ const Technologies = () => {
           </div>
 
           <div className="relative hover:scale-[1.08] hover:-translate-y-1 duration-300 flex justify-center">
-            <span className="absolute -bottom-[10px] w-[6px] h-[6px] bg-[#e8e0df] rounded-full"></span>
+            <span className="absolute -bottom-[10px] w-[6px] h-[6px] bg-[#a1b8da] rounded-full"></span>
             <SiTailwindcss
               className="text-tech-tailwind"
               onMouseEnter={() => setTailwind(true)}
@@ -93,7 +94,7 @@ const Technologies = () => {
           </div>
 
           <div className="relative hover:scale-[1.08] hover:-translate-y-1 duration-300 flex justify-center">
-            <span className="absolute -bottom-[10px] w-[6px] h-[6px] bg-[#e8e0df] rounded-full"></span>
+            <span className="absolute -bottom-[10px] w-[6px] h-[6px] bg-[#a1b8da] rounded-full"></span>
             <FaReact
               className="text-tech-react"
               onMouseEnter={() => setReact(true)}
@@ -105,7 +106,7 @@ const Technologies = () => {
           </div>
 
           <div className="relative hover:scale-[1.08] hover:-translate-y-1 duration-300 flex justify-center">
-            <span className="absolute -bottom-[10px] w-[6px] h-[6px] bg-[#e8e0df] rounded-full"></span>
+            <span className="absolute -bottom-[10px] w-[6px] h-[6px] bg-[#a1b8da] rounded-full"></span>
             <SiJavascript
               className="text-tech-javascript"
               onMouseEnter={() => setJs(true)}
@@ -139,7 +140,7 @@ const Technologies = () => {
           </div>
 
           <div className="relative hover:scale-[1.08] hover:-translate-y-1 duration-300 flex justify-center">
-            <span className="absolute -bottom-[10px] w-[6px] h-[6px] bg-[#e8e0df] rounded-full"></span>
+            <span className="absolute -bottom-[10px] w-[6px] h-[6px] bg-[#a1b8da] rounded-full"></span>
             <SiMongodb
               className="text-tech-mongo"
               onMouseEnter={() => setMongo(true)}
@@ -151,18 +152,20 @@ const Technologies = () => {
           </div>
 
           <div className="relative hover:scale-[1.08] hover:-translate-y-1 duration-300 flex justify-center">
-            <span className="absolute -bottom-[10px] w-[6px] h-[6px] bg-[#e8e0df] rounded-full"></span>
-            <SiGoogleanalytics
-              className="text-tech-firebase"
+            <span className="absolute -bottom-[10px] w-[6px] h-[6px] bg-[#a1b8da] rounded-full"></span>
+            <SiPrisma
+              // className="text-tech-firebase"
+              className="text-tech-prisma"
               onMouseEnter={() => setFirebase(true)}
               onMouseLeave={() => setFirebase(false)}
             />
             {firebase && (
-              <p className="absolute text-[10px] -top-[30px]">Analytics</p>
+              <p className="absolute text-[10px] -top-[30px]">Prisma</p>
             )}
           </div>
 
           <div className="relative hover:scale-[1.08] hover:-translate-y-1 duration-300 flex justify-center">
+            <span className="absolute -bottom-[10px] w-[6px] h-[6px] bg-[#a1b8da] rounded-full"></span>
             <SiPostman
               className="text-tech-postman"
               onMouseEnter={() => setPostman(true)}
@@ -194,7 +197,7 @@ const Technologies = () => {
           </div>
 
           <div className="relative hover:scale-[1.08] hover:-translate-y-1 duration-300 flex justify-center">
-            <span className="absolute -bottom-[10px] w-[6px] h-[6px] bg-[#e8e0df] rounded-full"></span>
+            <span className="absolute -bottom-[10px] w-[6px] h-[6px] bg-[#a1b8da] rounded-full"></span>
             <SiFigma
               className="text-tech-figma"
               onMouseEnter={() => setFigma(true)}
@@ -215,7 +218,7 @@ const Technologies = () => {
           </div>
 
           <div className="relative hover:scale-[1.08] hover:-translate-y-1 duration-300 flex justify-center">
-            <span className="absolute -bottom-[10px] w-[6px] h-[6px] bg-[#e8e0df] rounded-full"></span>
+            <span className="absolute -bottom-[10px] w-[6px] h-[6px] bg-[#a1b8da] rounded-full"></span>
             <FaGit
               className="text-tech-git"
               onMouseEnter={() => setGit(true)}

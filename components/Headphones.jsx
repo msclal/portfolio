@@ -11,14 +11,14 @@ const Headphones = () => {
         exit={{ opacity: 0, y: 0 }}
         className="max-sm:hidden w-full md:w-1/2"
       >
-        <div className="duration-700 md:hover:-translate-y-[3px] md:hover:shadow-lg shadow-sm bg-gradient-to-br to-[#f9b8cb] from-[#cc4d71] bg-opacity-50 rounded-[20px] max-sm:pb-1 p-5 md:p-5 space-y-3 sm:h-[550px]">
-          <p className="font-semibold text-xl select-none text-[#ffe7f3]">
+        <div className="duration-700 md:hover:-translate-y-[3px] md:hover:shadow-lg shadow-sm bg-gradient-to-br to-[#242424] from-[#454548] bg-opacity-50 rounded-[20px] max-sm:pb-1 p-5 md:p-5 space-y-3 sm:h-[550px]">
+          <p className="font-semibold text-xl select-none text-white">
             {"What's on my Headphones?"}
           </p>
           <div className="w-full h-full">
             <iframe
               title="Mika's Spotify Playlist"
-              src="https://open.spotify.com/embed/playlist/42UDhwHjTGGg7J5ny0WVXU?utm_source=generator"
+              src="https://open.spotify.com/embed/playlist/42UDhwHjTGGg7J5ny0WVXU?utm_source=generator&theme=0"
               width="100%"
               loading="lazy"
               className="h-[90%]"
