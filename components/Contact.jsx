@@ -96,7 +96,7 @@ const Contact = ({ contactRef }) => {
             <Link
               href="mailto:mikashanela.dev@gmail.com"
               aria-label="Mail"
-              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px] md:hover:text-yellow-200"
+              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px] md:hover:text-purple-200"
               onClick={() =>
                 event({
                   action: "contact_click",
@@ -133,7 +133,7 @@ const Contact = ({ contactRef }) => {
               aria-label="Github"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px] md:hover:text-gray-300"
+              className="w-fit p-2 bg-gray-500 hover:bg-gray-600 text-white cursor-pointer rounded-[10px] duration-300 hover:-translate-y-[0.7px] md:hover:text-gray-800"
               onClick={() =>
                 event({
                   action: "contact_click",
