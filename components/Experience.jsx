@@ -21,7 +21,7 @@ const Experience = ({ experienceRef }) => {
       image: Scott,
       alt: "UC Riverside",
       description:
-        "C++ in CS010 at UC Riverside! This is also where I earned my Bachelor's in Computer Science and Business, graduating with Cum Laude honors. Chef's kiss, 10/10 people.",
+        "C++ in CS010 at UC Riverside! This is also where I earned my Bachelor in Computer Science and Business, graduating with Cum Laude honors. Chef's kiss, 10/10 people.",
     },
     {
       title: "GPU Research Intern",
