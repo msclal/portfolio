@@ -40,9 +40,9 @@ const Headphones = () => {
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 0, transition: { delay: 3.2 } }}
         exit={{ opacity: 0, y: 0 }}
-        // className="sm:hidden w-full h-[150px] bg-gradient-to-br from-[#b8b4b4] to-[#4d4b4b] rounded-[20px] pb-1 p-3 space-y-3 shadow-sm"
+        className="sm:hidden w-full h-[150px] bg-gradient-to-br from-[#4b4b4b] to-[#313131] rounded-[20px] pb-1 p-3 space-y-3 shadow-sm"
         // className="sm:hidden w-full h-[150px] bg-gradient-to-br from-[#b8a781] to-[#746346] rounded-[20px] pb-1 p-3 space-y-3 shadow-sm"
-        className="sm:hidden w-full h-[150px] bg-gradient-to-br from-[#c4ad72] to-[#95751c] rounded-[20px] pb-1 p-3 space-y-3 shadow-sm"
+        // className="sm:hidden w-full h-[150px] bg-gradient-to-br from-[#c4ad72] to-[#95751c] rounded-[20px] pb-1 p-3 space-y-3 shadow-sm"
         // className="sm:hidden w-full h-[150px] bg-gradient-to-br from-[#cdb77d] to-[#9c7c25] rounded-[20px] pb-1 p-3 space-y-3 shadow-sm"
       >
         <p className="font-semibold text-lg select-none text-white">
@@ -51,8 +51,7 @@ const Headphones = () => {
         <div className="w-full h-full">
           <iframe
             title="Mika's Favorite Spotify Song"
-            src="https://open.spotify.com/embed/track/1Bv3h7Vc4AaYA2BcSM3rVd?utm_source=generator"
-            // src="https://open.spotify.com/embed/track/2bfOeIn8bQkRr02NNX29tR?utm_source=generator"
+            src="https://open.spotify.com/embed/track/1Bv3h7Vc4AaYA2BcSM3rVd?utm_source=generator&theme=0"
             width="100%"
             loading="lazy"
             className="h-[75%]"
