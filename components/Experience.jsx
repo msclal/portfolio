@@ -11,6 +11,7 @@ import wrxSpace from "@/public/gallery/wrxSpace.png";
 import ACM from "@/public/gallery/ACM.png";
 import citrusHack from "@/public/gallery/citrusHack.png";
 import bioLink from "@/public/gallery/bioLink.png";
+import kabo from "@/public/gallery/kabo.png";
 import { RiShareBoxFill } from "react-icons/ri";
 
 const Experience = ({ experienceRef }) => {
@@ -55,7 +56,7 @@ const Experience = ({ experienceRef }) => {
       image: NM,
       alt: "Northwestern Mutual",
       description:
-        "I interned for the Innovation Team, and worked at the best office space, called Cream City Labs. We were in charge of ideating and developing new app ideas for the company.",
+        "I interned for the best team - The Innovation Team, and worked at the best office space, called Cream City Labs. We were in charge of ideating and developing new app ideas for the company.",
     },
     {
       title: "NMTech Instructor Assistant",
@@ -80,7 +81,7 @@ const Experience = ({ experienceRef }) => {
       image: ACM,
       alt: "ACM",
       description:
-        "UC Riverside's Computer Science club! We build projects that enhance student life experience at the school. I took part in building the 'bitByBit' and 'R'Parts' projects as a full-stack developer.",
+        "UC Riverside's Computer Science club! We build projects that enhance student life at the school. I took part in building the 'bitByBit' and 'R'Parts' projects as a full-stack developer.",
     },
     {
       title: "Web Developer Lead",
@@ -99,7 +100,7 @@ const Experience = ({ experienceRef }) => {
             CitrusHack.com.
           </a>{" "}
           I also assumed On-Call Technial Support responsibilities to tend to
-          bugs and user feedbacks during the {`website's`} launch week
+          bugs and user feedbacks during the {`website's`} launch week.
         </>
       ),
     },
@@ -110,6 +111,15 @@ const Experience = ({ experienceRef }) => {
       alt: "bioLink",
       description:
         "bioLink won 'Best Overall' in my last college hackathon. One last \"hoorah\" as I bid goodbye to UC Riverside.",
+      link: "https://github.com/minsooerickim/bioLink",
+    },
+    {
+      title: "KABO! studio",
+      subTitle: "August 2023 - Present",
+      image: kabo,
+      alt: "bioLink",
+      description:
+        "Working as a freelance web developer serving businesses across California. I talk to clients and oversee an entire project's lifecycle - from designs, development, testing, and maintenance of the website.",
       link: "https://github.com/minsooerickim/bioLink",
     },
   ];
@@ -123,13 +133,15 @@ const Experience = ({ experienceRef }) => {
       className="w-full md:w-[62%] h-full"
     >
       <div className="bg-[#F5F6F6] rounded-[20px] p-5 pr-3 bg-opacity-90 space-y-5 duration-700 md:hover:-translate-y-[3px] md:hover:shadow-lg shadow-sm scroll-smooth	">
-        <p className="font-semibold select-none text-lg">Experience</p>
+        <p className="font-semibold select-none text-lg">
+          Experience (2019 - Present){" "}
+        </p>
 
         <div
           className="overflow-y-auto h-[390px] pr-3 rounded-[10px] scroll-smooth"
           style={{ scrollBehavior: "smooth" }}
         >
-          {experiences.map((experience, index) => {
+          {experiences.reverse().map((experience, index) => {
             return (
               <div
                 key={index}
@@ -160,7 +172,7 @@ const Experience = ({ experienceRef }) => {
                         src={experience.image}
                         alt="image"
                         draggable={false}
-                        className="w-full h-full aspect-square rounded-[10px]"
+                        className="w-full h-full aspect-square rounded-[10px] object-contain"
                         placeholder="blur"
                       />
                     </div>

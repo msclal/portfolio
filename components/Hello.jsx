@@ -7,7 +7,7 @@ import { TypeAnimation } from "react-type-animation";
 import { FiMail } from "react-icons/fi";
 import { AiFillGithub } from "react-icons/ai";
 import { ImLinkedin2 } from "react-icons/im";
-import ProfilePNG from "@/public/gallery/hello.png";
+import ProfilePNG from "@/public/gallery/headshot.png";
 
 const Hello = ({ homeRef }) => {
   return (
@@ -163,7 +163,7 @@ const Hello = ({ homeRef }) => {
                   7000,
                   `UX Engineer`,
                   5000,
-                  "Garf LLC President",
+                  `KABO studio Co-Creator`,
                   5000,
                   "Professional Kareoke Singer",
                   5000,
