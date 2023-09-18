@@ -1,12 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Project from "./Project";
-import meThinks from "@/public/projects/meThinks2.png";
+import meThinks from "@/public/projects/metonks.png";
 import Citrus from "@/public/projects/citrus2.png";
-import bioLink from "@/public/projects/bioLink.png";
+// import bioLink from "@/public/projects/bioLink.png";
 import rparts from "@/public/projects/r-parts2.png";
 import garf from "@/public/projects/garfai2.png";
 import bbb from "@/public/projects/bbb2.png";
+import kabo from "@/public/projects/pik.png";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiTailwindcss } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
@@ -19,9 +20,28 @@ import { TbBrandFramerMotion } from "react-icons/tb";
 const Projects = ({ projectsRef }) => {
   const projectsData = [
     {
+      title: "KABO!",
+      role: "Co-Creator and Web Developer",
+      subTitle: "A creativity-driven design studio based in California",
+      image: kabo,
+      github: "https://github.com/msclal/KABO",
+      deployed: null,
+      tech: (
+        <div className="flex gap-x-2 text-sm text-gray-500">
+          <SiFigma />
+          <TbBrandNextjs />
+          <SiTailwindcss />
+          <TbBrandFramerMotion />
+          <p className="text-xs">Resend</p>
+        </div>
+      ),
+      bg: "bg-gradient-to-r from-[#eeeeee] to-[#e8f1fb]",
+      // bg: "bg-gradient-to-br from-[#f9fcff] via-[#f5f8ff] to-[#f7fffa]",
+    },
+    {
       title: "meThinks...",
       role: "Lead Developer & Product Manager",
-      subTitle: "Twitter-BeReal Style thought posting",
+      subTitle: "A Twitter-BeReal-style, spontaneous-posting social media app",
       image: meThinks,
       github: "https://github.com/msclal/project-methinks",
       deployed: "https://me-thinks.herokuapp.com/feed",
@@ -40,27 +60,27 @@ const Projects = ({ projectsRef }) => {
       bg: "bg-gradient-to-r from-[#eef2fd] to-[#ecf5fe]",
       // bg: "bg-gradient-to-bl from-[#f5f8ff] to-[#f2f6fd]",
     },
-    {
-      title: "bioLink",
-      role: "Front-end Developer",
-      subTitle:
-        "AI-driven health insights and live chatting with local experts",
-      image: bioLink,
-      github: "https://github.com/minsooerickim/bioLink",
-      deployed: null,
-      tech: (
-        <div className="flex gap-x-2 text-sm text-gray-500">
-          <TbBrandNextjs />
-          <SiTailwindcss />
-          <SiMongodb />
-          <SiOpenai />
-          <SiSocketdotio />
-          <p className="text-xs">NextAuth</p>
-        </div>
-      ),
-      bg: "bg-gradient-to-br from-[#ecf5fe] to-[#f3fef7]",
-      // bg: "bg-gradient-to-br from-[#f9fcff] via-[#f5f8ff] to-[#f7fffa]",
-    },
+    // {
+    //   title: "bioLink",
+    //   role: "Front-end Developer",
+    //   subTitle:
+    //     "AI-driven health insights and live chatting with local experts",
+    //   image: bioLink,
+    //   github: "https://github.com/minsooerickim/bioLink",
+    //   deployed: null,
+    //   tech: (
+    //     <div className="flex gap-x-2 text-sm text-gray-500">
+    //       <TbBrandNextjs />
+    //       <SiTailwindcss />
+    //       <SiMongodb />
+    //       <SiOpenai />
+    //       <SiSocketdotio />
+    //       <p className="text-xs">NextAuth</p>
+    //     </div>
+    //   ),
+    //   bg: "bg-gradient-to-br from-[#ecf5fe] to-[#f3fef7]",
+    //   // bg: "bg-gradient-to-br from-[#f9fcff] via-[#f5f8ff] to-[#f7fffa]",
+    // },
     {
       title: "Citrus Hack",
       role: "Lead Developer & On-Call Support Engineer",

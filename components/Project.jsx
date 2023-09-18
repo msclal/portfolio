@@ -71,12 +71,13 @@ const Project = ({ project }) => {
 
       <motion.div
         transition={{ duration: 0, ease: "linear" }}
-        className={`p-4 flex flex-col w-full rounded-[20px] gap-y-3 border-[1px] border-gray-200 shadow-sm bg-opacity-70 duration-700 md:hover:-translate-y-[3px] md:hover:shadow-lg ${project.bg}`}
+        className={`p-4 flex flex-col w-full rounded-[20px] gap-y-3 border-[1px] border-gray-200 shadow-sm bg-opacity-70 duration-700 md:hover:-translate-y-[3px] md:hover:shadow-lg ${project.bg}  justify-between`}
       >
+        {/* max-h-[430px] md:min-h-[500px] xl:max-h-[490px] */}
         <Image
           src={project.image}
           alt="meThinks"
-          className={`rounded-[20px] h-1/3`}
+          className={`rounded-[20px] object-cover`}
           placeholder="blur"
         />
         <div>
